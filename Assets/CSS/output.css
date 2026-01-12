@@ -10,6 +10,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
@@ -200,6 +201,9 @@
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -396,6 +400,9 @@
       background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
     }
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -413,6 +420,9 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-\[60px\] {
+    padding-block: 60px;
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
@@ -457,6 +467,10 @@
     --tw-leading: 105%;
     line-height: 105%;
   }
+  .leading-\[110\%\] {
+    --tw-leading: 110%;
+    line-height: 110%;
+  }
   .leading-\[125\%\] {
     --tw-leading: 125%;
     line-height: 125%;
@@ -468,6 +482,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .tracking-\[2px\] {
     --tw-tracking: 2px;
@@ -721,6 +739,11 @@
   .xl\:h-\[807px\] {
     @media (width >= 80rem) {
       height: 807px;
+    }
+  }
+  .xl\:text-\[42px\] {
+    @media (width >= 80rem) {
+      font-size: 42px;
     }
   }
   .xl\:text-\[48px\] {
