@@ -345,6 +345,9 @@
   .bg-\[\#1F2326\] {
     background-color: #1F2326;
   }
+  .bg-\[\#3CC4F4\] {
+    background-color: #3CC4F4;
+  }
   .bg-\[\#24C583\] {
     background-color: #24C583;
   }
@@ -437,6 +440,9 @@
   .text-\[\#1C6D4C\] {
     color: #1C6D4C;
   }
+  .text-\[\#3CC4F4\] {
+    color: #3CC4F4;
+  }
   .text-\[\#05C0F4\] {
     color: #05C0F4;
   }
@@ -519,6 +525,11 @@
   .max-lg\:text-\[\#1C6D4C\] {
     @media (width < 64rem) {
       color: #1C6D4C;
+    }
+  }
+  .max-lg\:text-\[\#3CC4F4\] {
+    @media (width < 64rem) {
+      color: #3CC4F4;
     }
   }
   .max-lg\:opacity-70 {
