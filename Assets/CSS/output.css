@@ -363,6 +363,9 @@
   .gap-y-\[22px\] {
     row-gap: 22px;
   }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
