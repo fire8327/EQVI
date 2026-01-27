@@ -319,11 +319,17 @@
                 </div>
             </div>
             <div class="flex flex-col gap-6">
-                <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase text-white">Оставить заявку</p>
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-2 text-[16px] leading-[140%]">
-                    <button class="rounded-[20px] bg-[#05C0F4] text-white flex items-center py-3"></button>
-                </div>
-                <p class="w-full text-right text-[12px] leading-[140%] font-medium">Нажимая на кнопку «Отправить» вы  соглашаетесь с <a href="#" class="underline">Политикой конфиденциальности</a></p>
+                <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase text-white max-lg:hidden">Оставить заявку</p>
+                <form class="grid grid-cols-1 lg:grid-cols-5 gap-2 text-[16px] leading-[140%]">
+                    <div class="relative w-full">
+                        <input type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            ФИО
+                        </p>
+                    </div>
+                    <button class="cursor-pointer rounded-full lg:rounded-[20px] bg-[#05C0F4] text-white flex justify-center py-3">Отправить заявку</button>
+                </form>
+                <p class="w-full text-right text-[12px] leading-[140%] font-medium max-lg:hidden">Нажимая на кнопку «Отправить» вы  соглашаетесь с <a href="#" class="underline">Политикой конфиденциальности</a></p>
             </div>
         </div>
     </div>
