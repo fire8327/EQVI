@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Assets/CSS/output.css">
 </head>
 <body class="bg-[#1F2326]">
-    <header class="w-full py-6 lg:py-8 px-3">
+    <header class="w-full py-6 max-lg:pb-16 lg:py-8 px-3 relative z-1">
         <div class="w-full max-w-[960px] mx-auto flex items-center justify-between">
             <a href="index.html">
                 <img src="Assets/Images/hero/logo.svg" alt="">
@@ -28,6 +28,8 @@
             </div>
         </div>
     </header>
+
+    <img src="Assets/Images/hero/main.webp" alt="" class="absolute top-0 left-0 w-full h-[132px] object-cover object-center lg:hidden grayscale">
 
     <div class="w-full py-8 lg:py-[120px] px-6">
         <div class="w-full max-w-[960px] mx-auto flex flex-col gap-4 lg:gap-8">
@@ -321,25 +323,25 @@
             <div class="flex flex-col gap-6">
                 <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase text-white max-lg:hidden">Оставить заявку</p>
                 <form class="grid grid-cols-1 lg:grid-cols-5 gap-2 text-[16px] leading-[140%]">
-                    <div class="relative w-full">
+                    <div class="relative w-full max-lg:hidden">
                         <input name="fio" type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
                         <p class="text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
                             ФИО
                         </p>
                     </div>
-                    <div class="relative w-full">
+                    <div class="relative w-full max-lg:hidden">
                         <input name="position" type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
                         <p class="text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
                             Должность
                         </p>
                     </div>
-                    <div class="relative w-full">
+                    <div class="relative w-full max-lg:hidden">
                         <input name="companyName" type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
                         <p class="text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
                             Название компании
                         </p>
                     </div>
-                    <div class="relative w-full">
+                    <div class="relative w-full max-lg:hidden">
                         <input name="count" type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
                         <p class="text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
                             Кол-во сотрудников
@@ -348,6 +350,23 @@
                     <button class="cursor-pointer rounded-full lg:rounded-[20px] bg-[#05C0F4] text-white flex justify-center py-3">Отправить заявку</button>
                 </form>
                 <p class="w-full text-right text-[12px] leading-[140%] font-medium max-lg:hidden">Нажимая на кнопку «Отправить» вы  соглашаетесь с <a href="#" class="underline">Политикой конфиденциальности</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full pt-14 pb-8 lg:py-[98px] px-6 bg-[#272C30] rounded-[20px] text-white">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-6 items-center">
+            <p class="text-center text-[16px] md:text-[18px] lg:text-[22px] leading-[140%] font-bold uppercase">Скачать приложение</p>
+            <svg width="43" height="19" viewBox="0 0 43 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.314453 0.388672L21.3145 17.3887L42.3145 0.388672" stroke="#05C0F4"/>
+            </svg>                
+            <div class="flex items-center gap-4 lg:gap-6">
+                <a href="#" class="w-[160px] lg:w-[200px]">
+                    <img src="Assets/Images/download/1.png" alt="" class="w-full">
+                </a>
+                <a href="#" class="w-[160px] lg:w-[200px]">
+                    <img src="Assets/Images/download/2.png" alt="" class="w-full">
+                </a>
             </div>
         </div>
     </div>

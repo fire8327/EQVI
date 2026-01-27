@@ -178,6 +178,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-1 {
     top: calc(var(--spacing) * 1);
   }
@@ -186,6 +189,9 @@
   }
   .top-\[34px\] {
     top: 34px;
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .left-1 {
     left: calc(var(--spacing) * 1);
@@ -200,6 +206,9 @@
     z-index: 0;
   }
   .z-1 {
+    z-index: 1;
+  }
+  .z-\[1\] {
     z-index: 1;
   }
   .mx-auto {
@@ -238,6 +247,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-\[132px\] {
+    height: 132px;
+  }
   .h-\[277px\] {
     height: 277px;
   }
@@ -249,6 +261,9 @@
   }
   .w-\[89px\] {
     width: 89px;
+  }
+  .w-\[160px\] {
+    width: 160px;
   }
   .w-\[210px\] {
     width: 210px;
@@ -497,6 +512,9 @@
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-14 {
+    padding-top: calc(var(--spacing) * 14);
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
@@ -747,6 +765,11 @@
       align-items: center;
     }
   }
+  .max-lg\:pb-16 {
+    @media (width < 64rem) {
+      padding-bottom: calc(var(--spacing) * 16);
+    }
+  }
   .max-lg\:text-\[\#1C6D4C\] {
     @media (width < 64rem) {
       color: #1C6D4C;
@@ -791,6 +814,11 @@
   .md\:text-\[16px\] {
     @media (width >= 48rem) {
       font-size: 16px;
+    }
+  }
+  .md\:text-\[18px\] {
+    @media (width >= 48rem) {
+      font-size: 18px;
     }
   }
   .md\:text-\[20px\] {
@@ -848,6 +876,11 @@
       width: calc(1/2 * 100%);
     }
   }
+  .lg\:w-\[200px\] {
+    @media (width >= 64rem) {
+      width: 200px;
+    }
+  }
   .lg\:w-\[212px\] {
     @media (width >= 64rem) {
       width: 212px;
@@ -883,6 +916,11 @@
       gap: calc(var(--spacing) * 3);
     }
   }
+  .lg\:gap-6 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .lg\:gap-8 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 8);
@@ -911,6 +949,11 @@
   .lg\:py-\[64px\] {
     @media (width >= 64rem) {
       padding-block: 64px;
+    }
+  }
+  .lg\:py-\[98px\] {
+    @media (width >= 64rem) {
+      padding-block: 98px;
     }
   }
   .lg\:py-\[120px\] {
