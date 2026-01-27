@@ -375,6 +375,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-\[\#383838\] {
+    border-color: #383838;
+  }
   .bg-\[\#1F2326\] {
     background-color: #1F2326;
   }
@@ -431,6 +434,9 @@
   }
   .px-\[22px\] {
     padding-inline: 22px;
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -543,6 +549,9 @@
   }
   .text-\[\#FEC535\] {
     color: #FEC535;
+  }
+  .text-\[16p\] {
+    color: 16p;
   }
   .text-white {
     color: var(--color-white);
