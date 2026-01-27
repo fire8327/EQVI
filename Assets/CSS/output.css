@@ -242,6 +242,12 @@
   .w-14 {
     width: calc(var(--spacing) * 14);
   }
+  .w-\[16px\] {
+    width: 16px;
+  }
+  .w-\[20px\] {
+    width: 20px;
+  }
   .w-\[22px\] {
     width: 22px;
   }
