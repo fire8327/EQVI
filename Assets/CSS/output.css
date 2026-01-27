@@ -217,6 +217,12 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-\[2\.8em\] {
+    height: 2.8em;
+  }
+  .h-\[2em\] {
+    height: 2em;
+  }
   .h-\[277px\] {
     height: 277px;
   }
@@ -234,9 +240,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-\[9\] {
-    max-width: 9;
   }
   .max-w-\[70\%\] {
     max-width: 70%;
@@ -347,6 +350,9 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-\[20px\] {
+    border-radius: 20px;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -476,6 +482,12 @@
   .text-\[\#05C0F4\] {
     color: #05C0F4;
   }
+  .text-\[\#707070\] {
+    color: #707070;
+  }
+  .text-\[\#A8A9AA\] {
+    color: #A8A9AA;
+  }
   .text-\[\#F1CE4F\] {
     color: #F1CE4F;
   }
@@ -523,6 +535,34 @@
     }
     &::-webkit-details-marker {
       color: #05C0F4;
+    }
+  }
+  .marker\:text-\[\#707070\] {
+    & *::marker {
+      color: #707070;
+    }
+    &::marker {
+      color: #707070;
+    }
+    & *::-webkit-details-marker {
+      color: #707070;
+    }
+    &::-webkit-details-marker {
+      color: #707070;
+    }
+  }
+  .marker\:text-\[\#F1C62C\] {
+    & *::marker {
+      color: #F1C62C;
+    }
+    &::marker {
+      color: #F1C62C;
+    }
+    & *::-webkit-details-marker {
+      color: #F1C62C;
+    }
+    &::-webkit-details-marker {
+      color: #F1C62C;
     }
   }
   .max-lg\:hidden {
@@ -591,6 +631,11 @@
       font-size: 14px;
     }
   }
+  .md\:text-\[20px\] {
+    @media (width >= 48rem) {
+      font-size: 20px;
+    }
+  }
   .md\:text-\[26px\] {
     @media (width >= 48rem) {
       font-size: 26px;
@@ -626,6 +671,16 @@
       display: none;
     }
   }
+  .lg\:h-\[2\.8em\] {
+    @media (width >= 64rem) {
+      height: 2.8em;
+    }
+  }
+  .lg\:w-1\/2 {
+    @media (width >= 64rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
   .lg\:w-\[212px\] {
     @media (width >= 64rem) {
       width: 212px;
@@ -639,6 +694,11 @@
   .lg\:max-w-\[1200px\] {
     @media (width >= 64rem) {
       max-width: 1200px;
+    }
+  }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
     }
   }
   .lg\:gap-3 {
@@ -689,11 +749,6 @@
   .lg\:text-\[32px\] {
     @media (width >= 64rem) {
       font-size: 32px;
-    }
-  }
-  .lg\:text-\[\'\]\'\] {
-    @media (width >= 64rem) {
-      color: ']';
     }
   }
   .xl\:h-\[807px\] {
