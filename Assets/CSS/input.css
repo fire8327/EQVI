@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.ui-tabs-active {
+    @apply bg-[#05C0F4] text-white
+}
