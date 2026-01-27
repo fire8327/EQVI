@@ -233,6 +233,12 @@
   .h-\[132px\] {
     height: 132px;
   }
+  .h-\[143px\] {
+    height: 143px;
+  }
+  .h-\[543px\]\! {
+    height: 543px !important;
+  }
   .h-\[620px\]\! {
     height: 620px !important;
   }
@@ -244,12 +250,6 @@
   }
   .w-\[16px\] {
     width: 16px;
-  }
-  .w-\[18px\] {
-    width: 18px;
-  }
-  .w-\[20px\] {
-    width: 20px;
   }
   .w-\[22px\] {
     width: 22px;
@@ -313,6 +313,12 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .place-content-center {
+    place-content: center;
+  }
+  .content-center {
+    align-content: center;
+  }
   .items-center {
     align-items: center;
   }
@@ -321,6 +327,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-items-center {
+    justify-items: center;
   }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
@@ -351,9 +360,6 @@
   }
   .gap-24 {
     gap: calc(var(--spacing) * 24);
-  }
-  .gap-\[30px\] {
-    gap: 30px;
   }
   .gap-x-7 {
     column-gap: calc(var(--spacing) * 7);
@@ -457,9 +463,6 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
-  }
-  .py-9 {
-    padding-block: calc(var(--spacing) * 9);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
@@ -687,11 +690,6 @@
       outline-style: none;
     }
   }
-  .max-lg\:mt-2 {
-    @media (width < 64rem) {
-      margin-top: calc(var(--spacing) * 2);
-    }
-  }
   .max-lg\:mt-4 {
     @media (width < 64rem) {
       margin-top: calc(var(--spacing) * 4);
@@ -705,11 +703,6 @@
   .max-lg\:flex-col {
     @media (width < 64rem) {
       flex-direction: column;
-    }
-  }
-  .max-lg\:pb-16 {
-    @media (width < 64rem) {
-      padding-bottom: calc(var(--spacing) * 16);
     }
   }
   .sm\:h-\[510px\]\! {
@@ -760,6 +753,16 @@
   .lg\:h-\[2\.8em\] {
     @media (width >= 64rem) {
       height: 2.8em;
+    }
+  }
+  .lg\:h-\[75px\]\! {
+    @media (width >= 64rem) {
+      height: 75px !important;
+    }
+  }
+  .lg\:h-\[705px\]\! {
+    @media (width >= 64rem) {
+      height: 705px !important;
     }
   }
   .lg\:h-\[745px\]\! {
@@ -825,11 +828,6 @@
   .lg\:px-\[30px\] {
     @media (width >= 64rem) {
       padding-inline: 30px;
-    }
-  }
-  .lg\:py-6 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 6);
     }
   }
   .lg\:py-8 {
