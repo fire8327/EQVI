@@ -23,4 +23,35 @@ const swiper = new Swiper('.swiper', {
         centeredSlides: true,
       }
     },
+
+    on: {
+        slideChange: function () {
+          updateNavButtons();
+        }
+    }
 });
+
+// Обновляем кнопки при изменении слайда
+function updateNavButtons() {
+    const activeIndex = swiper.realIndex;
+    const buttons = document.querySelectorAll('.nav-btn');
+  
+    buttons.forEach((btn, index) => {
+      if (index === activeIndex) {
+        btn.classList.remove('grayscale'); // активная кнопка — цветная
+      } else {
+        btn.classList.add('grayscale'); // неактивные — серые
+      }
+    });
+}
+  
+// Обработчики кликов по кнопкам
+document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const index = parseInt(btn.dataset.slideIndex);
+        swiper.slideToLoop(index);
+    });
+});
+
+// Инициализация при старте
+updateNavButtons();
