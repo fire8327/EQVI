@@ -60,9 +60,9 @@
 
     <div class="w-full py-8 lg:py-[120px] px-6 bg-white rounded-[20px]">
         <div class="w-full max-w-[960px] mx-auto flex flex-col gap-4 lg:gap-8">
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 w-full relative">
                 <div class="flex items-center justify-between w-full gap-4">
-                    <p class="text-[16px] md:text-[24px] lg:text-[32px] leading-[105%] font-bold uppercase">
+                    <p class="text-[16px] md:text-[24px] lg:text-[32px] leading-[125%] font-bold uppercase lg:max-w-[650px]">
                         Одна платформа — <span class="text-[#05C0F4]">десятки сценариев жизни</span>
                     </p>
                     <svg class="lg:hidden shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,10 +82,16 @@
                             transform="matrix(-0.69544 -0.718584 0.69544 -0.718584 16.2553 8.67596)" fill="#A5CF5F" />
                     </svg>
                 </div>
-                <p class="text-[16px] lg:text-[18px] leading-[140%] text-[#707070]">
-                    EQVI работает как живой организм, а не как статичный набор сервисов. <br>
-                    Это человеко-центричная экосистема, которая объединяет данные здоровья, повседневные привычки, потребление и сервисы в единую систему.
-                </p>
+                <div class="flex items-start gap-10">
+                    <p class="text-[16px] lg:text-[18px] leading-[140%] text-[#707070] lg:max-w-[650px]">
+                        EQVI работает как живой организм. <br>
+                        Это человеко-центричная экосистема, которая объединяет данные здоровья, повседневные привычки, потребление и сервисы в единую систему.
+                    </p>
+                    <video autoplay
+                    muted
+                    loop
+                    playsinline src="Assets/Images/platform/main.mp4" class="rounded-[16px] border-3 border-black overflow-hidden w-[116px] md:w-[170px] lg:w-[221px] shrink-0 lg:absolute lg:right-0 lg:-top-[360px]"></video>
+                </div>
             </div>            
         </div>
     </div>
