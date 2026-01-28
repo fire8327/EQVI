@@ -95,3 +95,16 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
 
 // Инициализация при старте (после создания инстанса)
 updateNavButtons(swiper);
+
+
+/* видео */
+$('#videoToggler').on('click', function() {
+  const video = $('#video')[0];
+  if (video.paused) {
+      video.play();
+      $("#videoOverlay").addClass('opacity-0');
+  } else {
+      video.pause();
+      $("#videoOverlay").removeClass('opacity-0');
+  }
+});
