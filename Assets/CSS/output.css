@@ -233,8 +233,14 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
   .h-14 {
     height: calc(var(--spacing) * 14);
+  }
+  .h-\[30px\] {
+    height: 30px;
   }
   .h-\[132px\] {
     height: 132px;
@@ -870,6 +876,11 @@
   .lg\:h-\[2\.8em\] {
     @media (width >= 64rem) {
       height: 2.8em;
+    }
+  }
+  .lg\:h-\[30px\] {
+    @media (width >= 64rem) {
+      height: 30px;
     }
   }
   .lg\:h-\[625px\]\! {
