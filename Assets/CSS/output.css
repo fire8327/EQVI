@@ -176,6 +176,9 @@
   .relative {
     position: relative;
   }
+  .relative\! {
+    position: relative !important;
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -185,14 +188,68 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .right-\[75px\] {
+    right: 75px;
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
+  }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
   }
   .left-4 {
     left: calc(var(--spacing) * 4);
   }
+  .left-\[75px\] {
+    left: 75px;
+  }
+  .left-\[75x\] {
+    left: 75x;
+  }
+  .left-\[150px\] {
+    left: 150px;
+  }
+  .left-\[300px\] {
+    left: 300px;
+  }
+  .left-\[336px\] {
+    left: 336px;
+  }
+  .left-\[calc\(\(100vw-960px\)\/2\)\] {
+    left: calc((100vw - 960px) / 2);
+  }
+  .left-\[calc\(\(100vw-1152px\)\)\] {
+    left: calc((100vw - 1152px));
+  }
+  .left-\[calc\(\(100vw-1152px\)\/2\)\] {
+    left: calc((100vw - 1152px) / 2);
+  }
+  .left-\[calc\(\(100vw-1200px\)\/2\)\] {
+    left: calc((100vw - 1200px) / 2);
+  }
+  .left-\[calc\(100vw\)\] {
+    left: calc(100vw);
+  }
+  .left-\[calc\(100vw-1152px\)\)\] {
+    left: calc(100vw - 1152px);
+  }
+  .left-\[calc\(100vw-1152px\)\] {
+    left: calc(100vw - 1152px);
+  }
   .z-1 {
     z-index: 1;
+  }
+  .z-2 {
+    z-index: 2;
+  }
+  .z-\[2\] {
+    z-index: 2;
   }
   .mx-auto {
     margin-inline: auto;
@@ -347,6 +404,15 @@
   .w-\[160px\] {
     width: 160px;
   }
+  .w-\[calc\(100\%\+\)\] {
+    width: calc(100% + );
+  }
+  .w-\[calc\(100\%\+100px\)\] {
+    width: calc(100% + 100px);
+  }
+  .w-\[calc\(100\)\] {
+    width: calc(100);
+  }
   .w-full {
     width: 100%;
   }
@@ -368,6 +434,34 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-translate-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-\[-1\] {
+    --tw-translate-x: calc(-1 * -1);
+    --tw-translate-y: calc(-1 * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-\[-1\] {
+    --tw-translate-x: -1;
+    --tw-translate-y: -1;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-y-1 {
     --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -375,6 +469,18 @@
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-\[-1\] {
+    --tw-translate-y: calc(-1 * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-\[-1\] {
+    --tw-translate-y: -1;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .scale-x-\[-1\] {
+    --tw-scale-x: -1;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -1033,9 +1139,39 @@
       font-size: 32px;
     }
   }
+  .xl\:-right-\[50px\] {
+    @media (width >= 80rem) {
+      right: calc(50px * -1);
+    }
+  }
+  .xl\:right-\[150px\] {
+    @media (width >= 80rem) {
+      right: 150px;
+    }
+  }
+  .xl\:left-\[150px\] {
+    @media (width >= 80rem) {
+      left: 150px;
+    }
+  }
   .xl\:text-\[56px\] {
     @media (width >= 80rem) {
       font-size: 56px;
+    }
+  }
+  .\32 xl\:right-\[250px\] {
+    @media (width >= 96rem) {
+      right: 250px;
+    }
+  }
+  .\32 xl\:left-\[250px\] {
+    @media (width >= 96rem) {
+      left: 250px;
+    }
+  }
+  .\32 xl\:left-\[300px\] {
+    @media (width >= 96rem) {
+      left: 300px;
     }
   }
 }
@@ -1071,6 +1207,21 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -1173,6 +1324,9 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
