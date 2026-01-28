@@ -38,11 +38,11 @@ function updateNavButtons() {
   
     buttons.forEach((btn, index) => {
       if (index === activeIndex) {
-        btn.classList.remove('grayscale','lg:w-6'); // активная кнопка — цветная
-        btn.classList.add('lg:w-8')
+        btn.classList.remove('grayscale','w-6'); // активная кнопка — цветная
+        btn.classList.add('w-8')
       } else {
-        btn.classList.remove('lg:w-8')
-        btn.classList.add('grayscale', 'lg:w-6'); // неактивные — серые
+        btn.classList.remove('w-8')
+        btn.classList.add('grayscale', 'w-6'); // неактивные — серые
       }
     });
 }
