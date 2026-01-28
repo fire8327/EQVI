@@ -400,8 +400,23 @@
   .list-inside {
     list-style-position: inside;
   }
+  .list-\[\"—\"\] {
+    list-style-type: "—";
+  }
+  .list-\[\'-\'\] {
+    list-style-type: '-';
+  }
+  .list-\[\'—\'\] {
+    list-style-type: '—';
+  }
   .list-\[-\] {
     list-style-type: -;
+  }
+  .list-\[—\] {
+    list-style-type: —;
+  }
+  .list-\[—_\] {
+    list-style-type: — ;
   }
   .list-disc {
     list-style-type: disc;
@@ -764,6 +779,52 @@
   .peer-focus\:text-\[\#05C0F4\] {
     &:is(:where(.peer):focus ~ *) {
       color: #05C0F4;
+    }
+  }
+  .marker\:mr-1\.5 {
+    & *::marker {
+      margin-right: calc(var(--spacing) * 1.5);
+    }
+    &::marker {
+      margin-right: calc(var(--spacing) * 1.5);
+    }
+    & *::-webkit-details-marker {
+      margin-right: calc(var(--spacing) * 1.5);
+    }
+    &::-webkit-details-marker {
+      margin-right: calc(var(--spacing) * 1.5);
+    }
+  }
+  .marker\:pr-1\.5 {
+    & *::marker {
+      padding-right: calc(var(--spacing) * 1.5);
+    }
+    &::marker {
+      padding-right: calc(var(--spacing) * 1.5);
+    }
+    & *::-webkit-details-marker {
+      padding-right: calc(var(--spacing) * 1.5);
+    }
+    &::-webkit-details-marker {
+      padding-right: calc(var(--spacing) * 1.5);
+    }
+  }
+  .marker\:font-bold {
+    & *::marker {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+    &::marker {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+    & *::-webkit-details-marker {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+    &::-webkit-details-marker {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
     }
   }
   .marker\:text-\[\#05C0F4\] {
