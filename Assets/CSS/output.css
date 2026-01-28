@@ -909,6 +909,11 @@
       width: 127px;
     }
   }
+  .lg\:w-\[184px\] {
+    @media (width >= 64rem) {
+      width: 184px;
+    }
+  }
   .lg\:w-\[200px\] {
     @media (width >= 64rem) {
       width: 200px;
