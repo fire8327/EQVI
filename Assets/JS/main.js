@@ -2,7 +2,31 @@
 $('#tabs').tabs();
 
 /* swiper */
+// Для loop с 4 слайдами и slidesPerView > 1 на десктопе Swiper часто не успевает
+// “заполнить” правую сторону клонами — визуально выглядит как пустота до первого клика.
+// Самый стабильный способ без переписывания разметки: один раз продублировать слайды.
+const swiperWrapper = document.querySelector('.swiper .swiper-wrapper');
+if (swiperWrapper && !swiperWrapper.dataset.clonedForLoop) {
+    const slides = Array.from(swiperWrapper.children).filter(el => el.classList && el.classList.contains('swiper-slide'));
+
+    // Если слайдов мало — удваиваем (4 -> 8). Этого достаточно для бесшовного loop.
+    if (slides.length > 0 && slides.length < 6) {
+        slides.forEach(slide => {
+            swiperWrapper.appendChild(slide.cloneNode(true));
+        });
+    }
+
+    swiperWrapper.dataset.clonedForLoop = '1';
+}
+
 const swiper = new Swiper('.swiper', {
+    loop: true,
+    // У тебя всего 4 слайда и на десктопе slidesPerView ~ 1.7 (≈2).
+    // Если Swiper пытается клонировать слишком много слайдов, loop начинает “полуработать”
+    // и появляется warning про недостаточное число слайдов.
+    // Поэтому фиксируем число клонируемых слайдов под текущую сетку (≈2).
+    loopedSlides: 4,
+    loopAdditionalSlides: 2,
     slidesPerView: 1.1,
     spaceBetween: 15,
     grabCursor: true,
@@ -30,16 +54,25 @@ const swiper = new Swiper('.swiper', {
     },
 
     on: {
+        init: function () {
+          updateNavButtons(this);
+        },
         slideChange: function () {
-          updateNavButtons();
+          updateNavButtons(this);
         }
     }
 });
 
 // Обновляем кнопки при изменении слайда
-function updateNavButtons() {
-    const activeIndex = swiper.realIndex;
+function updateNavButtons(swiperInstance) {
+    if (!swiperInstance) return;
+    // В loop режиме ориентируемся на realIndex (индекс “настоящих” слайдов)
     const buttons = document.querySelectorAll('.nav-btn');
+    if (!buttons.length) return;
+
+    const rawIndex = Number.isFinite(swiperInstance.realIndex) ? swiperInstance.realIndex : swiperInstance.activeIndex;
+    // После дублирования DOM-слайдов индекс может быть больше, чем число кнопок (4) — нормализуем.
+    const activeIndex = ((rawIndex % buttons.length) + buttons.length) % buttons.length;
   
     buttons.forEach((btn, index) => {
       if (index === activeIndex) {
@@ -60,5 +93,5 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
     });
 });
 
-// Инициализация при старте
-updateNavButtons();
+// Инициализация при старте (после создания инстанса)
+updateNavButtons(swiper);
