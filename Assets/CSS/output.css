@@ -329,6 +329,9 @@
   .max-w-\[680px\] {
     max-width: 680px;
   }
+  .max-w-\[895px\] {
+    max-width: 895px;
+  }
   .max-w-\[960px\] {
     max-width: 960px;
   }
@@ -994,6 +997,11 @@
   .lg\:text-\[32px\] {
     @media (width >= 64rem) {
       font-size: 32px;
+    }
+  }
+  .xl\:text-\[56px\] {
+    @media (width >= 80rem) {
+      font-size: 56px;
     }
   }
 }
