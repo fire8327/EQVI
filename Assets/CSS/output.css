@@ -215,6 +215,12 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
+  .-mt-1 {
+    margin-top: calc(var(--spacing) * -1);
+  }
+  .-mt-20 {
+    margin-top: calc(var(--spacing) * -20);
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -343,6 +349,9 @@
   }
   .w-\[160px\] {
     width: 160px;
+  }
+  .w-\[391px\] {
+    width: 391px;
   }
   .w-full {
     width: 100%;
@@ -940,6 +949,11 @@
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
@@ -958,6 +972,11 @@
   .lg\:gap-8 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:gap-24 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 24);
     }
   }
   .lg\:gap-32 {
