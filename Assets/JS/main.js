@@ -111,3 +111,19 @@ $('#videoToggler').on('click', function() {
       $("#videoOverlay").removeClass('opacity-0');
   }
 });
+
+
+/* скролл к слайдеру с отступом */
+document.querySelectorAll('.scroll-to-slider').forEach(button => {
+    button.addEventListener('click', function() {
+        const slider = document.getElementById('slider');
+        if (slider) {
+            const sliderPosition = slider.getBoundingClientRect().top + window.pageYOffset;
+            const offset = 60; // отступ 60px от верха блока
+            window.scrollTo({
+                top: sliderPosition - offset,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
