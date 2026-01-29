@@ -101,8 +101,11 @@ updateNavButtons(swiper);
 $('#videoToggler').on('click', function() {
   const video = $('#video')[0];
   if (video.paused) {
+    $("#videoOverlay").addClass('opacity-0');
+    $("#videoPreview").addClass('hidden');
+    setTimeout(() => {
       video.play();
-      $("#videoOverlay").addClass('opacity-0');
+    }, 350);
   } else {
       video.pause();
       $("#videoOverlay").removeClass('opacity-0');
