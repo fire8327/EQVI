@@ -29,3 +29,7 @@ $(document).ready(function() {
     
     handleScroll(); // Проверяем сразу
 });
+
+$("#contact, #contact2, #formToggler, #overlay").click(() => {
+    $("#form, #overlay, #formToggler").toggleClass("hidden")
+})
