@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../Assets/CSS/output.css">
 </head>
 <body class="bg-[#1F2326]">
-    <header class="w-full py-6 lg:py-8 px-6 relative z-1">
+    <header class="w-full py-6 lg:py-8 px-6 relative z-1 left-0 top-0 bg-[#1F2326]">
         <div class="w-full max-w-[960px] mx-auto flex items-center justify-between">
             <a href="index2.html" class="flex flex-col items-center">
                 <video autoplay
@@ -22,7 +22,7 @@
                     <path d="M63.917 0.265927H66V15.0471H63.917V0.265927Z" fill="white"/>
                 </svg>   
             </a>
-            <div class="flex items-center gap-2">
+            <div id="nav" class="flex items-center gap-2">
                 <button class="scroll-to-slider cursor-pointer">
                     <img src="../Assets/Images/hero/1.svg" alt="" class="w-[16px] md:w-[32px] aspect-square">
                 </button>
@@ -36,6 +36,7 @@
                     <img src="../Assets/Images/hero/4.svg" alt="" class="w-[16px] md:w-[32px] aspect-square">
                 </button>
             </div>
+            <button id="contact" class="cursor-pointer hidden text-[16px] rounded-full lg:rounded-[20px] bg-[#05C0F4] text-white flex justify-center items-center w-[126px] h-[44px]">Contact Us</button>
         </div>
     </header>
 
@@ -424,7 +425,7 @@
     </div>
 
     <div class="w-full py-12 lg:py-[64px] px-6 bg-[#1F2326] text-[#A8A9AA]">
-        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-12 lg:gap-32">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-6 lg:gap-14">
             <div class="flex flex-col gap-6">
                 <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase text-[#05C0F4]">ABOUT US</p>
                 <p class="text-[16px] lg:text-[18px] leading-[140%]">
@@ -445,37 +446,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-6 hidden">
-                <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase text-white max-lg:hidden">Оставить заявку</p>
-                <form class="grid grid-cols-1 lg:grid-cols-5 gap-2 text-[16px] leading-[140%]">
-                    <div class="relative w-full max-lg:hidden">
-                        <input name="fio" type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
-                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
-                            ФИО
-                        </p>
-                    </div>
-                    <div class="relative w-full max-lg:hidden">
-                        <input name="position" type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
-                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
-                            Должность
-                        </p>
-                    </div>
-                    <div class="relative w-full max-lg:hidden">
-                        <input name="companyName" type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
-                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
-                            Название компании
-                        </p>
-                    </div>
-                    <div class="relative w-full max-lg:hidden">
-                        <input name="count" type="text" placeholder=" " class="w-full text-[14px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[20px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
-                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[14px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
-                            Кол-во сотрудников
-                        </p>
-                    </div>
-                    <button class="cursor-pointer rounded-full lg:rounded-[20px] bg-[#05C0F4] text-white flex justify-center py-3">Отправить заявку</button>
-                </form>
-                <p class="w-full text-right text-[12px] leading-[140%] font-medium max-lg:hidden">Нажимая на кнопку «Отправить» вы  соглашаетесь с <a href="#" class="underline">Политикой конфиденциальности</a></p>
-            </div>
+            <button class="cursor-pointer text-[16px] rounded-full lg:rounded-[20px] bg-[#05C0F4] text-white flex justify-center items-center w-[200px] h-[44px]">Contact Us</button>
         </div>
     </div>
 
@@ -500,5 +471,6 @@
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
     <script src="../Assets/JS/main.js"></script>
+    <script src="../Assets/JS/en.js"></script>
 </body>
 </html>
