@@ -991,6 +991,36 @@
       right: calc(var(--spacing) * 0);
     }
   }
+  .lg\:right-\[calc\(\(100vw-960px\)\/2\)\] {
+    @media (width >= 64rem) {
+      right: calc((100vw - 960px) / 2);
+    }
+  }
+  .lg\:right-\[calc\(100\)\] {
+    @media (width >= 64rem) {
+      right: calc(100);
+    }
+  }
+  .lg\:right-\[calc\(100vw-\)\] {
+    @media (width >= 64rem) {
+      right: calc(100vw - );
+    }
+  }
+  .lg\:right-\[calc\(100vw-960px\)\)\] {
+    @media (width >= 64rem) {
+      right: calc(100vw - 960px);
+    }
+  }
+  .lg\:right-\[calc\(100vw-960px\)\/2\)\] {
+    @media (width >= 64rem) {
+      right: calc(100vw - 960px)/;
+    }
+  }
+  .lg\:right-\[calc\(100vw-960px\)\] {
+    @media (width >= 64rem) {
+      right: calc(100vw - 960px);
+    }
+  }
   .lg\:mt-12 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 12);
