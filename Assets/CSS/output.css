@@ -12,7 +12,6 @@
     --spacing: 0.25rem;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --blur-sm: 8px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -342,9 +341,6 @@
   .w-\[55px\] {
     width: 55px;
   }
-  .w-\[59px\] {
-    width: 59px;
-  }
   .w-\[61px\] {
     width: 61px;
   }
@@ -445,6 +441,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-not-allowed {
+    cursor: not-allowed;
   }
   .cursor-pointer {
     cursor: pointer;
