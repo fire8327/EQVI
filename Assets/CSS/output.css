@@ -379,6 +379,9 @@
   .w-\[74px\] {
     width: 74px;
   }
+  .w-\[80px\] {
+    width: 80px;
+  }
   .w-\[82px\] {
     width: 82px;
   }
@@ -1041,6 +1044,11 @@
   .lg\:w-12 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:w-\[100px\] {
+    @media (width >= 64rem) {
+      width: 100px;
     }
   }
   .lg\:w-\[184px\] {
