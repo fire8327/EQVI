@@ -456,6 +456,9 @@
   .max-w-\[342px\] {
     max-width: 342px;
   }
+  .max-w-\[456px\] {
+    max-width: 456px;
+  }
   .max-w-\[600px\] {
     max-width: 600px;
   }
@@ -688,6 +691,9 @@
   .bg-\[\#F97FB0\] {
     background-color: #F97FB0;
   }
+  .bg-\[\#FFFFFF0D\] {
+    background-color: #FFFFFF0D;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -732,6 +738,9 @@
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -1127,6 +1136,11 @@
       font-size: 18px;
     }
   }
+  .md\:text-\[22px\] {
+    @media (width >= 48rem) {
+      font-size: 22px;
+    }
+  }
   .md\:text-\[24px\] {
     @media (width >= 48rem) {
       font-size: 24px;
@@ -1470,6 +1484,11 @@
   .lg\:text-\[32px\] {
     @media (width >= 64rem) {
       font-size: 32px;
+    }
+  }
+  .lg\:text-\[178px\] {
+    @media (width >= 64rem) {
+      font-size: 178px;
     }
   }
   .lg\:font-bold {
