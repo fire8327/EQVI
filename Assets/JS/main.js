@@ -128,3 +128,12 @@ document.querySelectorAll('.scroll-to-slider').forEach(button => {
         }
     });
 });
+
+
+/* dropdown */
+$(".dropDown").each((i, el) => {
+  $(el).find(".dropDownToggler").click(() => {
+    $(el).find(".dropDownToggler").find("img").toggleClass("rotate-180")
+    $(el).find(".dropDownList").toggleClass("max-h-0 max-h-[1000px]")
+  })
+})
