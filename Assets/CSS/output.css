@@ -648,6 +648,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
   }
@@ -707,6 +710,9 @@
   }
   .gap-\[18px\] {
     gap: 18px;
+  }
+  .gap-\[30px\] {
+    gap: 30px;
   }
   .gap-x-0 {
     column-gap: calc(var(--spacing) * 0);
@@ -1618,6 +1624,11 @@
   .lg\:max-w-\[320px\] {
     @media (width >= 64rem) {
       max-width: 320px;
+    }
+  }
+  .lg\:max-w-\[344px\] {
+    @media (width >= 64rem) {
+      max-width: 344px;
     }
   }
   .lg\:max-w-\[390px\] {
