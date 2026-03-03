@@ -27,14 +27,14 @@ const swiper = new Swiper('.swiper', {
     // Поэтому фиксируем число клонируемых слайдов под текущую сетку (≈2).
     loopedSlides: 4,
     loopAdditionalSlides: 2,
-    slidesPerView: 1.1,
-    spaceBetween: 15,
+    slidesPerView: 1.05,
+    spaceBetween: 8,
     grabCursor: true,
 
     breakpoints: {
       640: {
-        slidesPerView: 1.1,
-        spaceBetween: 15,
+        slidesPerView: 1.05,
+        spaceBetween: 8,
         centeredSlides: false,
       },
       1024: {
