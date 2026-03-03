@@ -12,6 +12,7 @@
     --spacing: 0.25rem;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+    --font-weight-black: 900;
     --radius-lg: 0.5rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -938,6 +939,10 @@
     --tw-leading: 140%;
     line-height: 140%;
   }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -957,6 +962,9 @@
   }
   .text-\[\#5E6366\] {
     color: #5E6366;
+  }
+  .text-\[\#515151\] {
+    color: #515151;
   }
   .text-\[\#707070\] {
     color: #707070;
@@ -987,6 +995,9 @@
   }
   .text-\[1\] {
     color: 1;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-white {
     color: var(--color-white);
