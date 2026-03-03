@@ -255,6 +255,9 @@
   .mt-2\.5 {
     margin-top: calc(var(--spacing) * 2.5);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -429,12 +432,6 @@
   .max-w-\[149px\] {
     max-width: 149px;
   }
-  .max-w-\[150px\] {
-    max-width: 150px;
-  }
-  .max-w-\[209px\] {
-    max-width: 209px;
-  }
   .max-w-\[600px\] {
     max-width: 600px;
   }
@@ -587,9 +584,6 @@
   .scroll-smooth {
     scroll-behavior: smooth;
   }
-  .rounded-\[1\] {
-    border-radius: 1;
-  }
   .rounded-\[8px\] {
     border-radius: 8px;
   }
@@ -631,6 +625,9 @@
   .bg-\[\#1F2326\] {
     background-color: #1F2326;
   }
+  .bg-\[\#1F23260D\] {
+    background-color: #1F23260D;
+  }
   .bg-\[\#3CC4F4\] {
     background-color: #3CC4F4;
   }
@@ -651,9 +648,6 @@
   }
   .bg-\[\#F97FB0\] {
     background-color: #F97FB0;
-  }
-  .bg-\[\#FFFFFF0D\] {
-    background-color: #FFFFFF0D;
   }
   .bg-black {
     background-color: var(--color-black);
@@ -711,6 +705,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-3\.5 {
+    padding-block: calc(var(--spacing) * 3.5);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -780,13 +777,13 @@
     --tw-leading: 120%;
     line-height: 120%;
   }
+  .leading-\[120\] {
+    --tw-leading: 120;
+    line-height: 120;
+  }
   .leading-\[125\%\] {
     --tw-leading: 125%;
     line-height: 125%;
-  }
-  .leading-\[140\$\] {
-    --tw-leading: 140$;
-    line-height: 140$;
   }
   .leading-\[140\%\] {
     --tw-leading: 140%;
@@ -823,12 +820,6 @@
   }
   .text-\[\#A8A9AA\] {
     color: #A8A9AA;
-  }
-  .text-\[\#A8A9AAф\] {
-    color: #A8A9AAф;
-  }
-  .text-\[\#E2E2E2\] {
-    color: #E2E2E2;
   }
   .text-\[\#E2E2E2\]\/70 {
     color: color-mix(in oklab, #E2E2E2 70%, transparent);
@@ -1054,29 +1045,14 @@
       font-size: 18px;
     }
   }
-  .md\:text-\[22px\] {
-    @media (width >= 48rem) {
-      font-size: 22px;
-    }
-  }
   .md\:text-\[24px\] {
     @media (width >= 48rem) {
       font-size: 24px;
     }
   }
-  .md\:text-\[25px\] {
-    @media (width >= 48rem) {
-      font-size: 25px;
-    }
-  }
   .md\:text-\[26px\] {
     @media (width >= 48rem) {
       font-size: 26px;
-    }
-  }
-  .md\:text-\[226px\] {
-    @media (width >= 48rem) {
-      font-size: 226px;
     }
   }
   .lg\:absolute {
@@ -1189,6 +1165,11 @@
       max-width: 209px;
     }
   }
+  .lg\:max-w-\[287px\] {
+    @media (width >= 64rem) {
+      max-width: 287px;
+    }
+  }
   .lg\:max-w-\[650px\] {
     @media (width >= 64rem) {
       max-width: 650px;
@@ -1219,11 +1200,6 @@
       gap: calc(var(--spacing) * 3);
     }
   }
-  .lg\:gap-4 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 4);
-    }
-  }
   .lg\:gap-6 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 6);
@@ -1247,6 +1223,11 @@
   .lg\:gap-14 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:gap-16 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 16);
     }
   }
   .lg\:gap-24 {
@@ -1362,6 +1343,26 @@
   .xl\:left-\[150px\] {
     @media (width >= 80rem) {
       left: 150px;
+    }
+  }
+  .xl\:gap-20 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:gap-\[70px\] {
+    @media (width >= 80rem) {
+      gap: 70px;
+    }
+  }
+  .xl\:gap-\[76px\] {
+    @media (width >= 80rem) {
+      gap: 76px;
+    }
+  }
+  .xl\:gap-\[77px\] {
+    @media (width >= 80rem) {
+      gap: 77px;
     }
   }
   .xl\:text-\[50px\] {
