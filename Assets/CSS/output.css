@@ -1284,6 +1284,11 @@
       width: 197px;
     }
   }
+  .max-lg\:w-full {
+    @media (width < 64rem) {
+      width: 100%;
+    }
+  }
   .max-lg\:grow {
     @media (width < 64rem) {
       flex-grow: 1;
@@ -1294,10 +1299,35 @@
       flex-direction: column;
     }
   }
+  .max-lg\:justify-between {
+    @media (width < 64rem) {
+      justify-content: space-between;
+    }
+  }
+  .max-lg\:gap-\[30px\] {
+    @media (width < 64rem) {
+      gap: 30px;
+    }
+  }
   .max-lg\:border-r {
     @media (width < 64rem) {
       border-right-style: var(--tw-border-style);
       border-right-width: 1px;
+    }
+  }
+  .max-lg\:px-4 {
+    @media (width < 64rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .max-lg\:pr-4 {
+    @media (width < 64rem) {
+      padding-right: calc(var(--spacing) * 4);
+    }
+  }
+  .max-lg\:pl-4 {
+    @media (width < 64rem) {
+      padding-left: calc(var(--spacing) * 4);
     }
   }
   .max-md\:right-1 {
@@ -1340,6 +1370,16 @@
       flex-direction: column;
     }
   }
+  .max-md\:pr-1 {
+    @media (width < 48rem) {
+      padding-right: calc(var(--spacing) * 1);
+    }
+  }
+  .max-md\:pr-1\.5 {
+    @media (width < 48rem) {
+      padding-right: calc(var(--spacing) * 1.5);
+    }
+  }
   .md\:h-\[225px\] {
     @media (width >= 48rem) {
       height: 225px;
@@ -1373,6 +1413,11 @@
   .md\:items-center {
     @media (width >= 48rem) {
       align-items: center;
+    }
+  }
+  .md\:gap-\[30px\] {
+    @media (width >= 48rem) {
+      gap: 30px;
     }
   }
   .md\:text-\[14px\] {
@@ -1685,6 +1730,11 @@
       gap: calc(var(--spacing) * 3);
     }
   }
+  .lg\:gap-5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 5);
+    }
+  }
   .lg\:gap-6 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 6);
@@ -1754,6 +1804,11 @@
   .lg\:p-6 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:px-4 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .lg\:px-\[30px\] {
