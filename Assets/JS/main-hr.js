@@ -5,19 +5,19 @@ $('#tabs').tabs();
 // Для loop с 4 слайдами и slidesPerView > 1 на десктопе Swiper часто не успевает
 // “заполнить” правую сторону клонами — визуально выглядит как пустота до первого клика.
 // Самый стабильный способ без переписывания разметки: один раз продублировать слайды.
-const swiperWrapper = document.querySelector('.swiper .swiper-wrapper');
+/* const swiperWrapper = document.querySelector('.swiper .swiper-wrapper');
 if (swiperWrapper && !swiperWrapper.dataset.clonedForLoop) {
     const slides = Array.from(swiperWrapper.children).filter(el => el.classList && el.classList.contains('swiper-slide'));
 
     // Если слайдов мало — удваиваем (4 -> 8). Этого достаточно для бесшовного loop.
-    if (slides.length > 0 && slides.length < 6) {
+    if (slides.length > 0 && slides.length < 8) {
         slides.forEach(slide => {
             swiperWrapper.appendChild(slide.cloneNode(true));
         });
     }
 
     swiperWrapper.dataset.clonedForLoop = '1';
-}
+} */
 
 const swiper = new Swiper('.swiper', {
     loop: true,
@@ -25,16 +25,16 @@ const swiper = new Swiper('.swiper', {
     // Если Swiper пытается клонировать слишком много слайдов, loop начинает “полуработать”
     // и появляется warning про недостаточное число слайдов.
     // Поэтому фиксируем число клонируемых слайдов под текущую сетку (≈2).
-    loopedSlides: 4,
-    loopAdditionalSlides: 2,
-    slidesPerView: 1.1,
-    spaceBetween: 15,
+    
+    slidesPerView: 1.05,
+    spaceBetween: 8,
     grabCursor: true,
 
     breakpoints: {
       640: {
-        slidesPerView: 1.1,
-        spaceBetween: 15,
+        slidesPerView: 1.05,
+        spaceBetween: 8,
+        centeredSlides: false,
       },
       1024: {
         slidesPerView: 1.5,
@@ -53,18 +53,18 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiperPrev',
     },
 
-    on: {
+    /* on: {
         init: function () {
           updateNavButtons(this);
         },
         slideChange: function () {
           updateNavButtons(this);
         }
-    }
+    } */
 });
 
 // Обновляем кнопки при изменении слайда
-function updateNavButtons(swiperInstance) {
+/* function updateNavButtons(swiperInstance) {
     if (!swiperInstance) return;
     // В loop режиме ориентируемся на realIndex (индекс “настоящих” слайдов)
     const buttons = document.querySelectorAll('.nav-btn');
@@ -83,18 +83,18 @@ function updateNavButtons(swiperInstance) {
         btn.classList.add('grayscale', 'w-6'); // неактивные — серые
       }
     });
-}
+} */
   
 // Обработчики кликов по кнопкам
-document.querySelectorAll('.nav-btn').forEach(btn => {
+/* document.querySelectorAll('.nav-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const index = parseInt(btn.dataset.slideIndex);
         swiper.slideToLoop(index);
     });
-});
+}); */
 
 // Инициализация при старте (после создания инстанса)
-updateNavButtons(swiper);
+/* updateNavButtons(swiper); */
 
 
 /* видео */
@@ -127,3 +127,12 @@ document.querySelectorAll('.scroll-to-slider').forEach(button => {
         }
     });
 });
+
+
+/* dropdown */
+$(".dropDown").each((i, el) => {
+  $(el).find(".dropDownToggler").click(() => {
+    $(el).find(".dropDownToggler").find("img").toggleClass("rotate-180")
+    $(el).find(".dropDownList").toggleClass("max-h-0 max-h-[1000px]")
+  })
+})
