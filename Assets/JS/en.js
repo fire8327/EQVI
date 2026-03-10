@@ -66,7 +66,9 @@ $(function() {
             })
             .done(function(response) {
                 if (response && response.success === true) {
-                    $("#formContent").addClass("hidden");
+                    $("#form").addClass("hidden");
+                    $("#overlay").addClass("hidden");
+                    $("#formToggler").addClass("hidden");
                     $("#formSuccess").removeClass("hidden");
                 } else {
                     $("#formError").removeClass("hidden");
