@@ -67,7 +67,6 @@ $(function() {
             .done(function(response) {
                 if (response && response.success === true) {
                     $("#form").addClass("hidden");
-                    $("#overlay").addClass("hidden");
                     $("#formToggler").addClass("hidden");
                     $("#formSuccess").removeClass("hidden");
                 } else {
@@ -86,6 +85,6 @@ $(function() {
     }
 
     $("#formClose").click(function() {
-        $("#form, #overlay, #formToggler").addClass("hidden");
+        $("#form, #overlay, #formToggler, #formSuccess").addClass("hidden");
     });
 });
