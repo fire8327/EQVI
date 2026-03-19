@@ -136,6 +136,33 @@
         </div>
     </div>
 
+    <!-- отличие от классических wellbeing-программ -->
+    <div class="w-full py-14 lg:py-[120px] px-4">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-8 text-white">
+            <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[140%] font-bold uppercase">
+                <span class="text-[#05C0F4]">Отличие от классических</span> wellbeing-программ
+            </p>
+            <div class="flex items-center text-[16px] md:text-[18px] leading-[140%] text-center">
+                <div class="flex flex-col items-center gap-8 rounded-[4px] bg-[#272C30] text-[#B9B9B9] w-1/2 pt-2.5 lg:pt-3.5 pb-4 lg:pb-7">
+                    <p class="text-[16px] leading-[140%] font-bold">Wellbeing</p>
+                    <p class="opacity-60 max-md:max-w-[170px]">Набор отдельных сервисов</p>
+                    <p class="opacity-60 max-md:max-w-[100px]">Реакция на проблему</p>
+                    <p class="opacity-60 max-md:max-w-[100px]">Отчеты раз в квартал</p>
+                    <p class="opacity-60 max-md:max-w-[100px]">Бонус или привилегия</p>
+                    <p class="opacity-60 max-md:max-w-[170px]">Активности ради активности</p>
+                </div>
+                <div class="flex flex-col items-center gap-8 rounded-[4px] bg-[#05C0F433] border-[0.5px] border-[#05C0F480] text-[#B9B9B9] w-1/2 pt-5 lg:pt-6 pb-7 lg:pb-11">
+                    <p class="text-[22px] leading-[140%] font-bold text-[#05C0F4]">ЭКВИ</p>
+                    <p class="max-md:max-w-[100px]">Единая AI-система</p>
+                    <p class="max-md:max-w-[100px]">Предиктивная модель</p>
+                    <p class="max-md:max-w-[160px]">Аналитика в&nbsp;реальном времени</p>
+                    <p class="max-md:max-w-[170px]">Инфраструктура управления энергией</p>
+                    <p class="max-md:max-w-[150px]">Связка с&nbsp;бизнес-метриками</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- всё работает синхронно -->
     <div class="w-full py-8 lg:py-[70px] px-4">
         <div class="w-full max-w-[960px] mx-auto flex flex-col gap-8 text-white">
@@ -178,286 +205,6 @@
                 Система ежедневно <span class="text-[#F1C62C]">адаптирует</span> рекомендации <span class="text-[#F1C62C]">одновременно</span> в&nbsp;нескольких направлениях: 
             </p>
         </div>
-    </div>
-
-    <!-- слайдер -->
-    <div id="slider" class="flex flex-col gap-4 lg:gap-6 items-center relative">
-        <!-- <div class="flex items-center gap-4 h-8">
-            <button class="nav-btn grayscale w-6 cursor-pointer transition-all" data-slide-index="0">
-                <img src="../Assets/Images/hero/1.svg" alt="" class="aspect-square">
-            </button>
-            <button class="nav-btn grayscale w-6 cursor-pointer transition-all" data-slide-index="1">
-                <img src="../Assets/Images/hero/2.svg" alt="" class="aspect-square">
-            </button>
-            <button class="nav-btn grayscale w-6 cursor-pointer transition-all" data-slide-index="2">
-                <img src="../Assets/Images/hero/3.svg" alt="" class="aspect-square">
-            </button>
-            <button class="nav-btn grayscale w-6 cursor-pointer transition-all" data-slide-index="3">
-                <img src="../Assets/Images/hero/4.svg" alt="" class="aspect-square">
-            </button>
-        </div> -->
-        <div class="swiper w-full">
-            <div class="swiper-wrapper h-full">
-                <div class="bg-[#F1C62C] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col gap-6 h-[700px]! lg:h-[665px]!">
-                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[125%] font-bold uppercase px-4 lg:px-[30px] pt-5 lg:pt-[30px]">Питание как основа энергии</p>
-                    <div class="flex lg:items-start lg:justify-between gap-20 px-4 lg:px-[30px]">
-                        <div class="flex flex-col gap-3 lg:gap-8 lg:max-w-[390px]">
-                            <div class="flex flex-col gap-4 lg:gap-3">
-                                <p class="text-[16px] md:text-[18px] leading-[140%]">Каждое утро, день и вечер сотрудник получает персональные рекомендации:</p>
-                                <div class="grid grid-cols-3 gap-1">
-                                    <div class="flex flex-col gap-2 rounded-[10px] bg-[#1212121A] p-2">
-                                        <p class="text-[16px] leading-[140%] font-bold">Утро 🌅</p>
-                                        <p class="text-[12px] leading-[140%]">Что съесть для правильного старта энергии с учётом сна и пульса</p>
-                                    </div>
-                                    <div class="flex flex-col gap-2 rounded-[10px] bg-[#1212121A] p-2">
-                                        <p class="text-[16px] leading-[140%] font-bold">День ☀️</p>
-                                        <p class="text-[12px] leading-[140%]">Поддержка концентрации корректировка при усталости</p>
-                                    </div>
-                                    <div class="flex flex-col gap-2 rounded-[10px] bg-[#1212121A] p-2">
-                                        <p class="text-[16px] leading-[140%] font-bold">Вечер 🌙</p>
-                                        <p class="text-[12px] leading-[140%]">Питание для восстановления рекомендации для качественного сна</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4 max-lg:justify-between">
-                                <div class="flex flex-col gap-8 lg:gap-3">
-                                    <div class="flex flex-col gap-2 text-[14px] md:text-[16px] lg:text-[18px] leading-[140%]">
-                                        <p class="font-bold">Удобно: заказ в 2 клика</p>
-                                        <ul class="list-inside list-disc flex flex-col gap-2">
-                                            <li>Интеграция с супермаркетами</li>
-                                            <li>Рекомендации конкретных продуктов</li>
-                                            <li>Подбор под бюджет</li>
-                                        </ul>
-                                    </div>
-                                    <p class="text-[14px] md:text-[16px] leading-[140%]">Питание становится инструментом управления энергией.</p>
-                                </div>
-                                <img src="../Assets/Images/food/phone.png" alt="" class="min-w-[116px] max-w-[116px] md:max-w-[150px] lg:hidden">
-                            </div>
-                        </div>
-                        <img src="../Assets/Images/food/phone.png" alt="" class="w-[168px] max-lg:hidden self-end">
-                    </div>
-                    <div class="w-full bg-black/50 rounded-[16px] h-[135px] lg:h-[143px] px-4 flex flex-col items-center justify-center gap-5 mt-auto">
-                        <div class="flex items-center gap-5">
-                            <img src="../Assets/Images/food/logo 1.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/food/logo 2.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/food/logo 3.webp" alt="" class="h-5 lg:h-[30px]">
-                        </div>
-                        <div class="flex items-center gap-5">
-                            <img src="../Assets/Images/food/logo 4.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/food/logo 5.webp" alt="" class="h-5 lg:h-[30px]">
-                            <p class="text-[14px] leading-[140%] text-white/50">+ 20 сервисов</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#3CC4F4] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col gap-6 h-[700px]! lg:h-[665px]!">
-                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[125%] font-bold uppercase px-4 lg:px-[30px] pt-5 lg:pt-[30px]">Управление состоянием организма</p>
-                    <div class="flex lg:items-start lg:justify-between gap-20 px-4 lg:px-[30px] max-lg:grow max-lg:w-full">
-                        <div class="flex flex-col gap-6 w-full lg:max-w-[433px]">
-                            <p class="text-[16px] leading-[140%] lg:hidden">Если система  фиксирует сбои пульса, недосып и пиковую усталость.</p>
-                            <div class="max-lg:hidden text-[18px] leading-[140%]">
-                                <p>Если система фиксирует отклонения:</p>
-                                <ul class="list-disc list-inside">
-                                    <li>нестабильный пульс</li>
-                                    <li>дефицит сна</li>
-                                    <li>высокий уровень усталости</li>
-                                </ul>
-                            </div>
-                            <div class="flex gap-8 max-lg:grow max-lg:justify-between">
-                                <div class="flex flex-col gap-2 lg:gap-3">
-                                    <p class="text-[16px] md:text-[18px] leading-[140%] font-bold">Тогда ЭКВИ:</p>
-                                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:text-center">
-                                        <div class="p-2 lg:py-3 rounded-[10px] bg-[#1212121A] flex items-center lg:justify-center lg:h-[66px]">Корректирует питание</div>
-                                        <div class="p-2 lg:py-3 rounded-[10px] bg-[#1212121A] flex items-center lg:justify-center lg:h-[66px]">Меняет нагрузку</div>
-                                        <div class="p-2 lg:py-3 rounded-[10px] bg-[#1212121A] flex items-center lg:justify-center lg:h-[66px]">Даёт рекомендации по восстановлению</div>
-                                        <div class="p-2 lg:py-3 rounded-[10px] bg-[#1212121A] flex items-center lg:justify-center lg:h-[66px]">Рекомендует профильных врачей</div>
-                                    </div>
-                                    <p class="text-[14px] leading-[140%] max-lg:mt-auto">Сотрудник получает ощущение контроля над своим организмом.</p>
-                                </div>
-                                <img src="../Assets/Images/tracker/phone.png" alt="" class="min-w-[116px] max-w-[116px] md:max-w-[150px] lg:hidden self-end">
-                            </div>
-                        </div>
-                        <img src="../Assets/Images/tracker/phone.png" alt="" class="w-[168px] max-lg:hidden self-end">
-                    </div>
-                    <div class="w-full bg-black/50 rounded-[16px] h-[135px] lg:h-[143px] px-4 flex flex-col items-center justify-center gap-5 mt-auto">
-                        <div class="flex items-center gap-5">
-                            <img src="../Assets/Images/tracker/logo 1.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/tracker/logo 2.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/tracker/logo 3.webp" alt="" class="h-5 lg:h-[30px]">
-                        </div>
-                        <div class="flex items-center gap-5">
-                            <img src="../Assets/Images/tracker/logo 4.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/tracker/logo 5.webp" alt="" class="h-5 lg:h-[30px]">
-                            <p class="text-[14px] leading-[140%] text-white/50">+ 10 брендов</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#F97FB0] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col gap-6 h-[700px]! lg:h-[665px]!">
-                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[125%] font-bold uppercase px-4 lg:px-[30px] pt-5 lg:pt-[30px]">Одежда и ментальное здоровье</p>
-                    <div class="flex lg:items-start lg:justify-between gap-10 lg:px-[30px]">
-                        <div class="flex flex-col gap-[18px] lg:gap-3 text-[16px] md:text-[18px] leading-[140%] lg:max-w-[440px]">
-                            <p class="max-lg:px-4">Встроен в корпоративную well-being систему. Почему это важно?</p>
-                            <div class="flex flex-col gap-1 max-lg:px-4">
-                                <p>Одежда влияет на:</p>
-                                <div class="flex items-center gap-0.5 lg:gap-1 flex-wrap">
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Уровень стресса</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Уверенность</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Поведение</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Проф. идентичность</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Восприятие коллегами</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-1 max-lg:justify-between max-lg:pl-4 max-md:pr-1 max-lg:pr-4">
-                                <div class="flex flex-col gap-[18px] lg:gap-3">
-                                    <div class="flex flex-col gap-1">
-                                        <p>ЭКВИ ежедневно планирует:</p>
-                                        <div class="flex items-center gap-1 flex-wrap">
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">что надеть на работу</p>
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">что выбрать для дома</p>
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">образ для мероприятий</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-1">
-                                        <p>Учитывается:</p>
-                                        <div class="flex items-center gap-1 flex-wrap">
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Погода</p>
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Тип фигуры</p>
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Цели дня</p>
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Формат встречи</p>
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Тренды</p>
-                                            <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Бюджет</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src="../Assets/Images/style/phone.png" alt="" class="min-w-[116px] max-w-[116px] md:max-w-[150px] self-end lg:hidden">
-                            </div>
-                        </div>
-                        <img src="../Assets/Images/style/phone.png" alt="" class="w-[168px] max-lg:hidden self-end">
-                    </div>
-                    <div class="w-full bg-black/50 rounded-[16px] h-[135px] lg:h-[143px] px-4 flex flex-col items-center justify-center gap-2.5 lg:gap-5 mt-auto">
-                        <div class="flex items-center gap-2.5">
-                            <img src="../Assets/Images/style/logo 1.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/style/logo 2.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/style/logo 3.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/style/logo 9.webp" alt="" class="h-[30px] max-lg:hidden">
-                            <img src="../Assets/Images/style/logo 4.webp" alt="" class="h-[30px] max-lg:hidden">
-                        </div>
-                        <div class="flex items-center gap-2.5 lg:hidden">
-                            <img src="../Assets/Images/style/logo 4.webp" alt="" class="h-5">
-                            <img src="../Assets/Images/style/logo 5.webp" alt="" class="h-5">
-                            <img src="../Assets/Images/style/logo 6.webp" alt="" class="h-5">
-                            <img src="../Assets/Images/style/logo 9.webp" alt="" class="h-5 lg:hidden">
-                        </div>
-                        <div class="flex items-center gap-2.5">
-                            <img src="../Assets/Images/style/logo 5.webp" alt="" class="h-[30px] max-lg:hidden">
-                            <img src="../Assets/Images/style/logo 6.webp" alt="" class="h-[30px] max-lg:hidden">
-                            <img src="../Assets/Images/style/logo 7.webp" alt="" class="h-5 lg:h-[30px]">
-                            <img src="../Assets/Images/style/logo 8.webp" alt="" class="h-5 lg:h-[30px]">
-                            <p class="text-[14px] leading-[140%] text-white/50">+ 20 брендов</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#0EB548] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col gap-6 h-[700px]! lg:h-[665px]!">
-                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[125%] font-bold uppercase px-4 lg:px-[30px] pt-5 lg:pt-[30px]">Медицина</p>
-                    <div class="flex lg:items-start lg:justify-between gap-20 px-4 lg:px-[30px]">
-                        <div class="flex flex-col gap-[18px] lg:gap-8 text-[16px] md:text-[18px] leading-[140%] lg:max-w-[370px]">
-                            <p>
-                                ЭКВИ превращает данные трекера в мгновенную медицинскую поддержку. <br>
-                                При отклонении от персональной нормы — система сама предлагает нужного специалиста:
-                            </p>
-                            <p>40+ врачей — неограниченный онлайн-доступ.</p>
-                            <div class="flex items-start gap-[30px]">
-                                <div class="flex items-center gap-0.5 flex-wrap lg:max-w-[344px]">
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">AI_мониторинг </p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Телемедицина</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Терапевт</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Психолог</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Нутрициолог</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Кардиолог</p>
-                                </div>
-                                <img src="../Assets/Images/medicine/phone.png" alt="" class="min-w-[116px] max-w-[116px] md:max-w-[150px] lg:hidden">
-                            </div>
-                        </div>
-                        <img src="../Assets/Images/medicine/phone.png" alt="" class="w-[168px] max-lg:hidden self-end">
-                    </div>
-                    <div class="w-full bg-black/50 rounded-[16px] h-[135px] lg:h-[143px] px-4 flex items-center justify-center mt-auto">
-                        <div class="text-[14px] lg:text-[16px] leading-[140%] opacity-50 flex flex-col gap-2">
-                            <p class="font-bold">Умные чекапы</p>
-                            <ul class="list-disc list-inside marker:text-white">
-                                <li>Льготные обследования в ведущих клиниках.</li>
-                                <li>Результаты анализов учитываются в программе питания.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#FF9494] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col gap-6 h-[700px]! lg:h-[665px]!">
-                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[125%] font-bold uppercase px-4 lg:px-[30px] pt-5 lg:pt-[30px]">Экосистема для семьи</p>
-                    <div class="flex lg:items-start lg:justify-between gap-20 px-4 lg:px-[30px]">
-                        <div class="flex flex-col gap-[18px] lg:gap-8 text-[16px] md:text-[18px] leading-[140%] lg:max-w-[370px]">
-                            <p>К экосистеме можно подключить членов семьи, после чего ЭКВИ  будет создавать рекомендации с учетом общих параметров.</p>
-                            <p>«Что будем сегодня есть, чтоб было полезно, вкусно и разнообразно для всей семьи?» </p>
-                            <p>Или</p>
-                            <div class="flex items-start gap-4 md:gap-[30px] max-lg:justify-between">
-                                <div class="flex flex-col gap-[18px] lg:gap-8">
-                                    <p>«Кто, что будет надевать на праздник»? </p>
-                                    <div class="flex flex-col gap-0.5">
-                                        <p class="flex items-center px-3 h-12 w-fit max-lg:w-[197px] lg:h-[30px] text-[14px] lg:text-[16px] leading-[140%] rounded-[10px] bg-[#1212121A]">Общий план питания для всей семьи</p>
-                                        <p class="flex items-center px-3 h-12 w-fit max-lg:w-[197px] lg:h-[30px] text-[14px] lg:text-[16px] leading-[140%] rounded-[10px] bg-[#1212121A]">Подбор образов для семейных событий»</p>
-                                    </div>
-                                </div>
-                                <img src="../Assets/Images/family/phone.png" alt="" class="min-w-[116px] max-w-[116px] md:max-w-[150px] lg:hidden">
-                            </div>
-                        </div>
-                        <img src="../Assets/Images/family/phone.png" alt="" class="w-[168px] max-lg:hidden self-end">
-                    </div>
-                    <div class="w-full bg-black/50 rounded-[16px] h-[135px] lg:h-[143px] px-4 flex items-center justify-center mt-auto">
-                        <div class="text-[14px] lg:text-[16px] leading-[140%] opacity-50 flex flex-col gap-2">
-                            <p>Гармония дома повышает продуктивность на работе</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#AC95EF] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col gap-6 h-[700px]! lg:h-[665px]!">
-                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[125%] font-bold uppercase px-4 lg:px-[30px] pt-5 lg:pt-[30px]">Викторины</p>
-                    <div class="flex lg:items-start lg:justify-between gap-16 px-4 lg:px-[30px] relative">
-                        <div class="flex flex-col gap-[18px] lg:gap-8 lg:max-w-[420px]">
-                            <div class="flex flex-col gap-3">
-                                <p>Интеллектуальная викторина ЭКВИ:</p>
-                                <ul class="lg:hidden mt-1.5 list-inside list-disc text-[16px] leading-[140%]">
-                                    <li>темы: искусство, история, наука, кино, музыка</li>
-                                    <li>снижает уровень стресса</li>
-                                    <li>развивает знания</li>
-                                </ul>
-                                <div class="flex items-center gap-0.5 lg:gap-1 flex-wrap max-lg:hidden">
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Темы: искусство, история, наука, кино, музыка</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Снижает уровень стресса</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Развивает знания</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-3">
-                                <p>Инструмент:</p>
-                                <div class="flex md:items-center max-md:flex-col gap-0.5 lg:gap-1 flex-wrap">
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] w-fit text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Регулярный скрининг</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] w-fit text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Когнитивного тестирования</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] w-fit text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Оценка мотивации</p>
-                                    <p class="flex items-center px-3 h-7 lg:h-[30px] w-fit text-[14px] lg:text-[16px] rounded-[10px] bg-[#1212121A]">Выявления скрытых амбиций</p>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="../Assets/Images/quizzes/phone.png" alt="" class="min-w-[116px] max-w-[116px] md:max-w-[150px] lg:w-[168px] max-lg:absolute max-lg:right-4 max-md:right-1 max-lg:-bottom-36 lg:self-end">
-                    </div>
-                    <div class="w-full bg-black/50 rounded-[16px] h-[135px] lg:h-[143px] px-4 flex items-center justify-center mt-auto">
-                        <div class="text-[14px] lg:text-[16px] leading-[140%] opacity-50">
-                            <p>Мягкая диагностика без ощущения контроля</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="swiperPrev cursor-pointer max-lg:hidden absolute z-2 top-1/2 -translate-y-1/2 left-[75px] xl:left-[150px] 2xl:left-[250px]">
-            <img src="../Assets/Images/slider/arrow.svg" alt="">
-        </button>
-        <button class="swiperNext cursor-pointer max-lg:hidden absolute z-2 top-1/2 -translate-y-1/2 right-[75px] xl:right-[150px] 2xl:right-[250px]">
-            <img src="../Assets/Images/slider/arrow.svg" alt="" class="scale-x-[-1]">
-        </button>
     </div>
 
     <!-- company energy index -->
@@ -955,33 +702,6 @@
                         <p class="text-[22px] leading-[140%] font-bold text-[#939597] lg:text-center">Возможность <span class="text-[#05C0F4]">White Label</span> интеграции</p>
                     </div>
                     <p class="opacity-50 lg:text-center lg:max-w-[230px]">Брендируем приложение под вашу компанию</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- отличие от классических wellbeing-программ -->
-    <div class="w-full py-14 lg:py-[120px] px-4">
-        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-8 text-white">
-            <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[140%] font-bold uppercase">
-                <span class="text-[#05C0F4]">Отличие от классических</span> wellbeing-программ
-            </p>
-            <div class="flex items-center text-[16px] md:text-[18px] leading-[140%] text-center">
-                <div class="flex flex-col items-center gap-8 rounded-[4px] bg-[#272C30] text-[#B9B9B9] w-1/2 pt-2.5 lg:pt-3.5 pb-4 lg:pb-7">
-                    <p class="text-[16px] leading-[140%] font-bold">Wellbeing</p>
-                    <p class="opacity-60 max-md:max-w-[170px]">Набор отдельных сервисов</p>
-                    <p class="opacity-60 max-md:max-w-[100px]">Реакция на проблему</p>
-                    <p class="opacity-60 max-md:max-w-[100px]">Отчеты раз в квартал</p>
-                    <p class="opacity-60 max-md:max-w-[100px]">Бонус или привилегия</p>
-                    <p class="opacity-60 max-md:max-w-[170px]">Активности ради активности</p>
-                </div>
-                <div class="flex flex-col items-center gap-8 rounded-[4px] bg-[#05C0F433] border-[0.5px] border-[#05C0F480] text-[#B9B9B9] w-1/2 pt-5 lg:pt-6 pb-7 lg:pb-11">
-                    <p class="text-[22px] leading-[140%] font-bold text-[#05C0F4]">ЭКВИ</p>
-                    <p class="max-md:max-w-[100px]">Единая AI-система</p>
-                    <p class="max-md:max-w-[100px]">Предиктивная модель</p>
-                    <p class="max-md:max-w-[160px]">Аналитика в&nbsp;реальном времени</p>
-                    <p class="max-md:max-w-[170px]">Инфраструктура управления энергией</p>
-                    <p class="max-md:max-w-[150px]">Связка с&nbsp;бизнес-метриками</p>
                 </div>
             </div>
         </div>
