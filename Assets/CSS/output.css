@@ -1038,6 +1038,9 @@
   .text-\[\#707070\] {
     color: #707070;
   }
+  .text-\[\#767676\] {
+    color: #767676;
+  }
   .text-\[\#797979\] {
     color: #797979;
   }
@@ -1832,6 +1835,11 @@
   .lg\:gap-1 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 1);
+    }
+  }
+  .lg\:gap-2\.5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 2.5);
     }
   }
   .lg\:gap-3 {
