@@ -296,6 +296,18 @@
   .-mr-2 {
     margin-right: calc(var(--spacing) * -2);
   }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
+  }
+  .ml-6 {
+    margin-left: calc(var(--spacing) * 6);
+  }
   .flex {
     display: flex;
   }
@@ -582,6 +594,9 @@
   }
   .list-inside {
     list-style-position: inside;
+  }
+  .list-outside {
+    list-style-position: outside;
   }
   .list-\[\'-\'\] {
     list-style-type: '-';
@@ -1862,6 +1877,11 @@
   .lg\:gap-32 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:gap-\[52px\] {
+    @media (width >= 64rem) {
+      gap: 52px;
     }
   }
   .lg\:gap-y-\[5px\] {
