@@ -317,6 +317,12 @@
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
   }
+  .ml-\[17px\] {
+    margin-left: 17px;
+  }
+  .ml-\[18px\] {
+    margin-left: 18px;
+  }
   .flex {
     display: flex;
   }
