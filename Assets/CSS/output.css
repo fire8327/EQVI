@@ -485,6 +485,9 @@
   .max-w-\[960px\] {
     max-width: 960px;
   }
+  .max-w-\[960pxc\] {
+    max-width: 960pxc;
+  }
   .flex-shrink {
     flex-shrink: 1;
   }
@@ -1212,6 +1215,11 @@
       font-size: 18px;
     }
   }
+  .md\:text-\[22px\] {
+    @media (width >= 48rem) {
+      font-size: 22px;
+    }
+  }
   .md\:text-\[24px\] {
     @media (width >= 48rem) {
       font-size: 24px;
@@ -1445,6 +1453,11 @@
   .lg\:rounded-\[20px\] {
     @media (width >= 64rem) {
       border-radius: 20px;
+    }
+  }
+  .lg\:bg-\[\#272C30\] {
+    @media (width >= 64rem) {
+      background-color: #272C30;
     }
   }
   .lg\:bg-\[\#121212\] {
