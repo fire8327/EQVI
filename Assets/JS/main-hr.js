@@ -37,13 +37,8 @@ const swiper = new Swiper('.swiper', {
         centeredSlides: false,
       },
       1024: {
-        slidesPerView: 1.5,
-        spaceBetween: 0,    
-        centeredSlides: true,
-      },
-      1280: {
-        slidesPerView: 1.7,
-        spaceBetween: 0,
+        slidesPerView: 3.7,
+        spaceBetween: 8,    
         centeredSlides: true,
       }
     },
