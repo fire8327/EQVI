@@ -910,6 +910,10 @@
   .text-\[22px\] {
     font-size: 22px;
   }
+  .leading-\[1\] {
+    --tw-leading: 1;
+    line-height: 1;
+  }
   .leading-\[12\%\] {
     --tw-leading: 12%;
     line-height: 12%;
