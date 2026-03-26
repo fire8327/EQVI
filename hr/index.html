@@ -170,21 +170,44 @@
     </div>
 
     <!-- экви - не про работу -->
-    <div class="w-full py-14 lg:py-[100px] px-4 bg-[#272C30] rounded-[20px]">
-        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-[52px] lg:gap-8 text-white">
-            <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[140%] font-bold uppercase text-[#05C0F4]">
-                Экви - не про работу. <br>
-                Экви - про жизнь!
-            </p>
-            <p class="text-[16px] md:text-[18px] leading-[140%]">Это не навязанная HR- программа, а полезный лайфстайл -инструмент, который естественным образом становится частью повседневной жизни сотрудников.</p>
-            <div class="lg:mt-5 flex max-lg:flex-col lg:items-center gap-2 lg:flex-wrap text-[14px] md:text-[16px] lg:text-[18px] leading-[140%]">
-                <p class="py-1.5 px-6 rounded-[20px] bg-[#05C0F4] w-fit">Что приготовить, чтобы было полезно и вкусно для всей семьи?</p>
-                <p class="py-1.5 px-6 rounded-[20px] bg-[#05C0F4] w-fit">Что надеть на важную встречу?</p>
-                <p class="py-1.5 px-6 rounded-[20px] bg-[#05C0F4] w-fit">Как сбросить вес и повысить уровень энергии?</p>
-                <p class="py-1.5 px-6 rounded-[20px] bg-[#05C0F4] w-fit">Как справляться со стрессом?</p>
+    <div class="w-full py-14 lg:py-[100px] px-4 bg-white text-[#4B4B4B] rounded-[20px]">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-8">
+            <div>
+                <p class="text-[16px] md:text-[18px] leading-[140%] font-bold uppercase text-[#A8A9AA]">Экви - не про работу</p>
+                <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[140%] font-bold uppercase text-[#05C0F4]">
+                    Экви - про жизнь!
+                </p>
             </div>
-            <p class="text-[16px] md:text-[18px] leading-[140%] font-bold uppercase lg:-mt-2">
-                Это супер-апп,  который <span class="text-[#05C0F4]">объединяет предложения сотен компаний</span> <br> и представляет их в персонализированном виде в ежедневном формате.
+            <p class="text-[16px] md:text-[18px] leading-[140%] -mt-5">
+                Это не навязанная HR- программа, а полезный лайфстайл инструмент, который естественным образом становится частью повседневной жизни сотрудников, облегчая решение многих задач одновременно в разных направлениях.
+            </p>
+            <div id="videoToggler" class="rounded-[16px] border-3 border-black overflow-hidden w-[196px] lg:w-[267px] shrink-0 mx-auto lg:hidden">
+                <div class="relative w-full h-full overflow-hidden">
+                    <video id="video"
+                    muted
+                    loop
+                    playsinline src="../Assets/Images/platform/main.mp4" class="w-full aspect-9/20"></video>
+                    <div id="videoOverlay" class="absolute inset-0 bg-black/10 flex items-center justify-center cursor-pointer z-1">
+                        <div class="flex items-center justify-center transition-all duration-500">
+                            <svg class="w-10 lg:w-12 h-10 lg:h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
+                                        fill="#05C0F4"></path>
+                                </g>
+                            </svg> 
+                        </div>
+                    </div>
+                    <img id="videoPreview" src="../Assets/Images/platform/preview.webp" alt="" class="absolute inset-0 z-0 aspect-9/20">
+                </div>
+            </div>
+            <p class="text-[16px] md:text-[18px] leading-[140%]">
+                Все <span class="text-[#05C0F4]">рекомендации адаптируются</span> в реальном времени на основе поведения и&nbsp;состояния человека.
+            </p>
+            <p class="text-[16px] md:text-[18px] leading-[140%] lg:mt-3">
+                Это супер-апп, который объединяет предложения сотен компаний и представляет их  в персонализированном виде в ежедневном формате.
             </p>
         </div>
     </div>
