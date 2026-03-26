@@ -455,6 +455,9 @@
   .w-\[196px\] {
     width: 196px;
   }
+  .w-\[250px\] {
+    width: 250px;
+  }
   .w-\[391px\] {
     width: 391px;
   }
@@ -792,6 +795,9 @@
   }
   .py-\[52px\] {
     padding-block: 52px;
+  }
+  .py-\[56px\] {
+    padding-block: 56px;
   }
   .py-\[60px\] {
     padding-block: 60px;
