@@ -5,7 +5,7 @@ $('#tabs').tabs();
 // Для loop с 4 слайдами и slidesPerView > 1 на десктопе Swiper часто не успевает
 // “заполнить” правую сторону клонами — визуально выглядит как пустота до первого клика.
 // Самый стабильный способ без переписывания разметки: один раз продублировать слайды.
-/* const swiperWrapper = document.querySelector('.swiper .swiper-wrapper');
+const swiperWrapper = document.querySelector('.swiper .swiper-wrapper');
 if (swiperWrapper && !swiperWrapper.dataset.clonedForLoop) {
     const slides = Array.from(swiperWrapper.children).filter(el => el.classList && el.classList.contains('swiper-slide'));
 
@@ -17,7 +17,7 @@ if (swiperWrapper && !swiperWrapper.dataset.clonedForLoop) {
     }
 
     swiperWrapper.dataset.clonedForLoop = '1';
-} */
+}
 
 const swiper = new Swiper('.swiper', {
     loop: true,
@@ -48,18 +48,18 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiperPrev',
     },
 
-    /* on: {
+    on: {
         init: function () {
           updateNavButtons(this);
         },
         slideChange: function () {
           updateNavButtons(this);
         }
-    } */
+    }
 });
 
 // Обновляем кнопки при изменении слайда
-/* function updateNavButtons(swiperInstance) {
+function updateNavButtons(swiperInstance) {
     if (!swiperInstance) return;
     // В loop режиме ориентируемся на realIndex (индекс “настоящих” слайдов)
     const buttons = document.querySelectorAll('.nav-btn');
@@ -78,18 +78,18 @@ const swiper = new Swiper('.swiper', {
         btn.classList.add('grayscale', 'w-6'); // неактивные — серые
       }
     });
-} */
+}
   
 // Обработчики кликов по кнопкам
-/* document.querySelectorAll('.nav-btn').forEach(btn => {
+document.querySelectorAll('.nav-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const index = parseInt(btn.dataset.slideIndex);
         swiper.slideToLoop(index);
     });
-}); */
+});
 
 // Инициализация при старте (после создания инстанса)
-/* updateNavButtons(swiper); */
+updateNavButtons(swiper);
 
 
 /* видео */
