@@ -160,13 +160,13 @@
                     </div>
                     <p class="text-[16px] lg:text-[18px] leading-[140%]"><span class="text-[#05C0F4]">Вы платите за 100% ресурса,</span> но теряете его в эффективности, фокусе  и удержании.</p>
                 </div>
-                <div id="videoToggler" class="rounded-[16px] border-3 border-black overflow-hidden w-[196px] lg:w-[267px] shrink-0 max-lg:hidden lg:absolute lg:right-0 lg:-top-[235px]">
+                <div class="video-toggler rounded-[16px] border-3 border-black overflow-hidden w-[220px] lg:w-[267px] shrink-0 max-lg:hidden lg:absolute lg:right-0 lg:-top-[235px]">
                     <div class="relative w-full h-full overflow-hidden">
-                        <video id="video"
+                        <video class="video-player w-full aspect-9/16"
                         muted
                         loop
-                        playsinline src="../Assets/Images/platform/main_hr.mp4" class="w-full aspect-9/16"></video>
-                        <div id="videoOverlay" class="absolute inset-0 bg-black/10 flex items-center justify-center cursor-pointer z-1">
+                        playsinline src="../Assets/Images/platform/main_hr.mp4"></video>
+                        <div class="video-overlay absolute inset-0 bg-black/10 flex items-center justify-center cursor-pointer z-1">
                             <div class="flex items-center justify-center transition-all duration-500">
                                 <svg class="w-10 lg:w-12 h-10 lg:h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -179,7 +179,7 @@
                                 </svg> 
                             </div>
                         </div>
-                        <img id="videoPreview" src="../Assets/Images/platform/preview_hr.webp" alt="" class="absolute inset-0 z-0 aspect-9/16 object-cover">
+                        <img class="video-preview absolute inset-0 z-0 aspect-9/16 object-cover" src="../Assets/Images/platform/preview_hr.webp" alt="">
                     </div>
                 </div>
             </div>            
@@ -235,13 +235,13 @@
             <p class="text-[16px] md:text-[18px] leading-[140%] -mt-5">
                 Это не навязанная HR- программа, а полезный лайфстайл инструмент, который естественным образом становится частью повседневной жизни сотрудников, облегчая решение многих задач одновременно в разных направлениях.
             </p>
-            <div id="videoToggler" class="rounded-[16px] border-3 border-black overflow-hidden w-[196px] lg:w-[267px] shrink-0 mx-auto lg:hidden">
+            <div class="video-toggler rounded-[16px] border-3 border-black overflow-hidden w-[220px] lg:w-[267px] shrink-0 mx-auto lg:hidden">
                 <div class="relative w-full h-full overflow-hidden">
-                    <video id="video"
+                    <video class="video-player w-full aspect-9/16"
                     muted
                     loop
-                    playsinline src="../Assets/Images/platform/main_hr.mp4" class="w-full aspect-9/16"></video>
-                    <div id="videoOverlay" class="absolute inset-0 bg-black/10 flex items-center justify-center cursor-pointer z-1">
+                    playsinline src="../Assets/Images/platform/main_hr.mp4"></video>
+                    <div class="video-overlay absolute inset-0 bg-black/10 flex items-center justify-center cursor-pointer z-1">
                         <div class="flex items-center justify-center transition-all duration-500">
                             <svg class="w-10 lg:w-12 h-10 lg:h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -254,7 +254,7 @@
                             </svg> 
                         </div>
                     </div>
-                    <img id="videoPreview" src="../Assets/Images/platform/preview_hr.webp" alt="" class="absolute inset-0 z-0 aspect-9/16 object-cover">
+                    <img class="video-preview absolute inset-0 z-0 aspect-9/16 object-cover" src="../Assets/Images/platform/preview_hr.webp" alt="">
                 </div>
             </div>
             <p class="text-[16px] md:text-[18px] leading-[140%]">

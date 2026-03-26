@@ -103,17 +103,23 @@ updateNavButtons(swiper);
 
 
 /* видео */
-$('#videoToggler').on('click', function() {
-  const video = $('#video')[0];
+$('.video-toggler').on('click', function() {
+  const $toggler = $(this);
+  const video = $toggler.find('.video-player')[0];
+  const $overlay = $toggler.find('.video-overlay');
+  const $preview = $toggler.find('.video-preview');
+
+  if (!video) return;
+
   if (video.paused) {
-    $("#videoOverlay").addClass('opacity-0');
-    $("#videoPreview").addClass('hidden');
+    $overlay.addClass('opacity-0');
+    $preview.addClass('hidden');
     setTimeout(() => {
       video.play();
     }, 350);
   } else {
-      video.pause();
-      $("#videoOverlay").removeClass('opacity-0');
+    video.pause();
+    $overlay.removeClass('opacity-0');
   }
 });
 
