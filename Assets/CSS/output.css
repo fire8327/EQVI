@@ -1472,6 +1472,11 @@
       padding-block: calc(var(--spacing) * 16);
     }
   }
+  .lg\:py-\[56px\] {
+    @media (width >= 64rem) {
+      padding-block: 56px;
+    }
+  }
   .lg\:py-\[64px\] {
     @media (width >= 64rem) {
       padding-block: 64px;
