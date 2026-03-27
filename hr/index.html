@@ -175,18 +175,12 @@
                         muted
                         loop
                         playsinline src="../Assets/Images/platform/main_hr.mp4"></video>
-                        <div class="video-overlay absolute inset-0 bg-black/10 flex items-center justify-center cursor-pointer z-1">
-                            <div class="flex items-center justify-center transition-all duration-500">
-                                <svg class="w-10 lg:w-12 h-10 lg:h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path
-                                            d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
-                                            fill="#05C0F4"></path>
-                                    </g>
-                                </svg> 
+                        <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center backdrop-blur-xs cursor-pointer z-1">
+                            <div class="flex flex-col gap-3 text-white w-full pl-3 pr-[26px]">
+                                <p class="text-[22px] leading-[140%] font-bold uppercase">Демострация</p>
+                                <p class="text-[14px] leading-[140%] font-bold uppercase">функционала</p>
                             </div>
+                            <img src="../Assets/Images/overlay/click.webp" alt="" class="w-[112px] aspect-square object-cover self-end">
                         </div>
                         <img class="video-preview absolute inset-0 z-0 aspect-9/16 object-cover" src="../Assets/Images/platform/preview_hr.webp" alt="">
                     </div>
@@ -255,17 +249,13 @@
                     muted
                     loop
                     playsinline src="../Assets/Images/platform/main_hr.mp4"></video>
-                    <div class="video-overlay absolute inset-0 bg-black/10 flex items-center justify-center cursor-pointer z-1">
-                        <div class="flex items-center justify-center transition-all duration-500">
-                            <svg class="w-10 lg:w-12 h-10 lg:h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path
-                                        d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
-                                        fill="#05C0F4"></path>
-                                </g>
-                            </svg> 
+                    <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center backdrop-blur-xs cursor-pointer z-1">
+                        <div class="flex flex-col gap-3 text-white w-full pl-3 pr-[26px]">
+                            <div>
+                                <p class="text-[22px] leading-[140%] font-bold uppercase">Демострация</p>
+                                <p class="text-[14px] leading-[140%] font-bold uppercase">функционала</p>
+                            </div>
+                            <img src="../Assets/Images/overlay/click.webp" alt="" class="w-[112px] aspect-square object-cover self-end">
                         </div>
                     </div>
                     <img class="video-preview absolute inset-0 z-0 aspect-9/16 object-cover" src="../Assets/Images/platform/preview_hr.webp" alt="">
@@ -908,8 +898,30 @@
                 <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[140%] font-bold uppercase text-[#05C0F4]">Новый инструмент для HR</p>
                 <p class="text-[16px] md:text-[18px] leading-[140%] text-[#A8A9AA]">Статистика по каждому отделу, рекомендации от Экви </p>
             </div>
-            <img src="../Assets/Images/new_tool/mobile.webp" alt="" class="w-[250px] mx-auto lg:hidden">
-            <img src="../Assets/Images/new_tool/desktop.webp" alt="" class="w-full max-lg:hidden">
+            <div class="relative w-full lg:hidden overflow-hidden rounded-[16px]">
+                <img src="../Assets/Images/new_tool/mobile.webp" alt="" class="w-[250px] mx-auto">
+                <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center backdrop-blur-xs cursor-pointer z-1">
+                    <div class="flex flex-col gap-3 text-white w-full pl-3 pr-[26px]">
+                        <div>
+                            <p class="text-[22px] leading-[140%] font-bold uppercase">Демострация</p>
+                            <p class="text-[14px] leading-[140%] font-bold uppercase">функционала</p>
+                        </div>
+                        <img src="../Assets/Images/overlay/click.webp" alt="" class="w-[112px] aspect-square object-cover self-end">
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-full max-lg:hidden overflow-hidden rounded-[20px]">
+                <img src="../Assets/Images/new_tool/desktop.webp" alt="" class="w-full">
+                <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center backdrop-blur-xs cursor-pointer z-1">
+                    <div class="flex flex-col gap-3 text-white w-full max-w-[384px]">
+                        <div>
+                            <p class="text-[22px] leading-[140%] font-bold uppercase">Демострация</p>
+                            <p class="text-[14px] leading-[140%] font-bold uppercase">функционала</p>
+                        </div>
+                        <img src="../Assets/Images/overlay/click.webp" alt="" class="w-[112px] aspect-square object-cover self-end">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
