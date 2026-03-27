@@ -384,6 +384,9 @@
   .h-\[394px\]\! {
     height: 394px !important;
   }
+  .h-\[435px\]\! {
+    height: 435px !important;
+  }
   .h-\[543px\]\! {
     height: 543px !important;
   }
@@ -886,6 +889,9 @@
   }
   .pt-2\.5 {
     padding-top: calc(var(--spacing) * 2.5);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
