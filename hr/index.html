@@ -892,34 +892,26 @@
     </div>
 
     <!-- новый инструмент для HR -->
-    <div class="w-full py-[56px] lg:py-[100px] px-4 bg-[#272C30] rounded-[20px]">
+    <div class="w-full py-[56px] px-4 bg-[#272C30] rounded-[20px]">
         <div class="w-full max-w-[960px] mx-auto flex flex-col gap-8 lg:gap-[52px]">
             <div class="flex flex-col gap-3">
                 <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[140%] font-bold uppercase text-[#05C0F4]">Новый инструмент для HR</p>
                 <p class="text-[16px] md:text-[18px] leading-[140%] text-[#A8A9AA]">Статистика по каждому отделу, рекомендации от Экви </p>
             </div>
-            <div class="relative w-full lg:hidden overflow-hidden rounded-[16px]">
-                <img src="../Assets/Images/new_tool/mobile.webp" alt="" class="w-[250px] mx-auto">
-                <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center backdrop-blur-xs cursor-pointer z-1">
-                    <div class="flex flex-col gap-3 text-white w-full pl-3 pr-[26px]">
-                        <div>
+            <div class="video-toggler rounded-[16px] border-3 border-black overflow-hidden w-[220px] lg:w-[267px] mx-auto">
+                <div class="relative w-full h-full overflow-hidden">
+                    <video class="video-player w-full aspect-9/16"
+                    muted
+                    loop
+                    playsinline src="../Assets/Images/platform/main_hr2.mp4"></video>
+                    <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center backdrop-blur-xs cursor-pointer z-1">
+                        <div class="flex flex-col gap-3 text-white w-full pl-3 pr-[26px]">
                             <p class="text-[22px] leading-[140%] font-bold uppercase">Демострация</p>
                             <p class="text-[14px] leading-[140%] font-bold uppercase">функционала</p>
                         </div>
                         <img src="../Assets/Images/overlay/click.webp" alt="" class="w-[112px] aspect-square object-cover self-end">
                     </div>
-                </div>
-            </div>
-            <div class="relative w-full max-lg:hidden overflow-hidden rounded-[20px]">
-                <img src="../Assets/Images/new_tool/desktop.webp" alt="" class="w-full">
-                <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center backdrop-blur-xs cursor-pointer z-1">
-                    <div class="flex flex-col gap-3 text-white w-full max-w-[384px]">
-                        <div>
-                            <p class="text-[22px] leading-[140%] font-bold uppercase">Демострация</p>
-                            <p class="text-[14px] leading-[140%] font-bold uppercase">функционала</p>
-                        </div>
-                        <img src="../Assets/Images/overlay/click.webp" alt="" class="w-[112px] aspect-square object-cover self-end">
-                    </div>
+                    <img class="video-preview absolute inset-0 z-0 aspect-9/16 object-cover" src="../Assets/Images/platform/preview_hr2.webp" alt="">
                 </div>
             </div>
         </div>
