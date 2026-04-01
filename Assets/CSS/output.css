@@ -252,6 +252,9 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
+  .-mt-2 {
+    margin-top: calc(var(--spacing) * -2);
+  }
   .-mt-5 {
     margin-top: calc(var(--spacing) * -5);
   }
@@ -1550,6 +1553,11 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
     }
   }
   .lg\:gap-2\.5 {
