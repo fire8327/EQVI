@@ -396,6 +396,9 @@
   .h-\[608px\]\! {
     height: 608px !important;
   }
+  .h-fit {
+    height: fit-content;
+  }
   .h-full {
     height: 100%;
   }

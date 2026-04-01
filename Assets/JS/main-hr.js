@@ -144,6 +144,6 @@ document.querySelectorAll('.scroll-to-slider').forEach(button => {
 $(".dropDown").each((i, el) => {
   $(el).find(".dropDownToggler").click(() => {
     $(el).find(".dropDownToggler").find("img").toggleClass("rotate-180")
-    $(el).find(".dropDownList").toggleClass("max-h-0 max-h-[9999px]")
+    $(el).find(".dropDownList").toggleClass("max-h-0 max-h-[9999px] h-fit")
   })
 })
