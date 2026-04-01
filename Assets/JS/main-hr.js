@@ -46,11 +46,11 @@ const swiper = new Swiper('.swiper', {
         spaceBetween: 8,    
         centeredSlides: true,
       },
-      1440: {
+      /* 1440: {
         slidesPerView: 3.7,
         spaceBetween: 8,    
         centeredSlides: true,
-      }
+      } */
     },
 
     navigation: {
