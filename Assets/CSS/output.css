@@ -405,6 +405,21 @@
   .max-h-\[1000px\] {
     max-height: 1000px;
   }
+  .max-h-\[3000px\] {
+    max-height: 3000px;
+  }
+  .max-h-\[9999px\] {
+    max-height: 9999px;
+  }
+  .max-h-\[screen\] {
+    max-height: screen;
+  }
+  .max-h-full {
+    max-height: 100%;
+  }
+  .max-h-screen {
+    max-height: 100vh;
+  }
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
@@ -1030,6 +1045,9 @@
   }
   .text-\[\#5E6366\] {
     color: #5E6366;
+  }
+  .text-\[\#49A9DB\] {
+    color: #49A9DB;
   }
   .text-\[\#414141\] {
     color: #414141;
