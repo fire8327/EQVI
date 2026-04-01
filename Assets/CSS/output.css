@@ -1760,6 +1760,11 @@
       left: 150px;
     }
   }
+  .xl\:text-\[36px\] {
+    @media (width >= 80rem) {
+      font-size: 36px;
+    }
+  }
   .xl\:text-\[50px\] {
     @media (width >= 80rem) {
       font-size: 50px;
