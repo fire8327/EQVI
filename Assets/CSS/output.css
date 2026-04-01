@@ -16,6 +16,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --blur-xs: 4px;
+    --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -312,8 +313,14 @@
   .aspect-9\/20 {
     aspect-ratio: 9/20;
   }
+  .aspect-16\/9 {
+    aspect-ratio: 16/9;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
@@ -530,6 +537,9 @@
   }
   .max-w-\[360px\] {
     max-width: 360px;
+  }
+  .max-w-\[370px\] {
+    max-width: 370px;
   }
   .max-w-\[600px\] {
     max-width: 600px;
