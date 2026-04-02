@@ -217,6 +217,9 @@
   .right-\[175px\] {
     right: 175px;
   }
+  .right-\[200px\] {
+    right: 200px;
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -237,6 +240,9 @@
   }
   .left-\[175px\] {
     left: 175px;
+  }
+  .left-\[200px\] {
+    left: 200px;
   }
   .z-0 {
     z-index: 0;
@@ -1784,9 +1790,19 @@
       right: 150px;
     }
   }
+  .xl\:right-\[175px\] {
+    @media (width >= 80rem) {
+      right: 175px;
+    }
+  }
   .xl\:left-\[150px\] {
     @media (width >= 80rem) {
       left: 150px;
+    }
+  }
+  .xl\:left-\[175px\] {
+    @media (width >= 80rem) {
+      left: 175px;
     }
   }
   .xl\:text-\[36px\] {
