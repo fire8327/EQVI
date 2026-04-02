@@ -4,7 +4,7 @@ $(document).ready(function() {
         
         if (scrollPosition > 500) {
             $('header').addClass('fixed top-0 left-0 z-5 bg-[#1F2326] py-4');
-            $('header').removeClass('relative py-6 lg:py-8');
+            $('header').removeClass('relative py-3');
             $('#nav').addClass('hidden');
             $('#contact').removeClass('hidden');
             // Для предотвращения скачка контента
@@ -15,7 +15,7 @@ $(document).ready(function() {
             }
         } else {
             $('header').removeClass('fixed top-0 left-0 z-5 bg-[#1F2326] py-4');
-            $('header').addClass('relative py-6 lg:py-8');
+            $('header').addClass('relative py-3');
             $('#nav').removeClass('hidden');
             $('#contact').addClass('hidden');
             $('body').css('padding-top', '0');
