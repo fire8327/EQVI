@@ -446,6 +446,9 @@
   .h-\[44px\] {
     height: 44px;
   }
+  .h-\[54px\] {
+    height: 54px;
+  }
   .h-\[85px\] {
     height: 85px;
   }
@@ -716,6 +719,12 @@
   .w-px {
     width: 1px;
   }
+  .max-w-\[213px\] {
+    max-width: 213px;
+  }
+  .max-w-\[250px\] {
+    max-width: 250px;
+  }
   .max-w-\[360px\] {
     max-width: 360px;
   }
@@ -745,6 +754,12 @@
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .grow {
+    flex-grow: 1;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -887,6 +902,9 @@
   .gap-\[22\.5px\] {
     gap: 22.5px;
   }
+  .gap-\[22px\] {
+    gap: 22px;
+  }
   .gap-\[30px\] {
     gap: 30px;
   }
@@ -960,6 +978,10 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-\[\#05C0F480\] {
     border-color: #05C0F480;
   }
@@ -971,6 +993,12 @@
   }
   .border-\[\#383838\] {
     border-color: #383838;
+  }
+  .border-\[\#D9D9D966\] {
+    border-color: #D9D9D966;
+  }
+  .border-\[\#F3F4F6\] {
+    border-color: #F3F4F6;
   }
   .border-black {
     border-color: var(--color-black);
@@ -1076,6 +1104,9 @@
   }
   .bg-\[\#F97FB0\] {
     background-color: #F97FB0;
+  }
+  .bg-\[\#FDFDFD\] {
+    background-color: #FDFDFD;
   }
   .bg-\[\#FF9494\] {
     background-color: #FF9494;
@@ -1201,6 +1232,12 @@
   .pt-2\.5 {
     padding-top: calc(var(--spacing) * 2.5);
   }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-3\.5 {
+    padding-top: calc(var(--spacing) * 3.5);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
@@ -1296,6 +1333,10 @@
     --tw-leading: 19.5px;
     line-height: 19.5px;
   }
+  .leading-\[20px\] {
+    --tw-leading: 20px;
+    line-height: 20px;
+  }
   .leading-\[24px\] {
     --tw-leading: 24px;
     line-height: 24px;
@@ -1348,9 +1389,17 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .tracking-\[-0\.15px\] {
+    --tw-tracking: -0.15px;
+    letter-spacing: -0.15px;
+  }
   .tracking-\[0\.55px\] {
     --tw-tracking: 0.55px;
     letter-spacing: 0.55px;
+  }
+  .tracking-\[0\] {
+    --tw-tracking: 0;
+    letter-spacing: 0;
   }
   .text-\[\#2A9D8F\] {
     color: #2A9D8F;
@@ -1382,6 +1431,9 @@
   .text-\[\#20A9FF\] {
     color: #20A9FF;
   }
+  .text-\[\#48A95F\] {
+    color: #48A95F;
+  }
   .text-\[\#49A9DB\] {
     color: #49A9DB;
   }
@@ -1396,6 +1448,9 @@
   }
   .text-\[\#111111\] {
     color: #111111;
+  }
+  .text-\[\#364153\] {
+    color: #364153;
   }
   .text-\[\#414141\] {
     color: #414141;
@@ -1671,6 +1726,12 @@
       color: var(--color-white);
     }
   }
+  .last\:border-none {
+    &:last-child {
+      --tw-border-style: none;
+      border-style: none;
+    }
+  }
   .odd\:-right-2 {
     &:nth-child(odd) {
       right: calc(var(--spacing) * -2);
@@ -1828,6 +1889,11 @@
       justify-content: space-between;
     }
   }
+  .max-lg\:gap-4 {
+    @media (width < 64rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
   .max-lg\:gap-6 {
     @media (width < 64rem) {
       gap: calc(var(--spacing) * 6);
@@ -1852,6 +1918,11 @@
     @media (width < 64rem) {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
+    }
+  }
+  .max-lg\:bg-\[\#FDFDFD\] {
+    @media (width < 64rem) {
+      background-color: #FDFDFD;
     }
   }
   .max-lg\:text-center {
@@ -1933,6 +2004,11 @@
   .md\:w-full {
     @media (width >= 48rem) {
       width: 100%;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .md\:grid-cols-3 {
@@ -2100,6 +2176,11 @@
       height: 56px;
     }
   }
+  .lg\:h-\[64px\] {
+    @media (width >= 64rem) {
+      height: 64px;
+    }
+  }
   .lg\:h-\[72px\] {
     @media (width >= 64rem) {
       height: 72px;
@@ -2250,6 +2331,11 @@
       width: calc(100% + 65px);
     }
   }
+  .lg\:w-full {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
   .lg\:max-w-\[104px\] {
     @media (width >= 64rem) {
       max-width: 104px;
@@ -2349,6 +2435,11 @@
   .lg\:gap-4 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 4);
+    }
+  }
+  .lg\:gap-5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 5);
     }
   }
   .lg\:gap-6 {
