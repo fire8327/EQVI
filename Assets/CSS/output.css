@@ -1744,9 +1744,19 @@
       object-fit: cover;
     }
   }
+  .max-lg\:object-\[75\%_center\] {
+    @media (width < 64rem) {
+      object-position: 75% center;
+    }
+  }
   .max-lg\:object-center {
     @media (width < 64rem) {
       object-position: center;
+    }
+  }
+  .max-lg\:object-right {
+    @media (width < 64rem) {
+      object-position: right;
     }
   }
   .max-lg\:px-4 {
