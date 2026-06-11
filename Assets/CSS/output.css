@@ -1925,6 +1925,21 @@
       background-color: #FDFDFD;
     }
   }
+  .max-lg\:object-cover {
+    @media (width < 64rem) {
+      object-fit: cover;
+    }
+  }
+  .max-lg\:object-center {
+    @media (width < 64rem) {
+      object-position: center;
+    }
+  }
+  .max-lg\:pb-2 {
+    @media (width < 64rem) {
+      padding-bottom: calc(var(--spacing) * 2);
+    }
+  }
   .max-lg\:text-center {
     @media (width < 64rem) {
       text-align: center;
