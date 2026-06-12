@@ -2783,17 +2783,65 @@
   width: 35px;
   border-radius: 4px;
 }
-.historyMobilePagination > .swiper-pagination-bullet-active, .historyDesktopPagination > .swiper-pagination-bullet-active {
+.historyMobilePagination > .swiper-pagination-bullet-active {
   background: #1D1D1F;
   height: 3px;
   border-radius: 999px;
 }
-.swiper-pagination-horizontal.historyMobilePagination > .swiper-pagination-bullet, .swiper-pagination-horizontal.historyDesktopPagination > .swiper-pagination-bullet {
+.swiper-pagination-horizontal.historyMobilePagination > .swiper-pagination-bullet {
   background: #1D1D1F;
   height: 3px;
   border-radius: 999px;
   margin: 0;
   flex: 1;
+}
+.historyDesktopPagination {
+  display: flex;
+  width: 100%;
+  gap: 3px;
+}
+.history-desktop-pagination-item {
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  border-style: var(--tw-border-style);
+  border-width: 0px;
+  background-color: transparent;
+  padding: calc(var(--spacing) * 0);
+}
+.history-desktop-pagination-year {
+  font-size: 10px;
+  --tw-leading: 16px;
+  line-height: 16px;
+  color: #C7C7CC;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+.history-desktop-pagination-line {
+  height: 3px;
+  width: 100%;
+  border-radius: calc(infinity * 1px);
+  background-color: #E5E5E5;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+.history-desktop-pagination-item.is-active .history-desktop-pagination-year {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: #1D1D1F;
+}
+.history-desktop-pagination-item.is-active .history-desktop-pagination-line {
+  height: 3px;
+  background-color: #1D1D1F;
 }
 .mobilePrev, .mobileNext {
   display: flex;
@@ -2836,7 +2884,7 @@
   cursor: default;
   pointer-events: none;
 }
-.dayPagination.swiper-pagination-bullets, .historyMobilePagination.swiper-pagination-bullets, .historyDesktopPagination.swiper-pagination-bullets {
+.dayPagination.swiper-pagination-bullets, .historyMobilePagination.swiper-pagination-bullets {
   bottom: 0px;
 }
 .custom-shadow {

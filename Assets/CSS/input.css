@@ -26,18 +26,42 @@
   border-radius: 4px;
 }
 
-.historyMobilePagination > .swiper-pagination-bullet-active, .historyDesktopPagination > .swiper-pagination-bullet-active {
+.historyMobilePagination > .swiper-pagination-bullet-active {
   background: #1D1D1F;
   height: 3px;
   border-radius: 999px;
 }
 
-.swiper-pagination-horizontal.historyMobilePagination > .swiper-pagination-bullet, .swiper-pagination-horizontal.historyDesktopPagination > .swiper-pagination-bullet {
+.swiper-pagination-horizontal.historyMobilePagination > .swiper-pagination-bullet {
   background: #1D1D1F;
   height: 3px;
   border-radius: 999px;
   margin: 0;
   flex: 1;
+}
+
+.historyDesktopPagination {
+  @apply flex gap-[3px] w-full;
+}
+
+.history-desktop-pagination-item {
+  @apply flex flex-1 flex-col items-center gap-2 border-0 bg-transparent p-0 cursor-pointer;
+}
+
+.history-desktop-pagination-year {
+  @apply text-[10px] leading-[16px] text-[#C7C7CC] transition-all duration-300;
+}
+
+.history-desktop-pagination-line {
+  @apply w-full h-[3px] rounded-full bg-[#E5E5E5] transition-all duration-300;
+}
+
+.history-desktop-pagination-item.is-active .history-desktop-pagination-year {
+  @apply font-bold text-[#1D1D1F];
+}
+
+.history-desktop-pagination-item.is-active .history-desktop-pagination-line {
+  @apply h-[3px] bg-[#1D1D1F];
 }
 
 .mobilePrev,
@@ -82,8 +106,7 @@
 }
 
 .dayPagination.swiper-pagination-bullets,
-.historyMobilePagination.swiper-pagination-bullets,
-.historyDesktopPagination.swiper-pagination-bullets {
+.historyMobilePagination.swiper-pagination-bullets {
   bottom: 0px;
 }
 

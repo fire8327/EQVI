@@ -52,15 +52,43 @@ function updateHistoryDesktopCounter(swiperInstance) {
     totalEl.textContent = swiperInstance.slides.length;
 }
 
+function buildHistoryDesktopPagination(swiperInstance) {
+    const paginationEl = document.querySelector('.historyDesktopPagination');
+    if (!paginationEl || !swiperInstance) return;
+
+    const years = Array.from(
+        swiperInstance.el.querySelectorAll('.swiper-slide .history-slide-year')
+    ).map((el) => el.textContent.trim());
+
+    paginationEl.innerHTML = years.map((year, index) => `
+        <button
+            type="button"
+            class="history-desktop-pagination-item${index === swiperInstance.activeIndex ? ' is-active' : ''}"
+            data-index="${index}"
+            aria-label="Go to slide ${year}"
+        >
+            <span class="history-desktop-pagination-year">${year}</span>
+            <span class="history-desktop-pagination-line"></span>
+        </button>
+    `).join('');
+
+    paginationEl.querySelectorAll('.history-desktop-pagination-item').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            swiperInstance.slideTo(Number(btn.dataset.index));
+        });
+    });
+}
+
+function updateHistoryDesktopPagination(swiperInstance) {
+    document.querySelectorAll('.history-desktop-pagination-item').forEach((item, index) => {
+        item.classList.toggle('is-active', index === swiperInstance.activeIndex);
+    });
+}
+
 const swiper3 = new Swiper('.historyDesktopSlider', {
     grabCursor: true,
     slidesPerView: 1,
     spaceBetween: 10,
-  
-    pagination: {
-      el: '.historyDesktopPagination',
-      clickable: true,
-    },
 
     navigation: {
       nextEl: '.desktopNext',
@@ -69,9 +97,11 @@ const swiper3 = new Swiper('.historyDesktopSlider', {
 
     on: {
         init: function () {
+            buildHistoryDesktopPagination(this);
             updateHistoryDesktopCounter(this);
         },
         slideChange: function () {
+            updateHistoryDesktopPagination(this);
             updateHistoryDesktopCounter(this);
         },
     },
