@@ -26,8 +26,6 @@ const swiper = new Swiper('.daySlider', {
 });
 
 const swiper2 = new Swiper('.historyMobileSlider', {
-    loop: true,
-    loopedSlides: 1,
     grabCursor: true,
     slidesPerView: 1,
     spaceBetween: 10,
@@ -36,5 +34,10 @@ const swiper2 = new Swiper('.historyMobileSlider', {
     pagination: {
       el: '.historyMobilePagination',
       clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.mobileNext',
+      prevEl: '.mobilePrev',
     },
 });

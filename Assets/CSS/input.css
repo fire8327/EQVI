@@ -40,6 +40,33 @@
   flex: 1;
 }
 
+.mobilePrev,
+.mobileNext {
+  @apply w-11 h-11 rounded-full flex items-center justify-center transition-all duration-300;
+  background: #0000000A;
+}
+
+.mobilePrev svg,
+.mobileNext svg {
+  fill: #C7C7CC;
+}
+
+.mobilePrev:not(.swiper-button-disabled),
+.mobileNext:not(.swiper-button-disabled) {
+  background: #1D1D1F;
+}
+
+.mobilePrev:not(.swiper-button-disabled) svg,
+.mobileNext:not(.swiper-button-disabled) svg {
+  fill: white;
+}
+
+.mobilePrev.swiper-button-disabled,
+.mobileNext.swiper-button-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
 .dayPagination.swiper-pagination-bullets, .historyMobilePagination.swiper-pagination-bullets{
   bottom: 0px;
 }
