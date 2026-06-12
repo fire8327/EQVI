@@ -3,7 +3,7 @@ const swiper = new Swiper('.daySlider', {
     loop: true,
     loopedSlides: 6,
     grabCursor: true,
-    slidesPerView: 1.8,
+    slidesPerView: 1.9,
     spaceBetween: 27,
 
     breakpoints: {
