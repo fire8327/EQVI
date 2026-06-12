@@ -2664,6 +2664,11 @@
       gap: 111px;
     }
   }
+  .xl\:pb-1 {
+    @media (width >= 80rem) {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+  }
   .xl\:text-\[36px\] {
     @media (width >= 80rem) {
       font-size: 36px;
