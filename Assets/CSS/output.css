@@ -2649,6 +2649,11 @@
       left: calc((100vw - 960px) / 2);
     }
   }
+  .xl\:hidden {
+    @media (width >= 80rem) {
+      display: none;
+    }
+  }
   .xl\:w-\[372px\] {
     @media (width >= 80rem) {
       width: 372px;
