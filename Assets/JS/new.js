@@ -42,12 +42,21 @@ const swiper2 = new Swiper('.historyMobileSlider', {
     },
 });
 
+function updateHistoryDesktopCounter(swiperInstance) {
+    const currentEl = document.querySelector('.historyDesktopCurrent');
+    const totalEl = document.querySelector('.historyDesktopTotal');
+
+    if (!currentEl || !totalEl || !swiperInstance) return;
+
+    currentEl.textContent = swiperInstance.activeIndex + 1;
+    totalEl.textContent = swiperInstance.slides.length;
+}
+
 const swiper3 = new Swiper('.historyDesktopSlider', {
     grabCursor: true,
     slidesPerView: 1,
     spaceBetween: 10,
   
-    // If we need pagination
     pagination: {
       el: '.historyDesktopPagination',
       clickable: true,
@@ -56,5 +65,14 @@ const swiper3 = new Swiper('.historyDesktopSlider', {
     navigation: {
       nextEl: '.desktopNext',
       prevEl: '.desktopPrev',
+    },
+
+    on: {
+        init: function () {
+            updateHistoryDesktopCounter(this);
+        },
+        slideChange: function () {
+            updateHistoryDesktopCounter(this);
+        },
     },
 });
