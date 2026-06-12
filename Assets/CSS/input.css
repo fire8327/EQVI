@@ -81,7 +81,9 @@
   pointer-events: none;
 }
 
-.dayPagination.swiper-pagination-bullets, .historyMobilePagination.swiper-pagination-bullets{
+.dayPagination.swiper-pagination-bullets,
+.historyMobilePagination.swiper-pagination-bullets,
+.historyDesktopPagination.swiper-pagination-bullets {
   bottom: 0px;
 }
 
