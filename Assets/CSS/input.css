@@ -26,13 +26,13 @@
   border-radius: 4px;
 }
 
-.historyMobilePagination > .swiper-pagination-bullet-active {
+.historyMobilePagination > .swiper-pagination-bullet-active, .historyDesktopPagination > .swiper-pagination-bullet-active {
   background: #1D1D1F;
   height: 3px;
   border-radius: 999px;
 }
 
-.swiper-pagination-horizontal.historyMobilePagination > .swiper-pagination-bullet {
+.swiper-pagination-horizontal.historyMobilePagination > .swiper-pagination-bullet, .swiper-pagination-horizontal.historyDesktopPagination > .swiper-pagination-bullet {
   background: #1D1D1F;
   height: 3px;
   border-radius: 999px;
@@ -46,23 +46,37 @@
   background: #0000000A;
 }
 
-.mobilePrev svg,
-.mobileNext svg {
-  fill: #C7C7CC;
+.desktopPrev,
+.desktopNext {
+  @apply w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300;
+  background: #0000000A;
+}
+
+.mobilePrev span,
+.mobileNext span, 
+.desktopPrev span, 
+.desktopNext span {
+  color: #C7C7CC;
 }
 
 .mobilePrev:not(.swiper-button-disabled),
-.mobileNext:not(.swiper-button-disabled) {
+.mobileNext:not(.swiper-button-disabled),
+.desktopPrev:not(.swiper-button-disabled),
+.desktopNext:not(.swiper-button-disabled) {
   background: #1D1D1F;
 }
 
-.mobilePrev:not(.swiper-button-disabled) svg,
-.mobileNext:not(.swiper-button-disabled) svg {
-  fill: white;
+.mobilePrev:not(.swiper-button-disabled) span,
+.mobileNext:not(.swiper-button-disabled) span,
+.desktopPrev:not(.swiper-button-disabled) span,
+.desktopNext:not(.swiper-button-disabled) span {
+  color: white;
 }
 
 .mobilePrev.swiper-button-disabled,
-.mobileNext.swiper-button-disabled {
+.mobileNext.swiper-button-disabled,
+.desktopPrev.swiper-button-disabled,
+.desktopNext.swiper-button-disabled {
   cursor: default;
   pointer-events: none;
 }

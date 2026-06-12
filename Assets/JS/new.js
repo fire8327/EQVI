@@ -41,3 +41,20 @@ const swiper2 = new Swiper('.historyMobileSlider', {
       prevEl: '.mobilePrev',
     },
 });
+
+const swiper3 = new Swiper('.historyDesktopSlider', {
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+  
+    // If we need pagination
+    pagination: {
+      el: '.historyDesktopPagination',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.desktopNext',
+      prevEl: '.desktopPrev',
+    },
+});
