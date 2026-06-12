@@ -476,6 +476,9 @@
   .max-h-\[9999px\] {
     max-height: 9999px;
   }
+  .min-h-\[30px\] {
+    min-height: 30px;
+  }
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
@@ -768,9 +771,6 @@
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -1207,6 +1207,9 @@
   .pr-\[26px\] {
     padding-right: 26px;
   }
+  .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -1227,6 +1230,9 @@
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
   }
   .pl-7 {
     padding-left: calc(var(--spacing) * 7);
@@ -2676,13 +2682,13 @@
   color: var(--color-white);
 }
 @media (min-width: 1024px) {
-  .swiper-slide:not(.swiper-slide-active) {
+  .swiper:not(.daySlider) .swiper-slide:not(.swiper-slide-active) {
     transform: scale(0.85);
     opacity: 0.8;
     z-index: 0;
     transition: transform 0.4s ease, opacity 0.4s ease;
   }
-  .swiper-slide.swiper-slide-active {
+  .swiper:not(.daySlider) .swiper-slide.swiper-slide-active {
     transform: scale(1);
     opacity: 1;
     z-index: 10;
