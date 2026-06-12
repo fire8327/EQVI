@@ -26,7 +26,21 @@
   border-radius: 4px;
 }
 
-.dayPagination.swiper-pagination-bullets {
+.historyMobilePagination > .swiper-pagination-bullet-active {
+  background: #1D1D1F;
+  height: 3px;
+  border-radius: 999px;
+}
+
+.swiper-pagination-horizontal.historyMobilePagination > .swiper-pagination-bullet {
+  background: #1D1D1F;
+  height: 3px;
+  border-radius: 999px;
+  margin: 0;
+  flex: 1;
+}
+
+.dayPagination.swiper-pagination-bullets, .historyMobilePagination.swiper-pagination-bullets{
   bottom: 0px;
 }
 

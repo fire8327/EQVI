@@ -24,3 +24,17 @@ const swiper = new Swiper('.daySlider', {
       clickable: true,
     },
 });
+
+const swiper2 = new Swiper('.historyMobileSlider', {
+    loop: true,
+    loopedSlides: 1,
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+  
+    // If we need pagination
+    pagination: {
+      el: '.historyMobilePagination',
+      clickable: true,
+    },
+});
