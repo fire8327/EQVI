@@ -21,5 +21,6 @@ const swiper = new Swiper('.daySlider', {
     // If we need pagination
     pagination: {
       el: '.dayPagination',
+      clickable: true,
     },
 });
