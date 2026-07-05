@@ -5,19 +5,41 @@
 }
 
 @media (min-width: 1024px) {
-    .swiper:not(.daySlider) .swiper-slide:not(.swiper-slide-active) {
+    .swiper:not(.daySlider):not(.integrationSlider) .swiper-slide:not(.swiper-slide-active) {
       transform: scale(0.85);
       opacity: 0.8;
       z-index: 0;
       transition: transform 0.4s ease, opacity 0.4s ease;
     }
 
-    .swiper:not(.daySlider) .swiper-slide.swiper-slide-active {
+    .swiper:not(.daySlider):not(.integrationSlider) .swiper-slide.swiper-slide-active {
       transform: scale(1);
       opacity: 1;
       z-index: 10;
       transition: transform 0.4s ease, opacity 0.4s ease;
     }
+}
+
+@media (max-width: 767px) {
+  .swiper.integrationSlider .swiper-slide:not(.swiper-slide-active) {
+    transform: scale(0.8);
+    opacity: 0.8;
+    z-index: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .swiper.integrationSlider .swiper-slide.swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 10;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+}
+
+.integrationPagination > .swiper-pagination-bullet-active {
+  background: #20A9FF;
+  width: 40px;
+  border-radius: 4px;
 }
 
 .dayPagination > .swiper-pagination-bullet-active {

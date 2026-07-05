@@ -109,16 +109,20 @@ const swiper3 = new Swiper('.historyDesktopSlider', {
 
 const swiper5 = new Swiper('.integrationSlider', {
     grabCursor: true,
-    slidesPerView: 1.2,
-    spaceBetween: 24,
-    loop: true,
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    loop: false,
 
     breakpoints: {
         640: {
-          slidesPerView: 3.3,
+          slidesPerView: 3.5,
+          centeredSlides: false,
+          spaceBetween: 24,
         },
         1024: {
           slidesPerView: 5, 
+          centeredSlides: false,    
+          spaceBetween: 24,
         },
     },
   
