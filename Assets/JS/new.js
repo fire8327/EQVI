@@ -106,3 +106,25 @@ const swiper3 = new Swiper('.historyDesktopSlider', {
         },
     },
 });
+
+const swiper5 = new Swiper('.integrationSlider', {
+    grabCursor: true,
+    slidesPerView: 1.2,
+    spaceBetween: 24,
+    loop: true,
+
+    breakpoints: {
+        640: {
+          slidesPerView: 3.3,
+        },
+        1024: {
+          slidesPerView: 5, 
+        },
+    },
+  
+    // If we need pagination
+    pagination: {
+      el: '.integrationPagination',
+      clickable: true,
+    },
+});
