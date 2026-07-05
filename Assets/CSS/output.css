@@ -869,6 +869,9 @@
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -1675,6 +1678,9 @@
   .text-\[\#0D1117\] {
     color: #0D1117;
   }
+  .text-\[\#00BFFF\] {
+    color: #00BFFF;
+  }
   .text-\[\#00C896\] {
     color: #00C896;
   }
@@ -1692,6 +1698,9 @@
   }
   .text-\[\#2A9D8F\] {
     color: #2A9D8F;
+  }
+  .text-\[\#3B82F6\] {
+    color: #3B82F6;
   }
   .text-\[\#4A4A4A\] {
     color: #4A4A4A;
@@ -1725,6 +1734,9 @@
   }
   .text-\[\#7C5CFF\] {
     color: #7C5CFF;
+  }
+  .text-\[\#7E7E7E\] {
+    color: #7E7E7E;
   }
   .text-\[\#8E8E93\] {
     color: #8E8E93;
@@ -1786,11 +1798,20 @@
   .text-\[\#A1A1AA\] {
     color: #A1A1AA;
   }
+  .text-\[\#A5CF5F\] {
+    color: #A5CF5F;
+  }
   .text-\[\#A8A9AA\] {
     color: #A8A9AA;
   }
   .text-\[\#B9B9B9\] {
     color: #B9B9B9;
+  }
+  .text-\[\#EF95B9\] {
+    color: #EF95B9;
+  }
+  .text-\[\#F9C442\] {
+    color: #F9C442;
   }
   .text-\[\#F97373\] {
     color: #F97373;
@@ -2869,6 +2890,11 @@
   .lg\:gap-32 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:gap-100 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 100);
     }
   }
   .lg\:gap-\[22\.5px\] {
