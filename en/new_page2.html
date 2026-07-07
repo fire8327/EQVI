@@ -6,6 +6,17 @@
     <title>Index page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../Assets/CSS/output.css">
+    <style>
+        @keyframes eqvi-slow-spin { to { transform: rotate(360deg); } }
+        .eqvi-slow-spin { animation: eqvi-slow-spin 60s linear infinite; transform-origin: 50% 50%; }
+        @media (prefers-reduced-motion: reduce) {
+            .eqvi-slow-spin { animation: none; }
+        }
+        .eqvi-hero-ring { width: min(78vw, 1040px); height: min(78vw, 1040px); opacity: 0.55; }
+        @media (max-width: 768px) {
+            .eqvi-hero-ring { width: 135vw; height: 135vw; opacity: 0.45; }
+        }
+    </style>
 </head>
 <body class="bg-[#F5F7FA]">
     <header class="w-full pt-3 lg:py-7 px-4 bg-[#0D1117]">
@@ -26,7 +37,10 @@
 
     <main class="w-full">
         <section class="w-full pt-[48px] pb-[88px] lg:pt-[84px] lg:pb-[240px] px-4 bg-[#0D1117] relative overflow-clip">
-            <div class="flex flex-col gap-20 lg:gap-12 max-w-[1200px] mx-auto z-1">
+            <div aria-hidden="true" class="pointer-events-none absolute eqvi-hero-ring" style="right:0; top:50%; transform:translate(50%,-50%); z-index:0;">
+                <img src="../Assets/Images/new_page2/hero/logo-bg.webp" alt="" class="eqvi-slow-spin block select-none" style="width:100%; height:100%; mix-blend-mode:screen; filter:brightness(0.7); -webkit-mask-image:radial-gradient(circle farthest-side, #000 80%, transparent 100%); mask-image:radial-gradient(circle farthest-side, #000 80%, transparent 100%);">
+            </div>
+            <div class="flex flex-col gap-20 lg:gap-12 max-w-[1200px] mx-auto z-1 relative">
                 <div class="flex flex-col gap-6">
                     <div class="flex flex-col gap-3 lg:gap-6">
                         <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px]">LIFE OS FOR BANKING</p>
@@ -39,7 +53,6 @@
                     <button class="cursor-pointer rounded-[8px] w-full md:w-fit py-[18px] px-8 text-[16px] leading-[100%] font-semibold text-white bg-black border border-[#FFFFFF80]">Watch 2-Min Vision</button>
                 </div>
             </div>
-            <img src="../Assets/Images/new_page2/hero/circle.webp" alt="" class="absolute -top-12 md:top-1/2 md:-translate-y-1/2 w-[355px] lg:w-[500px] xl:w-[605px] z-0 -right-36 lg:right-0">
         </section>
 
         <section class="w-full py-10 lg:py-[120px] px-4 bg-[#F5F7FA]">
