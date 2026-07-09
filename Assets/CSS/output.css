@@ -1048,6 +1048,10 @@
     border-style: var(--tw-border-style);
     border-width: 0.5px;
   }
+  .border-\[1\.5px\] {
+    border-style: var(--tw-border-style);
+    border-width: 1.5px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -1548,6 +1552,9 @@
   .text-\[42px\] {
     font-size: 42px;
   }
+  .text-\[64px\] {
+    font-size: 64px;
+  }
   .text-\[159px\] {
     font-size: 159px;
   }
@@ -1759,6 +1766,9 @@
   }
   .text-\[\#20A9FF\] {
     color: #20A9FF;
+  }
+  .text-\[\#20A9FF\]\/50 {
+    color: color-mix(in oklab, #20A9FF 50%, transparent);
   }
   .text-\[\#48A95F\] {
     color: #48A95F;
@@ -2250,6 +2260,11 @@
       border-width: 1px;
     }
   }
+  .max-lg\:bg-\[\#0B0D14\] {
+    @media (width < 64rem) {
+      background-color: #0B0D14;
+    }
+  }
   .max-lg\:bg-\[\#0D1117\] {
     @media (width < 64rem) {
       background-color: #0D1117;
@@ -2571,6 +2586,11 @@
       height: calc(var(--spacing) * 12);
     }
   }
+  .lg\:h-14 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 14);
+    }
+  }
   .lg\:h-\[2\.8em\] {
     @media (width >= 64rem) {
       height: 2.8em;
@@ -2654,6 +2674,11 @@
   .lg\:w-12 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:w-14 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 14);
     }
   }
   .lg\:w-\[28\%\] {
@@ -2751,6 +2776,11 @@
       width: 100%;
     }
   }
+  .lg\:max-w-\[5\] {
+    @media (width >= 64rem) {
+      max-width: 5;
+    }
+  }
   .lg\:max-w-\[104px\] {
     @media (width >= 64rem) {
       max-width: 104px;
@@ -2774,6 +2804,11 @@
   .lg\:max-w-\[487px\] {
     @media (width >= 64rem) {
       max-width: 487px;
+    }
+  }
+  .lg\:max-w-\[540px\] {
+    @media (width >= 64rem) {
+      max-width: 540px;
     }
   }
   .lg\:max-w-\[650px\] {
@@ -2960,6 +2995,16 @@
   .lg\:gap-\[100px\] {
     @media (width >= 64rem) {
       gap: 100px;
+    }
+  }
+  .lg\:gap-\[120px\] {
+    @media (width >= 64rem) {
+      gap: 120px;
+    }
+  }
+  .lg\:gap-\[224px\] {
+    @media (width >= 64rem) {
+      gap: 224px;
     }
   }
   .lg\:gap-\[300px\] {
@@ -3281,6 +3326,11 @@
   .lg\:text-\[32px\] {
     @media (width >= 64rem) {
       font-size: 32px;
+    }
+  }
+  .lg\:text-\[40px\] {
+    @media (width >= 64rem) {
+      font-size: 40px;
     }
   }
   .lg\:text-\[42px\] {
