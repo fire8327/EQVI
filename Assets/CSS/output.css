@@ -3338,6 +3338,11 @@
       font-weight: var(--font-weight-semibold);
     }
   }
+  .lg\:text-\[\#20A9FF\] {
+    @media (width >= 64rem) {
+      color: #20A9FF;
+    }
+  }
   .lg\:text-\[\#52525B\] {
     @media (width >= 64rem) {
       color: #52525B;
