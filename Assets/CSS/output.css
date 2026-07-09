@@ -742,6 +742,9 @@
   .w-\[391px\] {
     width: 391px;
   }
+  .w-\[400px\] {
+    width: 400px;
+  }
   .w-\[425px\] {
     width: 425px;
   }
@@ -1831,6 +1834,9 @@
   .text-\[\#111111\] {
     color: #111111;
   }
+  .text-\[\#111827\] {
+    color: #111827;
+  }
   .text-\[\#364153\] {
     color: #364153;
   }
@@ -1989,6 +1995,10 @@
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
   }
   .duration-300 {
     --tw-duration: 300ms;
@@ -2356,6 +2366,20 @@
       text-align: center;
     }
   }
+  .max-lg\:group-open\:text-\[\#20A9FF\] {
+    @media (width < 64rem) {
+      &:is(:where(.group):is([open], :popover-open, :open) *) {
+        color: #20A9FF;
+      }
+    }
+  }
+  .max-lg\:open\:p-6 {
+    @media (width < 64rem) {
+      &:is([open], :popover-open, :open) {
+        padding: calc(var(--spacing) * 6);
+      }
+    }
+  }
   .max-md\:mt-5 {
     @media (width < 48rem) {
       margin-top: calc(var(--spacing) * 5);
@@ -2532,6 +2556,11 @@
       top: calc(1/2 * 100%);
     }
   }
+  .lg\:top-5 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 5);
+    }
+  }
   .lg\:top-8 {
     @media (width >= 64rem) {
       top: calc(var(--spacing) * 8);
@@ -2540,6 +2569,11 @@
   .lg\:right-0 {
     @media (width >= 64rem) {
       right: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:right-10 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 10);
     }
   }
   .lg\:right-\[calc\(\(100vw-960px\)\/2\)\] {
@@ -2667,6 +2701,11 @@
       height: 30px;
     }
   }
+  .lg\:h-\[34px\] {
+    @media (width >= 64rem) {
+      height: 34px;
+    }
+  }
   .lg\:h-\[42px\] {
     @media (width >= 64rem) {
       height: 42px;
@@ -2752,6 +2791,11 @@
       width: calc(var(--spacing) * 14);
     }
   }
+  .lg\:w-\[20px\] {
+    @media (width >= 64rem) {
+      width: 20px;
+    }
+  }
   .lg\:w-\[24px\] {
     @media (width >= 64rem) {
       width: 24px;
@@ -2790,6 +2834,11 @@
   .lg\:w-\[173px\] {
     @media (width >= 64rem) {
       width: 173px;
+    }
+  }
+  .lg\:w-\[180px\] {
+    @media (width >= 64rem) {
+      width: 180px;
     }
   }
   .lg\:w-\[184px\] {
@@ -2880,6 +2929,11 @@
   .lg\:max-w-\[487px\] {
     @media (width >= 64rem) {
       max-width: 487px;
+    }
+  }
+  .lg\:max-w-\[536px\] {
+    @media (width >= 64rem) {
+      max-width: 536px;
     }
   }
   .lg\:max-w-\[540px\] {
@@ -3164,6 +3218,11 @@
       background-color: #F59E0B1A;
     }
   }
+  .lg\:bg-white {
+    @media (width >= 64rem) {
+      background-color: var(--color-white);
+    }
+  }
   .lg\:p-4 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 4);
@@ -3199,6 +3258,11 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
+  .lg\:px-10 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:px-\[30px\] {
     @media (width >= 64rem) {
       padding-inline: 30px;
@@ -3217,6 +3281,11 @@
   .lg\:py-5 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:py-6 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 6);
     }
   }
   .lg\:py-7 {
@@ -3474,6 +3543,11 @@
       font-weight: var(--font-weight-semibold);
     }
   }
+  .lg\:text-\[\#6B7280\] {
+    @media (width >= 64rem) {
+      color: #6B7280;
+    }
+  }
   .lg\:text-\[\#20A9FF\] {
     @media (width >= 64rem) {
       color: #20A9FF;
@@ -3494,11 +3568,32 @@
       text-transform: uppercase;
     }
   }
+  .lg\:group-open\:top-8 {
+    @media (width >= 64rem) {
+      &:is(:where(.group):is([open], :popover-open, :open) *) {
+        top: calc(var(--spacing) * 8);
+      }
+    }
+  }
   .lg\:last\:border-none {
     @media (width >= 64rem) {
       &:last-child {
         --tw-border-style: none;
         border-style: none;
+      }
+    }
+  }
+  .lg\:open\:top-8 {
+    @media (width >= 64rem) {
+      &:is([open], :popover-open, :open) {
+        top: calc(var(--spacing) * 8);
+      }
+    }
+  }
+  .lg\:open\:py-10 {
+    @media (width >= 64rem) {
+      &:is([open], :popover-open, :open) {
+        padding-block: calc(var(--spacing) * 10);
       }
     }
   }
