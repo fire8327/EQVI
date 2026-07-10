@@ -1109,8 +1109,11 @@
                 makeDots();
             }
     
-            let rot = 0;
-            const ROT_SPEED = 0.05;           // radians per second (slow spin)
+            // Start with the warm-colored segment (red / orange / yellow — base phi ~170°)
+            // sitting in the middle of the visible left arc (rendered ~270°), so the ring
+            // begins on the colourful stretch. rot = 270° - 170° = 100°.
+            let rot = 100 * Math.PI / 180;
+            const ROT_SPEED = 0.02;           // radians per second (very slow spin)
     
             // Band taper along the arc: |sin(phi)| is the horizontal distance from the
             // right-edge axis — 0 where the arc exits the block (top & bottom), 1 at the
@@ -1163,7 +1166,7 @@
             if (reduce) render();
             else requestAnimationFrame(frame);
         })();
-        </script>
+    </script>
     <script src="../Assets/JS/new.js"></script>
 </body>
 </html>
