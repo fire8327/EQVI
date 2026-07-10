@@ -20,7 +20,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .swiper.integrationSlider .swiper-slide:not(.swiper-slide-active) {
     transform: scale(0.8);
     opacity: 0.8;
