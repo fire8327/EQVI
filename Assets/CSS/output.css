@@ -714,6 +714,9 @@
   .w-\[128px\] {
     width: 128px;
   }
+  .w-\[136px\] {
+    width: 136px;
+  }
   .w-\[159px\] {
     width: 159px;
   }
@@ -2352,6 +2355,11 @@
       flex-direction: column;
     }
   }
+  .max-md\:gap-4 {
+    @media (width < 48rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
   .max-md\:object-cover {
     @media (width < 48rem) {
       object-fit: cover;
@@ -3407,6 +3415,13 @@
     @media (width >= 64rem) {
       &:is(:where(.group):is([open], :popover-open, :open) *) {
         top: calc(var(--spacing) * 8);
+      }
+    }
+  }
+  .lg\:group-open\:opacity-0 {
+    @media (width >= 64rem) {
+      &:is(:where(.group):is([open], :popover-open, :open) *) {
+        opacity: 0%;
       }
     }
   }
