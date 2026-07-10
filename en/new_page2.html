@@ -1120,23 +1120,7 @@
 
         function render() {
             ctx.clearRect(0, 0, W, H);
-            // glow pass
-            ctx.globalCompositeOperation = 'lighter';
-            for (let i = 0; i < dots.length; i++) {
-                const d = dots[i];
-                const phi = d.phi + rot;
-                const s = Math.abs(Math.sin(phi));
-                const rr = R + d.ro * band * widthFactor(s);
-                const x = cx + Math.sin(phi) * rr;
-                if (x < -40 || x > cx + 40) continue; // only the left arc is inside the block
-                const y = cy - Math.cos(phi) * rr;
-                const r = d.size * sizeScale * sizeFactor(s);
-                ctx.beginPath();
-                ctx.fillStyle = 'rgba(' + d.rgb[0] + ',' + d.rgb[1] + ',' + d.rgb[2] + ',0.13)';
-                ctx.arc(x, y, r * 2.4, 0, TAU);
-                ctx.fill();
-            }
-            // core pass
+            // dots only — no glow halo
             ctx.globalCompositeOperation = 'source-over';
             for (let i = 0; i < dots.length; i++) {
                 const d = dots[i];
