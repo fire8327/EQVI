@@ -3555,6 +3555,11 @@
       padding-bottom: calc(var(--spacing) * 1);
     }
   }
+  .xl\:text-\[20px\] {
+    @media (width >= 80rem) {
+      font-size: 20px;
+    }
+  }
   .xl\:text-\[35px\] {
     @media (width >= 80rem) {
       font-size: 35px;
