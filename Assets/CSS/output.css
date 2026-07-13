@@ -1542,8 +1542,14 @@
   .text-\[22px\] {
     font-size: 22px;
   }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
   .text-\[24px\] {
     font-size: 24px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
   }
   .text-\[28px\] {
     font-size: 28px;
@@ -2393,6 +2399,11 @@
       max-width: 225px;
     }
   }
+  .sm\:text-\[28px\] {
+    @media (width >= 40rem) {
+      font-size: 28px;
+    }
+  }
   .md\:mx-auto {
     @media (width >= 48rem) {
       margin-inline: auto;
@@ -2486,6 +2497,11 @@
   .md\:text-\[26px\] {
     @media (width >= 48rem) {
       font-size: 26px;
+    }
+  }
+  .md\:text-\[28px\] {
+    @media (width >= 48rem) {
+      font-size: 28px;
     }
   }
   .lg\:absolute {
@@ -3330,6 +3346,11 @@
       font-size: 24px;
     }
   }
+  .lg\:text-\[25px\] {
+    @media (width >= 64rem) {
+      font-size: 25px;
+    }
+  }
   .lg\:text-\[28px\] {
     @media (width >= 64rem) {
       font-size: 28px;
@@ -3343,6 +3364,21 @@
   .lg\:text-\[32px\] {
     @media (width >= 64rem) {
       font-size: 32px;
+    }
+  }
+  .lg\:text-\[33px\] {
+    @media (width >= 64rem) {
+      font-size: 33px;
+    }
+  }
+  .lg\:text-\[35px\] {
+    @media (width >= 64rem) {
+      font-size: 35px;
+    }
+  }
+  .lg\:text-\[38px\] {
+    @media (width >= 64rem) {
+      font-size: 38px;
     }
   }
   .lg\:text-\[40px\] {
@@ -3494,6 +3530,11 @@
   .xl\:pb-1 {
     @media (width >= 80rem) {
       padding-bottom: calc(var(--spacing) * 1);
+    }
+  }
+  .xl\:text-\[35px\] {
+    @media (width >= 80rem) {
+      font-size: 35px;
     }
   }
   .xl\:text-\[36px\] {
