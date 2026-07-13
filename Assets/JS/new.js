@@ -172,6 +172,7 @@ $(function() {
                   $("#form").addClass("hidden");
                   $("#formToggler").addClass("hidden");
                   $("#formSuccess").removeClass("hidden");
+                  $submitBtn.prop("disabled", false).text("Submit");
               } else {
                   $("#formError").removeClass("hidden");
               }
