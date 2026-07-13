@@ -115,15 +115,18 @@ const swiper5 = new Swiper('.integrationSlider', {
 
     breakpoints: {
         640: {
-          slidesPerView: 2,
-          centeredSlides: false,
+          slidesPerView: 1.5,
           spaceBetween: 24,
         }
     },
-  
-    // If we need pagination
+
     pagination: {
       el: '.integrationPagination',
       clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.integrationNext',
+      prevEl: '.integrationPrev',
     },
 });
