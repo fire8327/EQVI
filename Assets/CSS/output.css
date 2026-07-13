@@ -369,6 +369,18 @@
   .mt-auto {
     margin-top: auto;
   }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
+  .ml-3\.5 {
+    margin-left: calc(var(--spacing) * 3.5);
+  }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
+  }
   .ml-\[18px\] {
     margin-left: 18px;
   }
@@ -2575,9 +2587,29 @@
       margin-top: calc(var(--spacing) * 16);
     }
   }
+  .lg\:ml-6 {
+    @media (width >= 64rem) {
+      margin-left: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:ml-7 {
+    @media (width >= 64rem) {
+      margin-left: calc(var(--spacing) * 7);
+    }
+  }
+  .lg\:ml-\[18px\] {
+    @media (width >= 64rem) {
+      margin-left: 18px;
+    }
+  }
   .lg\:ml-\[19px\] {
     @media (width >= 64rem) {
       margin-left: 19px;
+    }
+  }
+  .lg\:ml-\[26px\] {
+    @media (width >= 64rem) {
+      margin-left: 26px;
     }
   }
   .lg\:ml-\[52px\] {
