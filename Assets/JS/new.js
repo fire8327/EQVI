@@ -130,3 +130,64 @@ const swiper5 = new Swiper('.integrationSlider', {
       prevEl: '.integrationPrev',
     },
 });
+
+
+/* form */
+$("#contact, #contact2, #formToggler, #overlay").click(() => {
+  $("#form, #overlay, #formToggler").toggleClass("hidden")
+})
+
+$(function() {
+  const $form = $("#form");
+  const $submitBtn = $("#formSubmit");
+
+  if ($form.length) {
+      $form.on("submit", function(e) {
+          e.preventDefault();
+
+          if ($submitBtn.prop("disabled")) {
+              return;
+          }
+
+          $("#formError").addClass("hidden");
+
+          const payload = {
+              fullName: $("input[name='full_name']").val().trim() || "",
+              position: $("input[name='position']").val().trim() || "",
+              company: $("input[name='company']").val().trim() || "",
+              numberOfEmployees: $("input[name='number']").val().trim() || ""
+          };
+
+          $submitBtn.prop("disabled", true).text("Sending...");
+
+          $.ajax({
+              url: "http://coordinator.eqvilibria.com/api/v1/site/feedback",
+              method: "POST",
+              contentType: "application/json",
+              dataType: "json",
+              data: JSON.stringify(payload)
+          })
+          .done(function(response) {
+              if (response && response.success === true) {
+                  $("#form").addClass("hidden");
+                  $("#formToggler").addClass("hidden");
+                  $("#formSuccess").removeClass("hidden");
+              } else {
+                  $("#formError").removeClass("hidden");
+              }
+          })
+          .fail(function() {
+              $("#formError").removeClass("hidden");
+          })
+          .always(function() {
+              if (!$("#formSuccess").is(":visible")) {
+                  $submitBtn.prop("disabled", false).text("Submit");
+              }
+          });
+      });
+  }
+
+  $("#formClose").click(function() {
+      $("#form, #overlay, #formToggler, #formSuccess").addClass("hidden");
+  });
+});
