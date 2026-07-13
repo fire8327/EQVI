@@ -1572,6 +1572,10 @@
   .text-\[159px\] {
     font-size: 159px;
   }
+  .leading-\[10\%\] {
+    --tw-leading: 10%;
+    line-height: 10%;
+  }
   .leading-\[12px\] {
     --tw-leading: 12px;
     line-height: 12px;
@@ -1822,6 +1826,9 @@
   }
   .text-\[\#999999\] {
     color: #999999;
+  }
+  .text-\[\#A1A1A1\] {
+    color: #A1A1A1;
   }
   .text-\[\#A1A1AA\] {
     color: #A1A1AA;
@@ -2652,6 +2659,11 @@
       height: calc(var(--spacing) * 14);
     }
   }
+  .lg\:h-16 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 16);
+    }
+  }
   .lg\:h-\[2\.8em\] {
     @media (width >= 64rem) {
       height: 2.8em;
@@ -2735,6 +2747,11 @@
   .lg\:w-14 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:w-16 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 16);
     }
   }
   .lg\:w-\[20px\] {

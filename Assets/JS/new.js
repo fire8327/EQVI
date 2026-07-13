@@ -153,6 +153,7 @@ $(function() {
 
           const payload = {
               fullName: $("input[name='full_name']").val().trim() || "",
+              businessEmail: $("input[name='business_email']").val().trim() || "",
               position: $("input[name='position']").val().trim() || "",
               company: $("input[name='company']").val().trim() || "",
               numberOfEmployees: $("input[name='number']").val().trim() || ""
@@ -172,7 +173,7 @@ $(function() {
                   $("#form").addClass("hidden");
                   $("#formToggler").addClass("hidden");
                   $("#formSuccess").removeClass("hidden");
-                  $submitBtn.prop("disabled", false).text("Submit");
+                  $submitBtn.prop("disabled", false).text("Request Meeting");
               } else {
                   $("#formError").removeClass("hidden");
               }
@@ -182,7 +183,7 @@ $(function() {
           })
           .always(function() {
               if (!$("#formSuccess").is(":visible")) {
-                  $submitBtn.prop("disabled", false).text("Submit");
+                  $submitBtn.prop("disabled", false).text("Request Meeting");
               }
           });
       });
