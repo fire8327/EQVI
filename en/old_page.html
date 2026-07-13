@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../Assets/CSS/output.css">
+</head>
+<body class="bg-[#1F2326]">
+    <header class="w-full py-6 lg:py-8 px-6 relative z-1 left-0 top-0 bg-[#1F2326]">
+        <div class="w-full max-w-[960px] mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex flex-col items-center">
+                <video autoplay
+                muted
+                loop
+                playsinline src="../Assets/Images/hero/test.mp4" class="w-14 h-14"></video>
+                <svg class="w-14" viewBox="0 0 66 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.51512 0.265927V2.39335H2.083V6.1385H7.35175V8.26593H2.083V12.9197H7.51512V15.0471H0V0.265927H7.51512Z" fill="white"/>
+                    <path d="M29.9924 15.3352L28.9713 14.2271C27.8958 14.9658 26.6229 15.3352 25.1525 15.3352C23.1104 15.3352 21.4154 14.6113 20.0676 13.1634C18.7334 11.7008 18.0662 9.86888 18.0662 7.66759C18.0662 5.48107 18.7402 3.65651 20.088 2.19391C21.4358 0.731302 23.124 0 25.1525 0C27.1811 0 28.8692 0.738688 30.2171 2.21607C31.5649 3.67867 32.2388 5.49584 32.2388 7.66759C32.2388 9.73592 31.6125 11.5014 30.36 12.964L32.5655 15.3352H29.9924ZM26.8679 9.19668L28.9509 11.4349C29.7542 10.4303 30.1558 9.17452 30.1558 7.66759C30.1558 6.0277 29.6861 4.69067 28.7467 3.65651C27.8073 2.60757 26.6093 2.0831 25.1525 2.0831C23.6958 2.0831 22.4977 2.60757 21.5583 3.65651C20.6189 4.69067 20.1492 6.0277 20.1492 7.66759C20.1492 9.30748 20.6189 10.6519 21.5583 11.7008C22.4977 12.735 23.6958 13.2521 25.1525 13.2521C26.0374 13.2521 26.8203 13.06 27.501 12.6759L24.2744 9.19668H26.8679Z" fill="white"/>
+                    <path d="M41.6111 0.265927H43.8574L47.6558 10.5706L51.4542 0.265927H53.7006L47.6558 16L41.6111 0.265927Z" fill="white"/>
+                    <path d="M63.917 0.265927H66V15.0471H63.917V0.265927Z" fill="white"/>
+                </svg>   
+            </a>
+            <div id="nav" class="flex items-center gap-2">
+                <button class="scroll-to-slider cursor-pointer">
+                    <img src="../Assets/Images/hero/1.svg" alt="" class="w-[16px] md:w-[24px] aspect-square">
+                </button>
+                <button class="scroll-to-slider cursor-pointer">
+                    <img src="../Assets/Images/hero/2.svg" alt="" class="w-[16px] md:w-[24px] aspect-square">
+                </button>
+                <button class="scroll-to-slider cursor-pointer">
+                    <img src="../Assets/Images/hero/3.svg" alt="" class="w-[16px] md:w-[24px] aspect-square">
+                </button>
+                <button class="scroll-to-slider cursor-pointer">
+                    <img src="../Assets/Images/hero/4.svg" alt="" class="w-[16px] md:w-[24px] aspect-square">
+                </button>
+            </div>
+            <button id="contact" class="cursor-pointer hidden text-[16px] rounded-full lg:rounded-[20px] bg-[#05C0F4] text-white flex justify-center items-center w-[126px] h-[44px]">Contact Us</button>
+        </div>
+    </header>
+
+    <!-- contact form -->
+    <div id="overlay" class="hidden fixed inset-0 z-9 bg-[#05050580] lg:bg-[#121212]"></div>
+    <form id="form" class="hidden">
+        <div class="fixed z-10 bg-[#1F2326] rounded-[20px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[calc(100%-32px)] max-w-[600px] p-4 lg:p-6 flex flex-col gap-8">
+            <div id="formContent" class="flex flex-col gap-8">
+                <div class="flex flex-col w-full gap-6 lg:gap-8 text-white">
+                    <div class="relative w-full">
+                        <input name="full_name" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Full Name
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input name="position" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Position
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input name="company" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Company
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input name="number" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Number of Employees
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full gap-2">
+                    <button id="formSubmit" type="submit" class="cursor-pointer text-[16px] rounded-full lg:rounded-[20px] bg-[#05C0F4] text-white flex justify-center items-center w-full h-[44px]">Submit</button>
+                    <p class="text-[12px] leading-[100%] font-medium text-[#959595]">You agree to the <a href="#" target="_blank" class="underline">Privacy Policy</a></p>
+                    <p id="formError" class="hidden text-[12px] leading-[140%] font-medium text-[#F97373]">Something went wrong. Please try again.</p>
+                </div>
+            </div>
+        </div>
+    </form>
+    <button id="formToggler" class="hidden fixed top-[75px] right-4 lg:right-[calc((100vw-960px)/2)] cursor-pointer z-10">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="56" height="56" rx="28" fill="white" fill-opacity="0.1"/>
+            <path d="M36.4003 19.6133C36.2769 19.4897 36.1304 19.3917 35.9691 19.3247C35.8078 19.2578 35.6349 19.2234 35.4603 19.2234C35.2857 19.2234 35.1128 19.2578 34.9515 19.3247C34.7902 19.3917 34.6436 19.4897 34.5203 19.6133L28.0003 26.12L21.4803 19.6C21.3569 19.4766 21.2103 19.3786 21.049 19.3118C20.8877 19.245 20.7149 19.2106 20.5403 19.2106C20.3657 19.2106 20.1929 19.245 20.0316 19.3118C19.8703 19.3786 19.7237 19.4766 19.6003 19.6C19.4769 19.7234 19.3789 19.87 19.3121 20.0313C19.2453 20.1926 19.2109 20.3654 19.2109 20.54C19.2109 20.7146 19.2453 20.8874 19.3121 21.0487C19.3789 21.21 19.4769 21.3566 19.6003 21.48L26.1203 28L19.6003 34.52C19.4769 34.6434 19.3789 34.79 19.3121 34.9513C19.2453 35.1126 19.2109 35.2854 19.2109 35.46C19.2109 35.6346 19.2453 35.8074 19.3121 35.9687C19.3789 36.13 19.4769 36.2765 19.6003 36.4C19.7237 36.5234 19.8703 36.6214 20.0316 36.6882C20.1929 36.755 20.3657 36.7894 20.5403 36.7894C20.7149 36.7894 20.8877 36.755 21.049 36.6882C21.2103 36.6214 21.3569 36.5234 21.4803 36.4L28.0003 29.88L34.5203 36.4C34.6437 36.5234 34.7903 36.6214 34.9516 36.6882C35.1129 36.755 35.2857 36.7894 35.4603 36.7894C35.6349 36.7894 35.8077 36.755 35.969 36.6882C36.1303 36.6214 36.2769 36.5234 36.4003 36.4C36.5237 36.2765 36.6217 36.13 36.6885 35.9687C36.7553 35.8074 36.7897 35.6346 36.7897 35.46C36.7897 35.2854 36.7553 35.1126 36.6885 34.9513C36.6217 34.79 36.5237 34.6434 36.4003 34.52L29.8803 28L36.4003 21.48C36.907 20.9733 36.907 20.12 36.4003 19.6133Z" fill="white"/>
+        </svg>            
+    </button>
+    <div id="formSuccess" class="hidden">
+        <div class="z-10 flex flex-col items-center gap-4 text-center text-white p-4 bg-[#121212] border border-white/10 fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-xl">
+            <p class="text-[18px] lg:text-[20px] leading-[140%] font-semibold">Your request has been sent</p>
+            <p class="text-[14px] lg:text-[16px] leading-[140%] text-white/70 max-w-[360px]">We will contact you shortly using the details you provided.</p>
+            <button id="formClose" type="button" class="cursor-pointer text-[16px] rounded-full lg:rounded-[20px] bg-[#05C0F4] text-white flex justify-center items-center px-8 h-[44px]">Close</button>
+        </div>
+    </div>
+
+    <div class="w-full py-8 lg:pt-[64px] lg:pb-[120px] px-6">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-4 lg:gap-8">
+            <div class="flex flex-col gap-2 lg:gap-3">
+                <p class="text-[22px] md:text-[26px] lg:text-[30px] xl:text-[50px] max-w-[895px] leading-[105%] font-bold text-white uppercase">
+                    EQVI — a living <span class="text-[#05C0F4]">next-generation lifestyle ecosystem</span>
+                </p>
+                <p class="text-[12px] md:text-[14px] lg:text-[16px] leading-[140%] text-white/60">Health, lifestyle, and everyday human decisions are unitied into a single adaptive system.</p>
+            </div>
+            <ul class="flex flex-col gap-2 list-disc list-inside marker:text-[#05C0F4] text-[16px] lg:text-[18px] leading-[140%] text-white mt-2">
+                <li>It senses a&nbsp;person’s condition in real time.</li>
+                <li>Analyzes physiological and&nbsp;behavioral data.</li>
+                <li>Takes into account lifestyle, preferences, and&nbsp;context.</li>
+                <li>Daily adapts recommendations and&nbsp;offers.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w-full py-8 lg:py-[120px] px-6 bg-white rounded-[20px]">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-4 lg:gap-8">
+            <div class="flex flex-col gap-4 w-full relative">
+                <div class="flex items-center justify-between w-full gap-4">
+                    <p class="text-[16px] md:text-[24px] lg:text-[32px] leading-[125%] font-bold uppercase lg:max-w-[650px]">
+                        One platform — <span class="text-[#05C0F4]">dozens of life scenarios</span>
+                    </p>
+                    <svg class="lg:hidden shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="18.614" cy="10.9085" rx="2.58407" ry="2.5007" transform="rotate(90 18.614 10.9085)" fill="#F9C442" />
+                        <ellipse cx="2.50071" cy="10.9085" rx="2.58407" ry="2.5007" transform="rotate(90 2.50071 10.9085)" fill="#AC95EF" />
+                        <ellipse cx="10.5554" cy="19.2325" rx="2.5007" ry="2.58407" transform="rotate(-180 10.5554 19.2325)"
+                            fill="#FF9494" />
+                        <ellipse cx="10.5554" cy="2.58408" rx="2.5007" ry="2.58407" transform="rotate(-180 10.5554 2.58408)"
+                            fill="#82A8FF" />
+                        <ellipse cx="2.54272" cy="2.54273" rx="2.54272" ry="2.54273"
+                            transform="matrix(-0.69544 0.718584 -0.69544 -0.718584 19.7905 16.7853)" fill="#FFB661" />
+                        <ellipse cx="2.54272" cy="2.54273" rx="2.54272" ry="2.54273"
+                            transform="matrix(-0.69544 0.718584 -0.69544 -0.718584 8.39594 5.01971)" fill="#52C9CF" />
+                        <ellipse cx="2.54273" cy="2.54272" rx="2.54273" ry="2.54272"
+                            transform="matrix(-0.69544 -0.718584 0.695441 -0.718584 4.86078 20.4338)" fill="#EF95B9" />
+                        <ellipse cx="2.54273" cy="2.54272" rx="2.54273" ry="2.54272"
+                            transform="matrix(-0.69544 -0.718584 0.69544 -0.718584 16.2553 8.67596)" fill="#A5CF5F" />
+                    </svg>
+                </div>
+                <div class="flex items-start gap-10">
+                    <p class="text-[16px] lg:text-[18px] leading-[140%] text-[#707070] lg:max-w-[650px]">
+                        EQVI operates like a living organism, not a static set of services. <br>
+                        It is a human-centered ecosystem that unites health data, daily habits, consumption, and services into a single system.
+                    </p>
+                    <div id="videoToggler" class="rounded-[16px] border-3 border-black overflow-hidden w-[116px] md:w-[170px] lg:w-[221px] shrink-0 lg:absolute lg:right-0 lg:-top-[235px]">
+                        <div class="relative w-full h-full overflow-hidden">
+                            <video id="video"
+                            muted
+                            loop
+                            playsinline src="../Assets/Images/platform/main_en.mp4" class="w-full aspect-9/20"></video>
+                            <div id="videoOverlay" class="absolute inset-0 bg-black/10 flex items-center justify-center cursor-pointer z-1">
+                                <div class="flex items-center justify-center transition-all duration-500">
+                                    <svg class="w-10 lg:w-12 h-10 lg:h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
+                                                fill="#05C0F4"></path>
+                                        </g>
+                                    </svg> 
+                                </div>
+                            </div>
+                            <img id="videoPreview" src="../Assets/Images/platform/preview_en.webp" alt="" class="absolute inset-0 z-0 aspect-9/20 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="w-full py-8 lg:py-[120px] px-6">
+        <div class="w-full max-w-[960px] mx-auto flex max-lg:flex-col gap-4 lg:gap-8 lg:justify-between text-[16px] lg:text-[18px] leading-[140%] text-white">
+            <div class="flex flex-col gap-4 w-full lg:w-1/2">
+                <p class="text-[#A8A9AA] lg:h-[2.8em]">EQVI continuously <br> analyzes:</p>
+                <ul class="flex flex-col gap-2 list-disc list-inside marker:text-[#F1C62C]">
+                    <li>Sleep, heart rate, activity, and&nbsp;recovery</li>
+                    <li>Nutrition and consumer behavior</li>
+                    <li>Lifestyle, stress level, and daily context</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4 w-full lg:w-1/2 max-lg:mt-4">
+                <p class="text-[#A8A9AA] lg:h-[2.8em]">Based on this, the system <br> adapts daily:</p>
+                <ul class="flex flex-col gap-2 list-disc list-inside marker:text-[#F1C62C]">
+                    <li>Recommendations</li>
+                    <li>Services</li>
+                    <li>Partner offers</li>
+                    <li>Loyalty program</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="slider" class="flex flex-col gap-4 lg:gap-6 items-center relative">
+        <div class="flex items-center gap-4 h-8">
+            <button class="nav-btn grayscale w-6 cursor-pointer transition-all" data-slide-index="0">
+                <img src="../Assets/Images/hero/1.svg" alt="" class="aspect-square">
+            </button>
+            <button class="nav-btn grayscale w-6 cursor-pointer transition-all" data-slide-index="1">
+                <img src="../Assets/Images/hero/2.svg" alt="" class="aspect-square">
+            </button>
+            <button class="nav-btn grayscale w-6 cursor-pointer transition-all" data-slide-index="2">
+                <img src="../Assets/Images/hero/3.svg" alt="" class="aspect-square">
+            </button>
+            <button class="nav-btn grayscale w-6 cursor-pointer transition-all" data-slide-index="3">
+                <img src="../Assets/Images/hero/4.svg" alt="" class="aspect-square">
+            </button>
+        </div>
+        <div class="swiper w-full">
+            <div class="swiper-wrapper h-full">
+                <div class="bg-[#F1C62C] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col h-[543px]! lg:h-[625px]!">
+                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase px-4 lg:px-[30px] pt-8 lg:pt-14">NUTRITION PROGRAM</p>
+                    <div class="flex items-center justify-between gap-4 px-4 lg:px-[30px] my-4">
+                        <div class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%]">
+                            <p>Eqvi is integrated with leading food delivery services. It creates a personalized nutrition plan based on:</p>
+                            <ul class="list-disc list-inside marker:text-white">
+                                <li>gender, age, height, and weight</li>
+                                <li>goals and dietary restrictions</li>
+                                <li>preferences and lifestyle</li>
+                                <li>daily activity level</li>
+                            </ul>
+                        </div>
+                        <img src="../Assets/Images/food/phone_en.webp" alt="" class="w-[116px] lg:w-[184px]">
+                    </div>
+                    <div class="w-full bg-black/50 rounded-[16px] h-[143px] px-4 flex flex-col items-center justify-center gap-3 mt-auto">
+                        <div class="flex items-center gap-3">
+                            <img src="../Assets/Images/food/logo 1_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/food/logo 2_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/food/logo 3_en.webp" alt="" class="h-5 lg:h-[30px]">
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img src="../Assets/Images/food/logo 4_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/food/logo 5_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <p class="text-[14px] leading-[140%] text-white/50">+ 20 services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#3CC4F4] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col h-[543px]! lg:h-[625px]!">
+                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase px-4 lg:px-[30px] pt-8 lg:pt-14">TRACKER</p>
+                    <div class="flex items-center justify-between gap-4 px-4 lg:px-[30px] my-4">
+                        <div class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%]">
+                            <p>Eqvi integrates with smartwatches and fitness bands. It analyzes data daily and incorporates it into personalized nutrition and fitness plans:</p>
+                            <ul class="list-disc list-inside marker:text-white">
+                                <li>sleep</li>
+                                <li>heart rate</li>
+                                <li>activity</li>
+                                <li>calories and recovery</li>
+                            </ul>
+                        </div>
+                        <img src="../Assets/Images/tracker/phone_en.webp" alt="" class="w-[116px] lg:w-[184px]">
+                    </div>
+                    <div class="w-full bg-black/50 rounded-[16px] h-[143px] px-4 flex flex-col items-center justify-center gap-3 mt-auto">
+                        <div class="flex items-center gap-5">
+                            <img src="../Assets/Images/tracker/logo 1_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/tracker/logo 2_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/tracker/logo 3_en.webp" alt="" class="h-5 lg:h-[30px]">
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="../Assets/Images/tracker/logo 4_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/tracker/logo 5_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <p class="text-[14px] leading-[140%] text-white/50">+ 10 brands</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#0EB548] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col h-[543px]! lg:h-[625px]!">
+                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase px-4 lg:px-[30px] pt-8 lg:pt-14">MEDICAL CARE</p>
+                    <div class="flex items-center justify-between gap-4 px-4 lg:px-[30px] my-4">
+                        <div class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%]">
+                           <p>Eqvi is integrated with leading telemedicine services. </p>
+                           <p>If your metrics deviate from your personal norm, the system recommends the appropriate specialist. </p>
+                           <p>40+ doctors with unlimited online access</p>
+                        </div>
+                        <img src="../Assets/Images/medicine/phone_en.webp" alt="" class="w-[116px] lg:w-[184px]">
+                    </div>
+                    <div class="w-full bg-black/50 rounded-[16px] h-[143px] px-4 flex items-center justify-center mt-auto">
+                        <div class="text-[14px] lg:text-[16px] leading-[140%] opacity-50 flex flex-col gap-2">
+                            <p class="font-bold">Smart check-ups</p>
+                            <ul class="list-disc list-inside marker:text-white">
+                                <li>Discounted medical tests at leading clinics.</li>
+                                <li>Test results are taken into account in your nutrition program.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F97FB0] w-full rounded-[16px] overflow-hidden text-white swiper-slide flex! flex-col h-[543px]! lg:h-[625px]!">
+                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase px-4 lg:px-[30px] pt-8 lg:pt-14">PERSONAL STYLIST</p>
+                    <div class="flex items-center justify-between gap-4 px-4 lg:px-[30px] my-4">
+                        <div class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%]">
+                            <p>A personal stylist as a tool to support mental well-being.</p>
+                            <p>The stylist creates personalized looks based on body parameters, lifestyle, preferences, and other individual factors.</p>    
+                        </div>
+                        <img src="../Assets/Images/style/phone_en.webp" alt="" class="w-[116px] lg:w-[184px]">
+                    </div>
+                    <div class="w-full bg-black/50 rounded-[16px] h-[143px] px-4 flex flex-col items-center justify-center gap-2 mt-auto">
+                        <div class="grid grid-cols-3 gap-2">
+                            <img src="../Assets/Images/style/logo 1_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/style/logo 2_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/style/logo 3_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/style/logo 4_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/style/logo 5_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/style/logo 6_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/style/logo 7_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <img src="../Assets/Images/style/logo 8_en.webp" alt="" class="h-5 lg:h-[30px]">
+                            <p class="text-[14px] leading-[140%] text-white/50">+ 20 brands</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="swiperPrev cursor-pointer max-lg:hidden absolute z-2 top-1/2 -translate-y-1/2 left-[75px] xl:left-[150px] 2xl:left-[250px]">
+            <img src="../Assets/Images/slider/arrow.svg" alt="">
+        </button>
+        <button class="swiperNext cursor-pointer max-lg:hidden absolute z-2 top-1/2 -translate-y-1/2 right-[75px] xl:right-[150px] 2xl:right-[250px]">
+            <img src="../Assets/Images/slider/arrow.svg" alt="" class="scale-x-[-1]">
+        </button>
+    </div>
+
+    <div class="w-full py-14 lg:py-[120px] px-6">
+        <div class="w-full max-w-[960px] mx-auto flex max-lg:flex-col lg:items-center lg:justify-between gap-5 lg:gap-24 text-[16px] lg:text-[18px] leading-[140%]">
+            <div class="flex flex-col gap-4 w-full lg:w-[507px] text-[#A8A9AA]">
+                <div class="flex flex-col gap-2">
+                    <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[140%] font-bold text-[#05C0F4] uppercase">
+                        EQVI Balance Awards™
+                    </p>
+                    <p class="text-[12px] md:text-[14px] lg:text-[16px] leading-[140%]">A living loyalty program with a development currency — Libra</p>
+                </div>
+                <p class="text-[12px] md:text-[14px] lg:text-[16px] leading-[140%] mt-4">Libra is awarded for everyday activities:</p>
+                <ul class="flex flex-col gap-2 list-disc list-inside marker:text-[#05C0F4] text-[16px] lg:text-[18px] leading-[140%] mt-4">
+                    <li>Purchases in food and fashion categories</li>
+                    <li>Workouts</li>
+                    <li>Participation in quizzes</li>
+                    <li>Collective achievements</li>
+                    <li>Other activities within the EQVI ecosystem</li>
+                </ul>
+                <p class="text-[16px] lg:text-[18px] leading-[140%] mt-4">When the body is in balance — sleep, activity, and calories are within normal range — the Libra level increases and bonuses are doubled.</p>
+                <p class="text-[16px] lg:text-[18px] leading-[140%]">Accumulated Libra can be converted into cashback and used for health, education, electronics, leisure, and entertainment — for yourself and your loved ones.</p>
+                <p class="text-[12px] md:text-[16px] lg:text-[18px] leading-[140%] rounded-[16px] bg-[#272C30] p-3">
+                    Family, friend, and team Libra accounts are available: rewards can be earned and spent together.
+                </p>
+            </div>
+            <img src="../Assets/Images/balance_awards/desktop_en.webp" alt="" class="max-lg:hidden w-[391px]">
+            <img src="../Assets/Images/balance_awards/mobile_en.webp" alt="" class="lg:hidden w-full">
+        </div>
+    </div>
+
+    <div class="w-full py-8 lg:py-[64px] px-6 bg-white rounded-[20px]">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-6">
+            <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-medium uppercase">Eqvi for partners</p>
+            <div id="tabs" class="flex flex-col gap-6">
+                <ul class="flex items-center gap-1 flex-wrap max-w-[680px] text-[14px] lg:text-[16px] leading-[110%] text-[#4A4A4A] font-medium">
+                    <li class="bg-[#E9E9E9] rounded-full flex"><a href="#tabs1" class="py-3 px-6">General</a></li>
+                    <li class="bg-[#E9E9E9] rounded-full flex"><a href="#tabs2" class="py-3 px-6">HR / Benefits Platforms</a></li>
+                    <li class="bg-[#E9E9E9] rounded-full flex"><a href="#tabs3" class="py-3 px-6">Banks</a></li>
+                    <li class="bg-[#E9E9E9] rounded-full flex"><a href="#tabs4" class="py-3 px-6">Insurance Companies</a></li>
+                    <li class="bg-[#E9E9E9] rounded-full flex"><a href="#tabs5" class="py-3 px-6">Supermarkets and Delivery Services</a></li>
+                    <li class="bg-[#E9E9E9] rounded-full flex"><a href="#tabs6" class="py-3 px-6">Fashion E-commerce</a></li>
+                    <li class="bg-[#E9E9E9] rounded-full flex"><a href="#tabs7" class="py-3 px-6">Gas Stations</a></li>
+                </ul>
+                <div id="tabs1" class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%] text-[#707070]">
+                    <div>
+                        <p class="font-bold">EQVI is designed with the interests of multiple industries in mind.</p>
+                        <p class="font-bold">The ecosystem helps significantly improve core business metrics by leveraging cutting-edge technologies.</p>
+                    </div>
+                    <p>EQVI integrates partners’ products into personalized health and lifestyle scenarios for users.</p>
+                    <p>What partners gain:</p>
+                    <ul class="list-disc list-inside marker:text-[#707070]">
+                        <li>Increased engagement and interaction frequency with their products</li>
+                        <li>Personalized offers based on real-life context</li>
+                        <li>Loyalty and trust instead of intrusive marketing</li>
+                        <li>Higher LTV and more repeat touchpoints</li>
+                        <li>Cross-marketing and acquisition of new customers within the EQVI ecosystem</li>
+                        <li>Anonymized behavioral and lifestyle analytics</li>
+                        <li>A new layer of data on habits, preferences, and lifestyle patterns</li>
+                    </ul> 
+                </div>
+                <div id="tabs2" class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%] text-[#707070]">
+                    <p class="font-bold">EQVI integrates employee health and well-being into everyday work and life scenarios.</p>
+                    <p>What HR teams and companies gain:</p>
+                    <ul class="list-disc list-inside marker:text-[#707070]">
+                        <li>Higher energy levels, engagement, and sustainable employee productivity</li>
+                        <li>Reduced burnout and stress without monitoring or pressure</li>
+                        <li>Personalized recommendations for nutrition, physical activity, and recovery</li>
+                        <li>Gamification and rewards that help build healthy habits</li>
+                        <li>Improved eNPS, retention, and employer brand attractiveness</li>
+                        <li>Anonymized analytics on team well-being and engagement</li>
+                        <li>A new level of data for HR decision-making</li>
+                    </ul> 
+                </div>
+                <div id="tabs3" class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%] text-[#707070]">
+                    <p class="font-bold">EQVI integrates financial products into healthy and everyday lifestyle scenarios.</p>
+                    <p>Benefits for banks:</p>
+                    <ul class="list-disc list-inside marker:text-[#707070]">
+                        <li>Increased transaction activity and card usage frequency</li>
+                        <li>Personalized offers based on real lifestyle data</li>
+                        <li>Cashback and rewards linked to healthy habits</li>
+                        <li>Higher LTV without intrusive marketing</li>
+                        <li>Access to corporate audiences through HR channels</li>
+                        <li>Cross-marketing and new customer acquisition from the EQVI ecosystem (Insurance, retail, services)</li>
+                    </ul>
+                </div>
+                <div id="tabs4" class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%] text-[#707070]">
+                    <p class="font-bold">EQVI transforms insurance from compensation into proactive health management.</p>
+                    <p>Advantages:</p>
+                    <ul class="list-disc list-inside marker:text-[#707070]">
+                        <li>Risk reduction through prevention and monitoring</li>
+                        <li>Health recommendations from AI and medical experts</li>
+                        <li>Integration of telemedicine into everyday life</li>
+                        <li>Personalized insurance products and upsell opportunities</li>
+                        <li>Increased loyalty and customer lifetime value</li>
+                        <li>New customer acquisition via cross-marketing within the EQVI ecosystem</li>
+                    </ul>
+                </div>
+                <div id="tabs5" class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%] text-[#707070]">
+                    <p class="font-bold">EQVI creates product solutions based on the body’s condition, not just demand.</p>
+                    <p>For retail and delivery:</p>
+                    <ul class="list-disc list-inside marker:text-[#707070]">
+                        <li>Personalized shopping carts based on health data</li>
+                        <li>AI + nutritionist and dietitian recommendations</li>
+                        <li>Higher order frequency and average basket size</li>
+                        <li>Reduced dependency on discounts</li>
+                        <li>Formation of long-term purchasing habits</li>
+                        <li>Cross-marketing customer inflow from other EQVI verticals</li>
+                    </ul>
+                </div>
+                <div id="tabs6" class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%] text-[#707070]">
+                    <p class="font-bold">EQVI turns fashion retail into a personalized styling service</p>
+                    <p>Key effects:</p>
+                    <ul class="list-disc list-inside marker:text-[#707070] flex flex-col gap-1.5">
+                        <li>
+                            AI stylist combined with professional stylists, taking into account:
+                            <ul class="list-['-'] list-inside marker:font-bold marker:text-[#707070] pl-7 mt-1.5">
+                                <li>lifestyle</li>
+                                <li>activity</li>
+                                <li>nutrition</li>
+                                <li>mental state</li>
+                            </ul>
+                        </li>
+                        <li>Higher average order value: users buy outfits, not single items</li>
+                        <li>
+                            Significant reduction in returns:
+                            <ul class="list-['-'] list-inside marker:font-bold marker:text-[#707070] pl-7 mt-1.5">
+                                <li>size, style, and compatibility filtering</li>
+                                <li>fewer expectation mismatches</li>
+                            </ul>
+                        </li>
+                        <li>Increased loyalty without constant discounts</li>
+                        <li>New customer acquisition through cross-marketing from health and other EQVI services</li>
+                    </ul>
+                </div>
+                <div id="tabs7" class="flex flex-col gap-4 text-[16px] lg:text-[18px] leading-[140%] text-[#707070]">
+                    <p class="font-bold">EQVI embeds gas stations into users’ daily routes and lifestyle habits.</p>
+                    <p>Benefits for fuel retailers:</p>
+                    <ul class="list-disc list-inside marker:text-[#707070]">
+                        <li>Increased visit frequency and retention</li>
+                        <li>Personalized offers based on activity and lifestyle</li>
+                        <li>Integration of cashback and reward scenarios</li>
+                        <li>Shift from price competition to loyalty-driven models</li>
+                        <li>Cross-marketing and new customer acquisition from the EQVI ecosystem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full py-12 lg:py-[120px] px-6 bg-[#272C30] mt-2.5 rounded-[20px]">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-6">
+            <div class="flex flex-col gap-4 text-[#A8A9AA]">
+                <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase text-[#05C0F4]">MANAGEMENT & ANALYTICS</p>
+                <p class="text-[16px] lg:text-[18px] leading-[140%] mt-2">EQVI provides partners with:</p>
+                <ul class="text-[16px] lg:text-[18px] leading-[140%] flex flex-col gap-2 list-disc list-inside marker:text-[#05C0F4]">
+                    <li>Configuration of rules, scenarios, and services</li>
+                    <li>Bonus and motivation management</li>
+                    <li>Analytics on health, engagement, and effectiveness</li>
+                    <li>Flexible scaling to meet business objectives</li>
+                </ul>
+            </div>
+            <div class="w-full flex items-center justify-center py-1 rounded-[16px] border border-[#383838] mt-8">
+                <img src="../Assets/Images/analytics/main_en.webp" alt="" >
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full py-12 lg:py-[64px] px-6 bg-[#1F2326] text-[#A8A9AA]">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-6 lg:gap-14">
+            <div class="flex flex-col gap-6">
+                <p class="text-[22px] md:text-[26px] lg:text-[32px] leading-[105%] font-bold uppercase text-[#05C0F4]">ABOUT US</p>
+                <p class="text-[16px] lg:text-[18px] leading-[140%]">
+                    EQVI was created by a team with over <span class="text-[#05C0F4]">20 years of experience</span> in designing and developing large-scale lifestyle ecosystems, loyalty programs, and marketplaces for leading international companies.
+                </p>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3 lg:gap-8 flex-wrap">    
+                        <img src="../Assets/Images/about/17.webp" alt="" class="w-[68px]">    
+                        <img src="../Assets/Images/about/6.webp" alt="" class="w-[68px]">    
+                        <img src="../Assets/Images/about/7.webp" alt="" class="w-[72px]">    
+                        <img src="../Assets/Images/about/8.webp" alt="" class="w-[72px]">    
+                        <img src="../Assets/Images/about/9.webp" alt="" class="w-[63px]">    
+                        <img src="../Assets/Images/about/10.webp" alt="" class="w-[59px]"> 
+                        <img src="../Assets/Images/about/11.webp" alt="" class="w-[114px]">    
+                        <img src="../Assets/Images/about/12.webp" alt="" class="w-[62px]">    
+                        <img src="../Assets/Images/about/13.webp" alt="" class="w-[90px]">    
+                        <img src="../Assets/Images/about/14.webp" alt="" class="w-[36px]">    
+                        <img src="../Assets/Images/about/15.webp" alt="" class="w-[48px]">    
+                        <img src="../Assets/Images/about/16.webp" alt="" class="w-[51px]">    
+                        <img src="../Assets/Images/about/19.webp" alt="" class="w-[59px]">    
+                    </div>
+                    <p class="text-[12px] md:text-[14px] lg:text-[16px] leading-[140%] text-white/10">*Logos reflect the experience of working on the project and are used for illustrative purposes only.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full pt-14 pb-8 lg:py-[98px] px-6 bg-[#272C30] rounded-[20px] text-white">
+        <div class="w-full max-w-[960px] mx-auto flex flex-col gap-6 items-center">
+            <p class="text-center text-[16px] md:text-[18px] lg:text-[22px] leading-[140%] font-bold uppercase">Download</p>
+            <svg width="43" height="19" viewBox="0 0 43 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.314453 0.388672L21.3145 17.3887L42.3145 0.388672" stroke="#05C0F4"/>
+            </svg>                
+            <div class="flex items-center gap-4 lg:gap-6">
+                <div class="w-[160px] lg:w-[200px] relative overflow-hidden rounded-lg">
+                    <img src="../Assets/Images/download/1.png" alt="" class="w-full">
+                    <p class="absolute inset-0 flex items-center justify-center bg-black/80 text-[12px] lg:text-[14px] leading-[140%]">Soon</p>
+                </div>
+                <div class="w-[160px] lg:w-[200px] relative overflow-hidden rounded-lg">
+                    <img src="../Assets/Images/download/2.png" alt="" class="w-full">
+                    <p class="absolute inset-0 flex items-center justify-center bg-black/80 text-[12px] lg:text-[14px] leading-[140%]">Soon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
+    <script src="../Assets/JS/en.js"></script>
+</body>
+</html>
