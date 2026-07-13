@@ -69,6 +69,8 @@ $(function() {
                     $("#form").addClass("hidden");
                     $("#formToggler").addClass("hidden");
                     $("#formSuccess").removeClass("hidden");
+                    $form[0].reset();
+                    $form.find('input, textarea, select').val('');
                 } else {
                     $("#formError").removeClass("hidden");
                 }
