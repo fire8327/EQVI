@@ -1545,14 +1545,8 @@
   .text-\[22px\] {
     font-size: 22px;
   }
-  .text-\[23px\] {
-    font-size: 23px;
-  }
   .text-\[24px\] {
     font-size: 24px;
-  }
-  .text-\[25px\] {
-    font-size: 25px;
   }
   .text-\[28px\] {
     font-size: 28px;
@@ -1571,10 +1565,6 @@
   }
   .text-\[159px\] {
     font-size: 159px;
-  }
-  .leading-\[10\%\] {
-    --tw-leading: 10%;
-    line-height: 10%;
   }
   .leading-\[12px\] {
     --tw-leading: 12px;
@@ -1758,6 +1748,9 @@
   .text-\[\#7E7E7E\] {
     color: #7E7E7E;
   }
+  .text-\[\#8B949E\] {
+    color: #8B949E;
+  }
   .text-\[\#8E8E93\] {
     color: #8E8E93;
   }
@@ -1826,9 +1819,6 @@
   }
   .text-\[\#999999\] {
     color: #999999;
-  }
-  .text-\[\#A1A1A1\] {
-    color: #A1A1A1;
   }
   .text-\[\#A1A1AA\] {
     color: #A1A1AA;
@@ -2384,6 +2374,16 @@
       max-width: 170px;
     }
   }
+  .max-md\:max-w-\[220\] {
+    @media (width < 48rem) {
+      max-width: 220;
+    }
+  }
+  .max-md\:max-w-\[220px\] {
+    @media (width < 48rem) {
+      max-width: 220px;
+    }
+  }
   .max-md\:flex-col {
     @media (width < 48rem) {
       flex-direction: column;
@@ -2417,11 +2417,6 @@
   .max-sm\:max-w-\[225px\] {
     @media (width < 40rem) {
       max-width: 225px;
-    }
-  }
-  .sm\:text-\[28px\] {
-    @media (width >= 40rem) {
-      font-size: 28px;
     }
   }
   .md\:mx-auto {
@@ -2517,11 +2512,6 @@
   .md\:text-\[26px\] {
     @media (width >= 48rem) {
       font-size: 26px;
-    }
-  }
-  .md\:text-\[28px\] {
-    @media (width >= 48rem) {
-      font-size: 28px;
     }
   }
   .lg\:absolute {
@@ -3386,11 +3376,6 @@
       font-size: 24px;
     }
   }
-  .lg\:text-\[25px\] {
-    @media (width >= 64rem) {
-      font-size: 25px;
-    }
-  }
   .lg\:text-\[28px\] {
     @media (width >= 64rem) {
       font-size: 28px;
@@ -3404,21 +3389,6 @@
   .lg\:text-\[32px\] {
     @media (width >= 64rem) {
       font-size: 32px;
-    }
-  }
-  .lg\:text-\[33px\] {
-    @media (width >= 64rem) {
-      font-size: 33px;
-    }
-  }
-  .lg\:text-\[35px\] {
-    @media (width >= 64rem) {
-      font-size: 35px;
-    }
-  }
-  .lg\:text-\[38px\] {
-    @media (width >= 64rem) {
-      font-size: 38px;
     }
   }
   .lg\:text-\[40px\] {
@@ -3577,11 +3547,6 @@
       font-size: 20px;
     }
   }
-  .xl\:text-\[35px\] {
-    @media (width >= 80rem) {
-      font-size: 35px;
-    }
-  }
   .xl\:text-\[36px\] {
     @media (width >= 80rem) {
       font-size: 36px;
@@ -3605,11 +3570,6 @@
   .\[\&\.swiper-button-disabled\]\:opacity-50 {
     &.swiper-button-disabled {
       opacity: 50%;
-    }
-  }
-  .\[\&\.swiper-button-disabled\]\:opacity-70 {
-    &.swiper-button-disabled {
-      opacity: 70%;
     }
   }
 }
