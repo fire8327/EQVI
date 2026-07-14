@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../Assets/CSS/output.css">
+</head>
+<body class="bg-[#F5F7FA]">
+    <header class="w-full py-3 lg:py-7 px-4 bg-[#0D1117]">
+        <div class="w-full max-w-[1200px] mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-1 lg:gap-2">
+                <video autoplay
+                muted
+                loop
+                playsinline src="../Assets/Images/new_page2/header/logo.mp4" class="w-10"></video>
+                <p class="text-white leading-[100%] font-medium text-[18px] lg:font-bold lg:text-[20px]">EQVI</p>
+            </a>
+            <div class="flex items-center gap-10 max-lg:hidden text-[15px] leading-[100%] font-medium text-[#A1A1AA]">
+                <a href="platform.html">Платформа</a>
+                <a href="integration.html">Интеграция</a>
+                <a href="security.html">Безопасность</a>
+                <a href="benefits-for-banks.html">Преимущества для банков</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full">
+        <section class="w-full pt-[48px] pb-[88px] lg:pt-[84px] lg:pb-[240px] px-4 bg-[#0D1117] relative overflow-clip">
+            <div class="flex flex-col gap-20 lg:gap-12 max-w-[1200px] mx-auto relative z-1">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col gap-3 lg:gap-6">
+                        <p class="text-[40px] lg:text-[72px] leading-[110%] font-bold text-white w-full max-w-[695px]">EQVI — The Relationship Layer for Banking</p>
+                    </div>
+                    <p class="text-[24px] leading-[150%] font-semibold text-[#A1A1AA] w-full">
+                        Banks understand money. <br>
+                        EQVI understands people.
+                    </p>
+                </div>
+                <div class="flex max-md:flex-col items-center gap-3 lg:gap-4">
+                    <button id="contact" class="cursor-pointer rounded-[8px] w-full md:w-fit py-[18px] px-8 text-[16px] leading-[100%] font-semibold text-white bg-[#20A9FF]">Request Private Demo</button>
+                </div>
+            </div>
+            <div aria-hidden="true" class="pointer-events-none absolute eqvi-hero-ring w-[min(62vw,820px)] opacity-90 max-md:w-[120vw] max-md:opacity-78 right-0 top-0 bottom-0 z-0 max-sm:-right-1/5">
+                <canvas id="eqvi-ring-canvas" class="eqvi-hero-ring-canvas w-full h-full"></canvas>
+            </div>
+        </section>
+
+        <section id="integration" class="w-full py-10 lg:py-[120px] px-4 bg-[#F5F7FA]">
+            <div class="flex gap-1 lg:gap-10 max-w-[1200px] mx-auto">
+                <div class="flex max-lg:flex-col gap-6 w-full">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-3 lg:gap-4 w-full max-w-[756px]">
+                            <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">Banking Integration</p>
+                            <p class="text-[32px] lg:text-[56px] leading-[110%] font-bold text-black w-full">Built into your banking app</p>
+                            <p class="text-[16px] leading-[160%] text-[#6B7280]">A customer experience during the first days of EQVI</p>
+                        </div>
+                        <div class="flex flex-col gap-5 text-[16px] leading-[140%] text-black max-lg:hidden">
+                            <div class="flex gap-4">
+                                <svg class="shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="22" height="22" rx="8" fill="#20A9FF"/>
+                                    <path d="M14.9992 8L9.49975 13.4996L7 10.9998" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                </svg>
+                                <p>Understands the customer’s current situation</p>
+                            </div>
+                            <div class="flex gap-4">
+                                <svg class="shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="22" height="22" rx="8" fill="#20A9FF"/>
+                                    <path d="M14.9992 8L9.49975 13.4996L7 10.9998" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                </svg>
+                                <p>Predicts what matters next</p>
+                            </div>
+                            <div class="flex gap-4">
+                                <svg class="shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="22" height="22" rx="8" fill="#20A9FF"/>
+                                    <path d="M14.9992 8L9.49975 13.4996L7 10.9998" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                </svg>
+                                <p>Coordinates recommendations across life</p>
+                            </div>
+                            <div class="flex gap-4">
+                                <svg class="shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="22" height="22" rx="8" fill="#20A9FF"/>
+                                    <path d="M14.9992 8L9.49975 13.4996L7 10.9998" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                </svg>
+                                <p>Learns continuously from feedback</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[450px] text-[24px] lg:text-[28px] leading-[100%] font-bold text-[#7E7E7E] text-center">
+                        <div class="swiper integrationSlider relative w-full">
+                            <div class="swiper-wrapper">
+                                <div class="flex! flex-col gap-6 items-center swiper-slide w-full h-full">
+                                    <div class="flex flex-col gap-3 lg:gap-4">
+                                        <p class="text-[24px] lg:text-[28px] leading-[100%] font-bold text-[#A5CF5F]">Nutrition profile</p>
+                                        <div class="flex flex-col items-center">
+                                            <p class="text-[24px] lg:text-[32px] leading-[100%] font-bold text-[#A5CF5F]">40%</p>
+                                            <p class="text-[10px] lg:text-[12px] leading-[100%] text-[#A1A1AA]">complete</p>
+                                        </div>
+                                        <div class="flex flex-col gap-1">
+                                            <div class="w-full h-1 rounded-full bg-[#E5E7EB]">
+                                                <div class="w-2/5 h-full bg-[#A5CF5F]"></div>
+                                            </div>
+                                            <p class="text-[12px] leading-[100%] text-[#A1A1AA]">20 of 50 nutrition parameters identified</p>
+                                        </div>
+                                    </div>
+                                    <img src="../Assets/Images/new_page2/slider/2.webp" alt="" class="w-full">
+                                </div>
+                                <div class="flex! flex-col gap-6 items-center swiper-slide w-full h-full">
+                                    <div class="flex flex-col gap-3 lg:gap-4">
+                                        <p class="text-[24px] lg:text-[28px] leading-[100%] font-bold text-[#F05EAD]">Fashion profile</p>
+                                        <div class="flex flex-col items-center">
+                                            <p class="text-[24px] lg:text-[32px] leading-[100%] font-bold text-[#F05EAD]">30%</p>
+                                            <p class="text-[10px] lg:text-[12px] leading-[100%] text-[#A1A1AA]">complete</p>
+                                        </div>
+                                        <div class="flex flex-col gap-1">
+                                            <div class="w-full h-1 rounded-full bg-[#E5E7EB]">
+                                                <div class="w-[30%] h-full bg-[#F05EAD]"></div>
+                                            </div>
+                                            <p class="text-[12px] leading-[100%] text-[#A1A1AA]">15 of 45 fashion parameters identified</p>
+                                        </div>
+                                    </div>
+                                    <img src="../Assets/Images/new_page2/slider/3.webp" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="relative mt-6">
+                                <div class="integrationPagination flex justify-center gap-[3px] w-full"></div>
+                            </div>
+                            <div class="absolute top-1/2 -translate-y-1/2 max-lg:hidden flex items-center justify-between z-2 w-full">
+                                <button type="button" class="integrationPrev cursor-pointer rotate-180 transition-opacity [&.swiper-button-disabled]:opacity-50">
+                                    <svg class="w-12 h-12" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="64" height="64" rx="32" fill="#20A9FF"/>
+                                        <path d="M25 46L39 32L25 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>                                        
+                                </button>
+                                <button type="button" class="integrationNext cursor-pointer transition-opacity [&.swiper-button-disabled]:opacity-50">
+                                    <svg class="w-12 h-12" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="64" height="64" rx="32" fill="#20A9FF"/>
+                                        <path d="M25 46L39 32L25 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>                                        
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 text-[16px] leading-[140%] text-black lg:hidden">
+                        <div class="flex gap-4">
+                            <svg class="shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="22" height="22" rx="8" fill="#20A9FF"/>
+                                <path d="M14.9992 8L9.49975 13.4996L7 10.9998" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                            <p>Understands the customer’s current situation</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg class="shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="22" height="22" rx="8" fill="#20A9FF"/>
+                                <path d="M14.9992 8L9.49975 13.4996L7 10.9998" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                            <p>Predicts what matters next</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg class="shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="22" height="22" rx="8" fill="#20A9FF"/>
+                                <path d="M14.9992 8L9.49975 13.4996L7 10.9998" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                            <p>Coordinates recommendations across life</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg class="shrink-0" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="22" height="22" rx="8" fill="#20A9FF"/>
+                                <path d="M14.9992 8L9.49975 13.4996L7 10.9998" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                            <p>Learns continuously from feedback</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how_works" class="w-full py-10 lg:py-[120px] px-6 lg:px-4 bg-[#0D1117] max-lg:bg-[#0B0D14]">
+            <div class="flex flex-col gap-8 lg:gap-20 max-w-[1200px] mx-auto">
+                <div class="flex flex-col gap-3 lg:gap-5 lg:items-center lg:text-center">
+                    <p class="text-[32px] lg:text-[56px] leading-[110%] font-bold text-white w-full">How EQVI Works</p>
+                    <p class="text-[16px] lg:text-[18px] leading-[100%] text-[#6B7280] w-full lg:max-w-[720px]">EQVI orchestrates every personalized customer journey—from recommendation to purchase.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-4 lg:gap-8">
+                    <div class="flex items-center gap-4 p-4 lg:p-8 border border-[#30363D] rounded-[16px]">
+                        <div class="flex flex-col gap-4 lg:gap-6">
+                            <div class="flex items-center justify-between">
+                                <div class="flex lg:flex-col gap-2 lg:gap-3 max-lg:items-center">
+                                    <p class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 border border-[#30363D] rounded-full">
+                                        <span class="text-[12px] lg:text-[14px] leading-[100%] font-bold text-[#20A9FF]">01</span>
+                                    </p>
+                                    <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white">Domain Intelligence</p>
+                                </div>
+                                <svg class="max-lg:hidden" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                                    <path d="M43.6663 29.666V36.6668M25.0011 32.583V36.6668C25.0011 37.5952 25.7385 38.4855 27.0512 39.142C28.3638 39.7984 30.1442 40.1672 32.0005 40.1672C33.8569 40.1672 35.6372 39.7984 36.9499 39.142C38.2625 38.4855 39 37.5952 39 36.6668V32.583M42.9894 30.7422C43.1983 30.6501 43.3755 30.4987 43.4991 30.3068C43.6228 30.1149 43.6874 29.8909 43.6851 29.6626C43.6827 29.4344 43.6134 29.2118 43.4859 29.0225C43.3583 28.8332 43.1779 28.6855 42.9673 28.5977L32.9686 24.0425C32.6646 23.9038 32.3344 23.832 32.0003 23.832C31.6662 23.832 31.336 23.9038 31.032 24.0425L21.0345 28.593C20.8268 28.684 20.6501 28.8335 20.5261 29.0233C20.402 29.2131 20.3359 29.435 20.3359 29.6618C20.3359 29.8886 20.402 30.1104 20.5261 30.3002C20.6501 30.4901 20.8268 30.6396 21.0345 30.7306L31.032 35.2904C31.336 35.4291 31.6662 35.5009 32.0003 35.5009C32.3344 35.5009 32.6646 35.4291 32.9686 35.2904L42.9894 30.7422Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] leading-[100%] text-[#A1A1AA]">Domain experts continuously train, evaluate and refine specialized AI models for nutrition, health, style, travel and other areas of life.</p>
+                        </div>
+                        <svg class="lg:hidden shrink-0" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                            <path d="M43.6663 29.666V36.6668M25.0011 32.583V36.6668C25.0011 37.5952 25.7385 38.4855 27.0512 39.142C28.3638 39.7984 30.1442 40.1672 32.0005 40.1672C33.8569 40.1672 35.6372 39.7984 36.9499 39.142C38.2625 38.4855 39 37.5952 39 36.6668V32.583M42.9894 30.7422C43.1983 30.6501 43.3755 30.4987 43.4991 30.3068C43.6228 30.1149 43.6874 29.8909 43.6851 29.6626C43.6827 29.4344 43.6134 29.2118 43.4859 29.0225C43.3583 28.8332 43.1779 28.6855 42.9673 28.5977L32.9686 24.0425C32.6646 23.9038 32.3344 23.832 32.0003 23.832C31.6662 23.832 31.336 23.9038 31.032 24.0425L21.0345 28.593C20.8268 28.684 20.6501 28.8335 20.5261 29.0233C20.402 29.2131 20.3359 29.435 20.3359 29.6618C20.3359 29.8886 20.402 30.1104 20.5261 30.3002C20.6501 30.4901 20.8268 30.6396 21.0345 30.7306L31.032 35.2904C31.336 35.4291 31.6662 35.5009 32.0003 35.5009C32.3344 35.5009 32.6646 35.4291 32.9686 35.2904L42.9894 30.7422Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>  
+                    </div>
+                    <svg class="md:hidden mx-auto" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.0008 1V15.0016M1 8.0008L8.0008 15.0016L15.0016 8.0008" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="flex items-center gap-4 p-4 lg:p-8 border border-[#30363D] rounded-[16px]">
+                        <div class="flex flex-col gap-4 lg:gap-6">
+                            <div class="flex items-center justify-between">
+                                <div class="flex lg:flex-col gap-2 lg:gap-3 max-lg:items-center">
+                                    <p class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 border border-[#30363D] rounded-full">
+                                        <span class="text-[12px] lg:text-[14px] leading-[100%] font-bold text-[#20A9FF]">02</span>
+                                    </p>
+                                    <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white">Unified Customer Profile</p>
+                                </div>
+                                <svg class="max-lg:hidden" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                                    <path d="M26.1697 42.1061V40.167C26.1697 39.5481 26.4156 38.9545 26.8532 38.5169C27.2908 38.0793 27.8844 37.8334 28.5033 37.8334H35.5038C36.1227 37.8334 36.7162 38.0793 37.1539 38.5169C37.5915 38.9545 37.8373 39.5481 37.8373 40.167V42.1061M43.6711 31.9996C43.6711 38.4435 38.4474 43.6672 32.0035 43.6672C25.5597 43.6672 20.3359 38.4435 20.3359 31.9996C20.3359 25.5558 25.5597 20.332 32.0035 20.332C38.4474 20.332 43.6711 25.5558 43.6711 31.9996ZM35.5038 29.6661C35.5038 31.5993 33.9367 33.1664 32.0035 33.1664C30.0704 33.1664 28.5033 31.5993 28.5033 29.6661C28.5033 27.733 30.0704 26.1658 32.0035 26.1658C33.9367 26.1658 35.5038 27.733 35.5038 29.6661Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] leading-[100%] text-[#A1A1AA]">All signals from different domains unified into one intelligent profile to understand the whole person.</p>
+                        </div>
+                        <svg class="lg:hidden shrink-0" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                            <path d="M26.1697 42.1061V40.167C26.1697 39.5481 26.4156 38.9545 26.8532 38.5169C27.2908 38.0793 27.8844 37.8334 28.5033 37.8334H35.5038C36.1227 37.8334 36.7162 38.0793 37.1539 38.5169C37.5915 38.9545 37.8373 39.5481 37.8373 40.167V42.1061M43.6711 31.9996C43.6711 38.4435 38.4474 43.6672 32.0035 43.6672C25.5597 43.6672 20.3359 38.4435 20.3359 31.9996C20.3359 25.5558 25.5597 20.332 32.0035 20.332C38.4474 20.332 43.6711 25.5558 43.6711 31.9996ZM35.5038 29.6661C35.5038 31.5993 33.9367 33.1664 32.0035 33.1664C30.0704 33.1664 28.5033 31.5993 28.5033 29.6661C28.5033 27.733 30.0704 26.1658 32.0035 26.1658C33.9367 26.1658 35.5038 27.733 35.5038 29.6661Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>                            
+                    </div>
+                    <svg class="md:hidden mx-auto" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.0008 1V15.0016M1 8.0008L8.0008 15.0016L15.0016 8.0008" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="flex items-center gap-4 p-4 lg:p-8 border border-[#30363D] rounded-[16px]">
+                        <div class="flex flex-col gap-4 lg:gap-6">
+                            <div class="flex items-center justify-between">
+                                <div class="flex lg:flex-col gap-2 lg:gap-3 max-lg:items-center">
+                                    <p class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 border border-[#30363D] rounded-full">
+                                        <span class="text-[12px] lg:text-[14px] leading-[100%] font-bold text-[#20A9FF]">03</span>
+                                    </p>
+                                    <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white">Cross-Domain Intelligence</p>
+                                </div>
+                                <svg class="max-lg:hidden" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                                    <path d="M33.2948 26.9414L35.3715 30.0587M34.5222 32.9194L30.6442 34.5808M41.3333 22.6667L34.2633 24.4342M21.5 21.5V40.1667C21.5 40.7855 21.7458 41.379 22.1834 41.8166C22.621 42.2542 23.2145 42.5 23.8333 42.5H42.5M34.3333 25C34.3333 26.2887 33.2887 27.3333 32 27.3333C30.7113 27.3333 29.6667 26.2887 29.6667 25C29.6667 23.7113 30.7113 22.6667 32 22.6667C33.2887 22.6667 34.3333 23.7113 34.3333 25ZM39 32C39 33.2887 37.9553 34.3333 36.6667 34.3333C35.378 34.3333 34.3333 33.2887 34.3333 32C34.3333 30.7113 35.378 29.6667 36.6667 29.6667C37.9553 29.6667 39 30.7113 39 32ZM30.8333 35.5C30.8333 36.7887 29.7887 37.8333 28.5 37.8333C27.2113 37.8333 26.1667 36.7887 26.1667 35.5C26.1667 34.2113 27.2113 33.1667 28.5 33.1667C29.7887 33.1667 30.8333 34.2113 30.8333 35.5Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] leading-[100%] text-[#A1A1AA]">Experts and AI connect insights across domains to understand relationships and what matters next.</p>
+                        </div>
+                        <svg class="lg:hidden shrink-0" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                            <path d="M33.2948 26.9414L35.3715 30.0587M34.5222 32.9194L30.6442 34.5808M41.3333 22.6667L34.2633 24.4342M21.5 21.5V40.1667C21.5 40.7855 21.7458 41.379 22.1834 41.8166C22.621 42.2542 23.2145 42.5 23.8333 42.5H42.5M34.3333 25C34.3333 26.2887 33.2887 27.3333 32 27.3333C30.7113 27.3333 29.6667 26.2887 29.6667 25C29.6667 23.7113 30.7113 22.6667 32 22.6667C33.2887 22.6667 34.3333 23.7113 34.3333 25ZM39 32C39 33.2887 37.9553 34.3333 36.6667 34.3333C35.378 34.3333 34.3333 33.2887 34.3333 32C34.3333 30.7113 35.378 29.6667 36.6667 29.6667C37.9553 29.6667 39 30.7113 39 32ZM30.8333 35.5C30.8333 36.7887 29.7887 37.8333 28.5 37.8333C27.2113 37.8333 26.1667 36.7887 26.1667 35.5C26.1667 34.2113 27.2113 33.1667 28.5 33.1667C29.7887 33.1667 30.8333 34.2113 30.8333 35.5Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>                            
+                    </div>
+                    <svg class="md:hidden mx-auto" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.0008 1V15.0016M1 8.0008L8.0008 15.0016L15.0016 8.0008" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="flex items-center gap-4 p-4 lg:p-8 border border-[#30363D] rounded-[16px]">
+                        <div class="flex flex-col gap-4 lg:gap-6">
+                            <div class="flex items-center justify-between">
+                                <div class="flex lg:flex-col gap-2 lg:gap-3 max-lg:items-center">
+                                    <p class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 border border-[#30363D] rounded-full">
+                                        <span class="text-[12px] lg:text-[14px] leading-[100%] font-bold text-[#20A9FF]">04</span>
+                                    </p>
+                                    <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white">Contextual Recommendations</p>
+                                </div>
+                                <svg class="max-lg:hidden" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                                    <path d="M41.3327 20.3343V25.0008M43.6662 22.6676H38.9991M30.8516 21.2845C30.9016 21.0168 31.0436 20.7751 31.2531 20.6012C31.4625 20.4272 31.7262 20.332 31.9985 20.332C32.2708 20.332 32.5345 20.4272 32.744 20.6012C32.9534 20.7751 33.0955 21.0168 33.1455 21.2845L34.3717 27.7685C34.4588 28.2295 34.6829 28.6536 35.0146 28.9853C35.3464 29.317 35.7705 29.541 36.2315 29.6281L42.7164 30.8542C42.984 30.9042 43.2258 31.0462 43.3997 31.2557C43.5737 31.4651 43.6689 31.7288 43.6689 32.001C43.6689 32.2733 43.5737 32.537 43.3997 32.7464C43.2258 32.9558 42.984 33.0978 42.7164 33.1478L36.2315 34.3739C35.7705 34.461 35.3464 34.685 35.0146 35.0168C34.6829 35.3485 34.4588 35.7725 34.3717 36.2335L33.1455 42.7176C33.0955 42.9852 32.9534 43.2269 32.744 43.4009C32.5345 43.5748 32.2708 43.67 31.9985 43.67C31.7262 43.67 31.4625 43.5748 31.2531 43.4009C31.0436 43.2269 30.9016 42.9852 30.8516 42.7176L29.6253 36.2335C29.5382 35.7725 29.3142 35.3485 28.9824 35.0168C28.6506 34.685 28.2266 34.461 27.7655 34.3739L21.2807 33.1478C21.013 33.0978 20.7713 32.9558 20.5973 32.7464C20.4234 32.537 20.3281 32.2733 20.3281 32.001C20.3281 31.7288 20.4234 31.4651 20.5973 31.2557C20.7713 31.0462 21.013 30.9042 21.2807 30.8542L27.7655 29.6281C28.2266 29.541 28.6506 29.317 28.9824 28.9853C29.3142 28.6536 29.5382 28.2295 29.6253 27.7685L30.8516 21.2845ZM24.998 41.3335C24.998 42.6221 23.9533 43.6667 22.6645 43.6667C21.3757 43.6667 20.331 42.6221 20.331 41.3335C20.331 40.0449 21.3757 39.0002 22.6645 39.0002C23.9533 39.0002 24.998 40.0449 24.998 41.3335Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] leading-[100%] text-[#A1A1AA]">Personalized suggestions delivered in the right context, ensuring relevance to customers.</p>
+                        </div>
+                        <svg class="lg:hidden shrink-0" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                            <path d="M41.3327 20.3343V25.0008M43.6662 22.6676H38.9991M30.8516 21.2845C30.9016 21.0168 31.0436 20.7751 31.2531 20.6012C31.4625 20.4272 31.7262 20.332 31.9985 20.332C32.2708 20.332 32.5345 20.4272 32.744 20.6012C32.9534 20.7751 33.0955 21.0168 33.1455 21.2845L34.3717 27.7685C34.4588 28.2295 34.6829 28.6536 35.0146 28.9853C35.3464 29.317 35.7705 29.541 36.2315 29.6281L42.7164 30.8542C42.984 30.9042 43.2258 31.0462 43.3997 31.2557C43.5737 31.4651 43.6689 31.7288 43.6689 32.001C43.6689 32.2733 43.5737 32.537 43.3997 32.7464C43.2258 32.9558 42.984 33.0978 42.7164 33.1478L36.2315 34.3739C35.7705 34.461 35.3464 34.685 35.0146 35.0168C34.6829 35.3485 34.4588 35.7725 34.3717 36.2335L33.1455 42.7176C33.0955 42.9852 32.9534 43.2269 32.744 43.4009C32.5345 43.5748 32.2708 43.67 31.9985 43.67C31.7262 43.67 31.4625 43.5748 31.2531 43.4009C31.0436 43.2269 30.9016 42.9852 30.8516 42.7176L29.6253 36.2335C29.5382 35.7725 29.3142 35.3485 28.9824 35.0168C28.6506 34.685 28.2266 34.461 27.7655 34.3739L21.2807 33.1478C21.013 33.0978 20.7713 32.9558 20.5973 32.7464C20.4234 32.537 20.3281 32.2733 20.3281 32.001C20.3281 31.7288 20.4234 31.4651 20.5973 31.2557C20.7713 31.0462 21.013 30.9042 21.2807 30.8542L27.7655 29.6281C28.2266 29.541 28.6506 29.317 28.9824 28.9853C29.3142 28.6536 29.5382 28.2295 29.6253 27.7685L30.8516 21.2845ZM24.998 41.3335C24.998 42.6221 23.9533 43.6667 22.6645 43.6667C21.3757 43.6667 20.331 42.6221 20.331 41.3335C20.331 40.0449 21.3757 39.0002 22.6645 39.0002C23.9533 39.0002 24.998 40.0449 24.998 41.3335Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>                            
+                    </div>
+                    <svg class="md:hidden mx-auto" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.0008 1V15.0016M1 8.0008L8.0008 15.0016L15.0016 8.0008" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="flex items-center gap-4 p-4 lg:p-8 border border-[#30363D] rounded-[16px]">
+                        <div class="flex flex-col gap-4 lg:gap-6">
+                            <div class="flex items-center justify-between">
+                                <div class="flex lg:flex-col gap-2 lg:gap-3 max-lg:items-center">
+                                    <p class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 border border-[#30363D] rounded-full">
+                                        <span class="text-[12px] lg:text-[14px] leading-[100%] font-bold text-[#20A9FF]">05</span>
+                                    </p>
+                                    <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white">Continuous Feedback</p>
+                                </div>
+                                <svg class="max-lg:hidden" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                                    <path d="M42.9877 39.4833C43.4253 39.0457 43.6711 38.4523 43.6711 37.8334V23.8333C43.6711 23.2145 43.4253 22.621 42.9877 22.1834C42.55 21.7458 41.9565 21.5 41.3376 21.5H22.6695C22.0506 21.5 21.457 21.7458 21.0194 22.1834C20.5818 22.621 20.3359 23.2145 20.3359 23.8333V42.8338C20.336 42.9976 20.3846 43.1577 20.4756 43.2939C20.5666 43.4301 20.696 43.5363 20.8473 43.599C20.9987 43.6616 21.1652 43.678 21.3259 43.6461C21.4866 43.6141 21.6342 43.5353 21.7501 43.4194L24.3193 40.8504C24.7568 40.4128 25.3502 40.1669 25.9691 40.1668H41.3376C41.9565 40.1668 42.55 39.9209 42.9877 39.4833Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] leading-[100%] text-[#A1A1AA]">Real user feedback and behavior signals continuously feed the system to refine the experience.</p>
+                        </div>
+                        <svg class="lg:hidden shrink-0" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                            <path d="M42.9877 39.4833C43.4253 39.0457 43.6711 38.4523 43.6711 37.8334V23.8333C43.6711 23.2145 43.4253 22.621 42.9877 22.1834C42.55 21.7458 41.9565 21.5 41.3376 21.5H22.6695C22.0506 21.5 21.457 21.7458 21.0194 22.1834C20.5818 22.621 20.3359 23.2145 20.3359 23.8333V42.8338C20.336 42.9976 20.3846 43.1577 20.4756 43.2939C20.5666 43.4301 20.696 43.5363 20.8473 43.599C20.9987 43.6616 21.1652 43.678 21.3259 43.6461C21.4866 43.6141 21.6342 43.5353 21.7501 43.4194L24.3193 40.8504C24.7568 40.4128 25.3502 40.1669 25.9691 40.1668H41.3376C41.9565 40.1668 42.55 39.9209 42.9877 39.4833Z" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>                            
+                    </div>
+                    <svg class="md:hidden mx-auto" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.0008 1V15.0016M1 8.0008L8.0008 15.0016L15.0016 8.0008" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="flex items-center gap-4 p-4 lg:p-8 border border-[#30363D] rounded-[16px]">
+                        <div class="flex flex-col gap-4 lg:gap-6">
+                            <div class="flex items-center justify-between">
+                                <div class="flex lg:flex-col gap-2 lg:gap-3 max-lg:items-center">
+                                    <p class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 border border-[#30363D] rounded-full">
+                                        <span class="text-[12px] lg:text-[14px] leading-[100%] font-bold text-[#20A9FF]">06</span>
+                                    </p>
+                                    <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white">Adaptive Learning</p>
+                                </div>
+                                <svg class="max-lg:hidden" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                                    <path d="M43.6711 33.1668V26.168H36.6706M43.6711 26.168L33.7537 36.083L27.9199 30.2506L20.3359 37.8328" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] leading-[100%] text-[#A1A1AA]">AI continuously learns and becomes more accurate, adapting to your evolving needs and goals.</p>
+                        </div>
+                        <svg class="lg:hidden shrink-0" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="32" fill="#0B0D14"/>
+                            <path d="M43.6711 33.1668V26.168H36.6706M43.6711 26.168L33.7537 36.083L27.9199 30.2506L20.3359 37.8328" stroke="#20A9FF" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-10 lg:py-20 px-6 lg:px-4 bg-[#0D1117] max-lg:bg-[#0B0D14]">
+            <div class="flex flex-col gap-10 max-w-[1200px] mx-auto">
+                <div class="flex flex-col gap-2 lg:gap-4 lg:text-center lg:items-center">
+                    <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">EQVI ENGAGEMENT</p>
+                    <p class="text-[32px] lg:text-[56px] leading-[110%] font-bold text-white">Real engagement. Real results.</p>
+                    <p class="text-[16px] leading-[150%] text-[#A1A1AA] max-lg:mt-1">
+                        Metrics based on real user interactions during EQVI onboarding <br>
+                        <span class="italic">(March–June 2026, n=15.000 users).</span>
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 max-lg:border border-[#1E293B] max-lg:bg-[#0D1117] max-lg:rounded-[16px]">
+                    <div class="flex flex-col gap-2 p-4 lg:p-8 lg:rounded-[16px] lg:border border-[#1E293B]">
+                        <p class="text-[28px] lg:text-[48px] leading-[100%] font-bold text-[#7C5CFF]">85%</p>
+                        <p class="text-[16px] lg:text-[18px] leading-[120%] font-semibold text-white">positive recommendation ratings</p>
+                    </div>
+                    <div class="flex flex-col gap-2 p-4 lg:p-8 lg:rounded-[16px] lg:border border-[#1E293B]">
+                        <p class="text-[28px] lg:text-[48px] leading-[100%] font-bold text-[#7C5CFF]">70%+</p>
+                        <p class="text-[16px] lg:text-[18px] leading-[120%] font-semibold text-white">complete onboarding and activate services</p>
+                    </div>
+                    <div class="flex flex-col gap-2 p-4 lg:p-8 lg:rounded-[16px] lg:border border-[#1E293B]">
+                        <p class="text-[28px] lg:text-[48px] leading-[100%] font-bold text-[#20A9FF]">9<span class="text-[#A1A1AA] text-[16px] xl:text-[20px] leading-[100%]"> min</span> 15<span class="text-[#A1A1AA] text-[16px] xl:text-[20px] leading-[100%]"> sec</span></p>
+                        <p class="text-[16px] lg:text-[18px] leading-[120%] font-semibold text-white">average onboarding time</p>
+                    </div>
+                    <div class="flex flex-col gap-2 p-4 lg:p-8 lg:rounded-[16px] lg:border border-[#1E293B]">
+                        <p class="text-[28px] lg:text-[48px] leading-[100%] font-bold text-[#00C896] lg:text-[#20A9FF]">50%+</p>
+                        <p class="text-[16px] lg:text-[18px] leading-[120%] font-semibold text-white">return and actively use EQVI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="banks" class="w-full py-10 lg:py-[120px] px-6 lg:px-4 bg-[#0D1117]">
+            <div class="flex flex-col gap-10 lg:gap-40 max-w-[1200px] mx-auto">
+                <div class="flex flex-col gap-2 lg:gap-6 lg:text-center lg:items-center">
+                    <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">Benefits</p>
+                    <p class="text-[32px] lg:text-[56px] leading-[110%] font-bold text-white">Business Benefits for Banks</p>
+                    <p class="text-[16px] lg:text-[18px] leading-[100%] text-[#A1A1AA] max-lg:mt-4 lg:max-w-[720px]">EQVI helps banks create value in three ways: stronger <span class="text-[#20A9FF]">relationships</span>, higher product <span class="text-[#20A9FF]">conversion</span>, and new <span class="text-[#20A9FF]">revenue</span> streams.</p>
+                </div>
+                <div class="flex lg:items-center max-lg:flex-col gap-8 lg:gap-[120px]">
+                    <div class="flex flex-col gap-4 lg:max-w-[540px]">
+                        <p class="text-[64px] lg:text-[72px] leading-[100%] font-extrabold text-[#20A9FF]/50">01</p>
+                        <p class="text-[28px] lg:text-[40px] leading-[100%] font-bold text-white mt-4">Build Long-Term Customer Relationships Through Care</p>
+                        <p class="text-[16px] lg:text-[20px] leading-[100%] text-[#A1A1AA]">The bank remains the primary digital assistant in the AI era</p>
+                    </div>
+                    <div class="flex flex-col gap-0.5 lg:max-w-[540px]">
+                        <div class="flex gap-4 items-center">
+                            <div class="w-10 h-10 lg:w-14 lg:h-14 rounded-[8px] border-[1.5px] border-[#20A9FF] flex items-center justify-center shrink-0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.4709 5.32018C1.94541 6.08429 1.66408 6.98981 1.66406 7.91715C1.66406 9.83384 2.91416 11.2505 4.16425 12.5005L8.75461 16.9439C8.91214 17.1203 9.10541 17.2611 9.32156 17.357C9.53771 17.4529 9.7718 17.5018 10.0083 17.5003C10.2448 17.4988 10.4782 17.447 10.6931 17.3483C10.908 17.2497 11.0995 17.1064 11.2548 16.9281L15.8318 12.5005C17.0819 11.2505 18.332 9.8255 18.332 7.91715C18.3364 6.98778 18.0577 6.07909 17.5329 5.31204C17.0081 4.545 16.2621 3.95596 15.3942 3.62335C14.5263 3.29073 13.5777 3.2303 12.6746 3.45011C11.7715 3.66992 10.9568 4.15953 10.3389 4.85379C10.2952 4.90047 10.2425 4.93768 10.1838 4.96312C10.1252 4.98856 10.062 5.00169 9.99804 5.00169C9.93412 5.00169 9.87088 4.98856 9.81225 4.96312C9.75362 4.93768 9.70084 4.90047 9.65718 4.85379C9.03732 4.16402 8.22279 3.67848 7.32117 3.46131C6.41956 3.24414 5.47327 3.30556 4.6073 3.63744C3.74132 3.96933 2.99639 4.55607 2.4709 5.32018Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] lg:text-[18px] leading-[100%] text-white">Daily relevance</p>
+                        </div>
+                        <svg class="ml-4 lg:ml-[26px]" width="6" height="15" viewBox="0 0 6 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.89063 15L5.77738 10H0.00387359L2.89063 15ZM2.89062 0L2.39062 0L2.39063 10.5H2.89063H3.39063L3.39062 0L2.89062 0Z" fill="#20A9FF"/>
+                        </svg>                            
+                        <div class="flex gap-4 items-center">
+                            <div class="w-10 h-10 lg:w-14 lg:h-14 rounded-[8px] border-[1.5px] border-[#20A9FF] flex items-center justify-center shrink-0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8321 17.5V15.8333C15.8321 14.9493 15.4808 14.1014 14.8556 13.4763C14.2304 12.8512 13.3825 12.5 12.4983 12.5H7.49778C6.61362 12.5 5.76568 12.8512 5.14048 13.4763C4.51529 14.1014 4.16406 14.9493 4.16406 15.8333V17.5M13.3318 5.83333C13.3318 7.67428 11.8392 9.16667 9.99806 9.16667C8.1569 9.16667 6.66435 7.67428 6.66435 5.83333C6.66435 3.99238 8.1569 2.5 9.99806 2.5C11.8392 2.5 13.3318 3.99238 13.3318 5.83333Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] lg:text-[18px] leading-[100%] text-white">Stronger engagemen</p>
+                        </div>
+                        <svg class="ml-4 lg:ml-[26px]" width="6" height="15" viewBox="0 0 6 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.89063 15L5.77738 10H0.00387359L2.89063 15ZM2.89062 0L2.39062 0L2.39063 10.5H2.89063H3.39063L3.39062 0L2.89062 0Z" fill="#20A9FF"/>
+                        </svg>  
+                        <div class="flex gap-4 items-center">
+                            <div class="w-10 h-10 lg:w-14 lg:h-14 rounded-[8px] border-[1.5px] border-[#20A9FF] flex items-center justify-center shrink-0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3321 10.8332V5.83398H13.3317M18.3321 5.83398L11.2482 12.9162L7.08116 8.75018L1.66406 14.166" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] lg:text-[18px] leading-[100%] text-white">Deeper trust</p>
+                        </div>
+                        <svg class="ml-4 lg:ml-[26px]" width="6" height="15" viewBox="0 0 6 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.89063 15L5.77738 10H0.00387359L2.89063 15ZM2.89062 0L2.39062 0L2.39063 10.5H2.89063H3.39063L3.39062 0L2.89062 0Z" fill="#20A9FF"/>
+                        </svg>  
+                        <div class="flex gap-4 items-center">
+                            <div class="w-10 h-10 lg:w-14 lg:h-14 rounded-[8px] border-[1.5px] border-[#20A9FF] flex items-center justify-center shrink-0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2852 18.2919C13.7516 17.0836 16.6679 15.0002 16.6679 10.8334V4.99983C16.6679 4.77881 16.5801 4.56684 16.4239 4.41056C16.2676 4.25427 16.0557 4.16647 15.8347 4.16647C14.1682 4.16647 12.0934 3.17477 10.6352 1.89973C10.4587 1.74889 10.2341 1.66602 10.0019 1.66602C9.76975 1.66602 9.5452 1.74889 9.36867 1.89973C7.91881 3.16644 5.83569 4.16647 4.16919 4.16647C3.9482 4.16647 3.73626 4.25427 3.57999 4.41056C3.42373 4.56684 3.33594 4.77881 3.33594 4.99983V10.8334C3.33594 15.0002 6.25231 17.0836 9.72696 18.2836C9.90656 18.3505 10.1037 18.3534 10.2852 18.2919Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <p class="text-[16px] lg:text-[18px] leading-[100%] text-white">Lower churn and higher LTV.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-10 lg:py-[120px] px-4 bg-[#F9FAFB]">
+            <div class="flex flex-col gap-5 lg:gap-20 max-w-[1200px] mx-auto">
+                <div class="flex flex-col gap-4">
+                    <p class="text-[64px] lg:text-[72px] leading-[100%] font-extrabold text-[#20A9FF]/40">02</p>
+                    <p class="text-[28px] lg:text-[40px] leading-[100%] font-bold mt-4">Increase Product Sales Through Context</p>
+                    <p class="text-[16px] lg:text-[20px] leading-[100%] text-[#6B7280]">From transaction-based selling to context-based banking. EQVI gives banks a complete understanding of customer needs, enabling the right product at the right moment.</p>
+                </div>
+                <div class="flex max-lg:flex-col gap-4 lg:gap-8">
+                    <div class="flex flex-col gap-6 lg:gap-8 bg-white rounded-[20px] lg:rounded-[32px] overflow-hidden">
+                        <div class="relative max-lg:p-3">
+                            <img src="../Assets/Images/new_page2/benefits/1.webp" alt="" class="w-full max-lg:rounded-[16px]">
+                            <p class="absolute top-7 left-7 lg:top-8 lg:left-8 text-[24px] lg:text-[28px] font-bold text-white">Nutrition</p>
+                        </div>
+                        <div class="flex flex-col gap-4 lg:gap-5 px-3 lg:px-8 pb-3.5 lg:pb-8 text-[16px] lg:text-[18px] leading-[100%]">
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#2ECC71] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>Personalized cashback on healthier groceries based on your real-time health condition</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#2ECC71] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>Exclusive offers for preventive health check-ups when they’re due</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#2ECC71] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>Telemedicine integrated with your Health Tracker</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#2ECC71] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>BNPL and installment plans for healthy kitchen appliances</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#2ECC71] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>Nutrition budgeting and spending optimization with personalized savings goals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 lg:gap-8 bg-white rounded-[20px] lg:rounded-[32px] overflow-hidden">
+                        <div class="relative max-lg:p-3">
+                            <img src="../Assets/Images/new_page2/benefits/2.webp" alt="" class="w-full max-lg:rounded-[16px]">
+                            <p class="absolute top-7 left-7 lg:top-8 lg:left-8 text-[24px] lg:text-[28px] font-bold text-white">Fashion</p>
+                        </div>
+                        <div class="flex flex-col gap-4 lg:gap-5 px-3 lg:px-8 pb-3.5 lg:pb-8 text-[16px] lg:text-[18px] leading-[100%]">
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#F05EAD] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>Personalized cashback on clothing, shoes, and accessories selected for you</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#F05EAD] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>Wardrobe analysis and seasonal spending planning</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#F05EAD] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>BNPL and installment plans for recommended purchases</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#F05EAD] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>Seasonal wardrobe savings fund with automated contributions</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center justify-center w-[22px] h-[22px] lg:w-[24px] lg:h-[24px] bg-[#F05EAD] rounded-[8px] shrink-0">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                                <p>Purchase protection and extended return benefits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-10 lg:py-[120px] px-6 lg:px-4 bg-[#0D1117]">
+            <div class="flex max-lg:flex-col gap-8 lg:gap-[120px] lg:justify-between max-w-[1200px] mx-auto">
+                <div class="flex flex-col gap-4 lg:max-w-[540px]">
+                    <p class="text-[64px] lg:text-[72px] leading-[100%] font-extrabold text-[#20A9FF]/40">03</p>
+                    <p class="text-[28px] lg:text-[40px] leading-[100%] font-bold text-white mt-4">Partner-Funded Loyalty & New Revenue Streams</p>
+                    <p class="text-[16px] lg:text-[20px] leading-[100%] text-[#A1A1AA]">Every purchase made through an EQVI recommendation generates partner commission. The bank decides how to use this revenue to fund loyalty, increase rewards, or create additional profit.</p>
+                </div>
+                <div class="flex flex-col gap-4 lg:gap-8 p-5 lg:p-10 bg-[#1A2332] border border-[#FFFFFF1A] shadow-[0px_20px_40px_0px_#00000033] lg:max-w-[540px] rounded-[16px] lg:rounded-[24px]">
+                    <p class="text-[16px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF]">Result</p>
+                    <div class="flex flex-col gap-3 lg:gap-5 text-[16px] lg:text-[18px] leading-[100%] text-white">
+                        <div class="flex items-center gap-2 lg:gap-4">
+                            <svg class="w-3 h-3 lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>Lower loyalty program costs</p>    
+                        </div>
+                        <div class="flex items-center gap-2 lg:gap-4">
+                            <svg class="w-3 h-3 lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>Partner-funded rewards</p>    
+                        </div>
+                        <div class="flex items-center gap-2 lg:gap-4">
+                            <svg class="w-3 h-3 lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>A scalable source of non-interest revenue</p>    
+                        </div>
+                        <div class="flex items-center gap-2 lg:gap-4">
+                            <svg class="w-3 h-3 lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>Stronger marketplace economics</p>    
+                        </div>
+                        <div class="flex items-center gap-2 lg:gap-4">
+                            <svg class="w-3 h-3 lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>Higher profitability per active customer</p>    
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section id="security" class="w-full py-10 lg:py-[120px] px-6 lg:px-4 bg-[#0D1117] max-lg:bg-[#0A0A0F]">
+            <div class="flex max-lg:flex-col gap-8 lg:gap-40 lg:justify-between max-w-[1200px] mx-auto">
+                <div class="flex flex-col gap-10 justify-between">
+                    <div class="flex flex-col gap-3 lg:gap-5">
+                        <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">HOW EQVI WORKS</p>
+                        <p class="text-[32px] lg:text-[56px] leading-[110%] font-bold text-white">Tailored API <br> Documentation</p>
+                        <p class="text-[16px] leading-[120%] text-[#A1A1AA] lg:max-w-[602px]">Complete a short technical brief. Our integration team prepares API documentation tailored to your banking systems and architecture.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-y-8 gap-x-6 max-lg:hidden">
+                        <div class="flex flex-col gap-1">
+                            <div class="w-10 h-10 bg-[#111216] border border-[#1F2128] rounded-[8px] flex items-center justify-center">
+                                <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.9995 11.9993L10.9993 13.9994L14.9989 9.99928M19.9984 12.9998C19.9984 18 16.4987 20.5001 12.3392 21.9501C12.1214 22.0239 11.8847 22.0204 11.6692 21.9401C7.49965 20.5001 4 18 4 12.9998V5.9996C4 5.73438 4.10535 5.48002 4.29286 5.29247C4.48038 5.10493 4.73471 4.99957 4.9999 4.99957C6.9997 4.99957 9.49945 3.79953 11.2393 2.27948C11.4511 2.09847 11.7206 1.99902 11.9992 1.99902C12.2778 1.99902 12.5473 2.09847 12.7591 2.27948C14.5089 3.80953 16.9987 4.99957 18.9985 4.99957C19.2637 4.99957 19.518 5.10493 19.7055 5.29247C19.8931 5.48002 19.9984 5.73438 19.9984 5.9996V12.9998Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                            
+                            </div>
+                            <p class="text-[20px] leading-[100%] font-bold text-white mt-2">Secure by design</p>
+                            <p class="text-[18px] leading-[100%] text-[#A1A1AA]">Bank-grade security and privacy.</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="w-10 h-10 bg-[#111216] border border-[#1F2128] rounded-[8px] flex items-center justify-center">
+                                <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.0011 18L22.0016 12L16.0011 6M8.00048 6L2 12L8.00048 18" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                      
+                            </div>
+                            <p class="text-[20px] leading-[100%] font-bold text-white mt-2">REST APIs & SDKs</p>
+                            <p class="text-[18px] leading-[100%] text-[#A1A1AA]">Fast integration into existing systems.</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="w-10 h-10 bg-[#111216] border border-[#1F2128] rounded-[8px] flex items-center justify-center">
+                                <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9992 9.99966H12.0092M11.9992 14H12.0092M11.9992 5.99934H12.0092M15.9988 9.99966H16.0088M15.9988 14H16.0088M15.9988 5.99934H16.0088M7.9996 9.99966H8.0096M7.9996 14H8.0096M7.9996 5.99934H8.0096M8.9995 22.0006V19.0004C8.9995 18.7351 9.10485 18.4808 9.29236 18.2932C9.47988 18.1057 9.73421 18.0003 9.9994 18.0003H13.999C14.2642 18.0003 14.5185 18.1057 14.706 18.2932C14.8936 18.4808 14.9989 18.7351 14.9989 19.0004V22.0006M5.9998 1.99902H17.9986C19.1031 1.99902 19.9984 2.89453 19.9984 3.99918V20.0005C19.9984 21.1051 19.1031 22.0006 17.9986 22.0006H5.9998C4.89534 22.0006 4 21.1051 4 20.0005V3.99918C4 2.89453 4.89534 1.99902 5.9998 1.99902Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                      
+                            </div>
+                            <p class="text-[20px] leading-[100%] font-bold text-white mt-2">Your customer. Your brand.</p>
+                            <p class="text-[18px] leading-[100%] text-[#A1A1AA]">EQVI works entirely inside the bank app.</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="w-10 h-10 bg-[#111216] border border-[#1F2128] rounded-[8px] flex items-center justify-center">
+                                <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.2998 6.9998L11.9998 12.0001M11.9998 12.0001L20.6998 6.9998M11.9998 12.0001L12 22.0007M21 7.99976C20.9996 7.64901 20.9071 7.30453 20.7315 7.00086C20.556 6.6972 20.3037 6.44503 20 6.26966L13 2.26943C12.696 2.09388 12.3511 2.00146 12 2.00146C11.6489 2.00146 11.304 2.09388 11 2.26943L4 6.26966C3.69626 6.44503 3.44398 6.6972 3.26846 7.00086C3.09294 7.30453 3.00036 7.64901 3 7.99976V16.0002C3.00036 16.351 3.09294 16.6955 3.26846 16.9991C3.44398 17.3028 3.69626 17.5549 4 17.7303L11 21.7306C11.304 21.9061 11.6489 21.9985 12 21.9985C12.3511 21.9985 12.696 21.9061 13 21.7306L20 17.7303C20.3037 17.5549 20.556 17.3028 20.7315 16.9991C20.9071 16.6955 20.9996 16.351 21 16.0002V7.99976Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                       
+                            </div>
+                            <p class="text-[20px] leading-[100%] font-bold text-white mt-2">Modular deployment</p>
+                            <p class="text-[18px] leading-[100%] text-[#A1A1AA]">Start with one domain. Expand anytime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-3 lg:gap-0">
+                    <div class="flex items-center gap-4 p-4 lg:p-6 bg-[#12121A] border border-[#1E1E2A] rounded-[12px] lg:rounded-[16px] shadsow-[0px_0px_1px_1px_#FFFFFF05] w-full lg:w-[438px]">
+                        <img src="../Assets/Images/new_page2/how_works2/1.webp" alt="" class="w-12 h-12">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[16px] lg:text-[18px] leading-[100%] font-bold text-white">Customer</p>
+                            <p class="text-[16px] lg:text-[14px] leading-[100%] text-[#A1A1AA]">Conversations · Context · Signals</p>
+                        </div>
+                    </div>
+                    <div class="w-[2px] h-8 max-lg:hidden bg-[#20A9FF]"></div>
+                    <svg class="lg:hidden" width="6" height="16" viewBox="0 0 6 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.39062 0.5V0L2.39062 0V0.5H2.89062L3.39062 0.5ZM2.89063 15.5L5.77738 10.5H0.00387359L2.89063 15.5ZM2.89062 0.5H2.39062L2.39063 11H2.89063H3.39063L3.39062 0.5L2.89062 0.5Z" fill="#20A9FF"/>
+                    </svg>                        
+                    <div class="flex flex-col gap-4 p-4 lg:p-6 bg-[#12121A] border border-[#1E1E2A] rounded-[12px] lg:rounded-[16px] shadsow-[0px_0px_1px_1px_#FFFFFF05] w-full lg:w-[438px]">
+                        <div class="flex items-center gap-4">
+                            <img src="../Assets/Images/new_page2/how_works2/2.webp" alt="" class="w-12 h-12">
+                            <div class="flex flex-col gap-1">
+                                <p class="text-[16px] lg:text-[18px] leading-[100%] font-bold text-white">EQVI</p>
+                                <p class="text-[16px] lg:text-[14px] leading-[100%] text-[#A1A1AA]">Life Intelligence Layer</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap text-[14px] leading-[100%] font-semibold text-[#20A9FF]">
+                            <div class="flex items-center gap-2 py-1.5 px-3 bg-[#FFFFFF08] rounded-[8px]">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_320_7613)">
+                                        <path
+                                            d="M9.00067 13.4999V3.74959M9.00067 13.4999C9.0011 13.91 9.08561 14.3159 9.24896 14.6921C9.41232 15.0682 9.65106 15.4068 9.95043 15.6871C10.2498 15.9674 10.6035 16.1833 10.9896 16.3215C11.3756 16.4597 11.786 16.5174 12.1952 16.4908C12.6045 16.4643 13.0039 16.3541 13.3689 16.1671C13.7339 15.9802 14.0567 15.7203 14.3173 15.4037C14.5779 15.0871 14.7709 14.7205 14.8843 14.3264C14.9976 13.9323 15.029 13.5191 14.9764 13.1124M9.00067 13.4999C9.00023 13.91 8.91572 14.3159 8.75236 14.6921C8.58901 15.0682 8.35027 15.4068 8.0509 15.6871C7.75153 15.9674 7.39787 16.1833 7.01178 16.3215C6.62568 16.4597 6.21535 16.5174 5.80611 16.4908C5.39688 16.4643 4.99743 16.3541 4.63244 16.1671C4.26745 15.9802 3.94467 15.7203 3.68403 15.4037C3.42339 15.0871 3.23043 14.7205 3.11706 14.3264C3.00369 13.9323 2.97232 13.5191 3.02488 13.1124M9.00067 3.74959C9.00065 3.40444 9.08004 3.06402 9.23269 2.75447C9.38534 2.44492 9.60716 2.17463 9.88099 1.96451C10.1548 1.7544 10.4733 1.61009 10.8119 1.54275C11.1504 1.47541 11.4999 1.48685 11.8333 1.57618C12.1667 1.66551 12.475 1.83034 12.7346 2.05791C12.9941 2.28549 13.1977 2.5697 13.3298 2.88858C13.4619 3.20745 13.5188 3.55243 13.4962 3.89684C13.4737 4.24124 13.3721 4.57583 13.1995 4.87472M9.00067 3.74959C9.00068 3.40444 8.92129 3.06402 8.76864 2.75447C8.61599 2.44492 8.39417 2.17463 8.12034 1.96451C7.84651 1.7544 7.52801 1.61009 7.18948 1.54275C6.85095 1.47541 6.50146 1.48685 6.16806 1.57618C5.83466 1.66551 5.52628 1.83034 5.26678 2.05791C5.00728 2.28549 4.80361 2.5697 4.67153 2.88858C4.53945 3.20745 4.4825 3.55243 4.50509 3.89684C4.52768 4.24124 4.6292 4.57583 4.80179 4.87472M11.2509 9.74979C10.6019 9.5601 10.0319 9.16524 9.62622 8.62438C9.22055 8.08351 9.00107 7.42577 9.00067 6.74969C9.00026 7.42577 8.78078 8.08351 8.37511 8.62438C7.96944 9.16524 7.39942 9.5601 6.75047 9.74979M13.4989 3.84334C13.9398 3.9567 14.3491 4.16889 14.6958 4.46384C15.0425 4.7588 15.3176 5.12879 15.5002 5.54578C15.6827 5.96278 15.768 6.41585 15.7495 6.87068C15.7311 7.32551 15.6093 7.77017 15.3935 8.17099M13.5011 13.5C14.1615 13.5 14.8035 13.2821 15.3274 12.88C15.8514 12.478 16.228 11.9143 16.399 11.2764C16.5699 10.6385 16.5256 9.96204 16.2728 9.3519C16.0201 8.74176 15.5731 8.23205 15.0012 7.90183M4.50014 13.5C3.8397 13.5 3.19772 13.2821 2.67377 12.88C2.14982 12.478 1.77317 11.9143 1.60224 11.2764C1.4313 10.6385 1.47563 9.96204 1.72835 9.3519C1.98107 8.74176 2.42806 8.23205 3 7.90183M4.50246 3.84334C4.06158 3.9567 3.65226 4.16889 3.30553 4.46384C2.9588 4.7588 2.68373 5.12879 2.50117 5.54578C2.31861 5.96278 2.23333 6.41585 2.25181 6.87068C2.27028 7.32551 2.39202 7.77017 2.6078 8.17099"
+                                            stroke="#20A9FF" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_320_7613">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Context</p>
+                            </div>
+                            <div class="flex items-center gap-2 py-1.5 px-3 bg-[#FFFFFF08] rounded-[8px]">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.5012 9.74977V5.25049H12.0008M16.5012 5.25049L10.1257 11.6245L6.37539 7.87507L1.5 12.7493" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                        
+                                <p>Prediction</p>
+                            </div>
+                            <div class="flex items-center gap-2 py-1.5 px-3 bg-[#FFFFFF08] rounded-[8px]">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0008 8.25L13.501 9.75L16.5012 6.75M12.0008 15.75V14.25C12.0008 13.4544 11.6847 12.6913 11.1221 12.1287C10.5594 11.5661 9.79631 11.25 9.0006 11.25H4.50024C3.70453 11.25 2.9414 11.5661 2.37875 12.1287C1.8161 12.6913 1.5 13.4544 1.5 14.25V15.75M9.75066 5.25C9.75066 6.90685 8.40741 8.25 6.75042 8.25C5.09343 8.25 3.75018 6.90685 3.75018 5.25C3.75018 3.59315 5.09343 2.25 6.75042 2.25C8.40741 2.25 9.75066 3.59315 9.75066 5.25Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                        
+                                <p>Personalization</p>
+                            </div>
+                            <div class="flex items-center gap-2 py-1.5 px-3 bg-[#FFFFFF08] rounded-[8px]">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_320_7631)">
+                                        <path
+                                            d="M15.0029 1.50098V4.50086M16.503 3.00092H13.5028M8.26509 2.11178C8.29723 1.93974 8.38853 1.78436 8.52318 1.67254C8.65784 1.56072 8.82736 1.49951 9.0024 1.49951C9.17744 1.49951 9.34696 1.56072 9.48162 1.67254C9.61627 1.78436 9.70757 1.93974 9.73971 2.11178L10.528 6.28012C10.584 6.57647 10.728 6.84906 10.9413 7.06232C11.1546 7.27557 11.4272 7.41959 11.7236 7.47557L15.8925 8.26379C16.0645 8.29593 16.2199 8.38722 16.3317 8.52185C16.4436 8.65649 16.5048 8.826 16.5048 9.00101C16.5048 9.17603 16.4436 9.34553 16.3317 9.48017C16.2199 9.61481 16.0645 9.7061 15.8925 9.73823L11.7236 10.5265C11.4272 10.5824 11.1546 10.7265 10.9413 10.9397C10.728 11.153 10.584 11.4256 10.528 11.7219L9.73971 15.8902C9.70757 16.0623 9.61627 16.2177 9.48162 16.3295C9.34696 16.4413 9.17744 16.5025 9.0024 16.5025C8.82736 16.5025 8.65784 16.4413 8.52318 16.3295C8.38853 16.2177 8.29723 16.0623 8.26509 15.8902L7.47678 11.7219C7.42079 11.4256 7.27675 11.153 7.06347 10.9397C6.85019 10.7265 6.57757 10.5824 6.28118 10.5265L2.11235 9.73823C1.94028 9.7061 1.78488 9.61481 1.67305 9.48017C1.56122 9.34553 1.5 9.17603 1.5 9.00101C1.5 8.826 1.56122 8.65649 1.67305 8.52185C1.78488 8.38722 1.94028 8.29593 2.11235 8.26379L6.28118 7.47557C6.57757 7.41959 6.85019 7.27557 7.06347 7.06232C7.27675 6.84906 7.42079 6.57647 7.47678 6.28012L8.26509 2.11178ZM4.50207 15.0004C4.50207 15.8288 3.83045 16.5004 3.00195 16.5004C2.17346 16.5004 1.50183 15.8288 1.50183 15.0004C1.50183 14.1721 2.17346 13.5005 3.00195 13.5005C3.83045 13.5005 4.50207 14.1721 4.50207 15.0004Z"
+                                            stroke="#20A9FF" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_320_7631">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Recommendation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[2px] h-8 max-lg:hidden bg-[#20A9FF]"></div>
+                    <svg class="lg:hidden" width="6" height="16" viewBox="0 0 6 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.39062 0.5V0L2.39062 0V0.5H2.89062L3.39062 0.5ZM2.89063 15.5L5.77738 10.5H0.00387359L2.89063 15.5ZM2.89062 0.5H2.39062L2.39063 11H2.89063H3.39063L3.39062 0.5L2.89062 0.5Z" fill="#20A9FF"/>
+                    </svg>
+                    <div class="flex flex-col gap-4 p-4 lg:p-6 bg-[#12121A] border border-[#1E1E2A] rounded-[12px] lg:rounded-[16px] shadsow-[0px_0px_1px_1px_#FFFFFF05] w-full lg:w-[438px]">
+                        <div class="flex items-center gap-4">
+                            <img src="../Assets/Images/new_page2/how_works2/3.webp" alt="" class="w-12 h-12">
+                            <div class="flex flex-col gap-1">
+                                <p class="text-[16px] lg:text-[18px] leading-[100%] font-bold text-white">Your Bank</p>
+                                <p class="text-[16px] lg:text-[14px] leading-[100%] text-[#A1A1AA]">Integrated Systems</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap text-[14px] leading-[100%] font-semibold text-[#A1A1AA]">
+                            <p class="px-2 py-1 rounded-[4px] border border-[#1E1E2A]">Mobile App</p>
+                            <p class="px-2 py-1 rounded-[4px] border border-[#1E1E2A]">CRM</p>
+                            <p class="px-2 py-1 rounded-[4px] border border-[#1E1E2A]">Loyalty</p>
+                            <p class="px-2 py-1 rounded-[4px] border border-[#1E1E2A]">Payments</p>
+                            <p class="px-2 py-1 rounded-[4px] border border-[#1E1E2A]">Core Systems</p>
+                        </div>
+                    </div>
+                    <div class="w-[2px] h-8 max-lg:hidden bg-[#20A9FF]"></div>
+                    <svg class="lg:hidden" width="6" height="16" viewBox="0 0 6 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.39062 0.5V0L2.39062 0V0.5H2.89062L3.39062 0.5ZM2.89063 15.5L5.77738 10.5H0.00387359L2.89063 15.5ZM2.89062 0.5H2.39062L2.39063 11H2.89063H3.39063L3.39062 0.5L2.89062 0.5Z" fill="#20A9FF"/>
+                    </svg>
+                    <div class="flex flex-col gap-4 p-4 lg:p-6 bg-[#12121A] border border-[#1E1E2A] rounded-[12px] lg:rounded-[16px] shadsow-[0px_0px_1px_1px_#FFFFFF05] w-full lg:w-[438px]">
+                        <div class="flex items-center gap-4">
+                            <img src="../Assets/Images/new_page2/how_works2/4.webp" alt="" class="w-12 h-12">
+                            <div class="flex flex-col gap-1">
+                                <p class="text-[16px] lg:text-[18px] leading-[100%] font-bold text-white">Customer Receives</p>
+                                <p class="text-[16px] lg:text-[14px] leading-[100%] text-[#A1A1AA]">Personalized Engagement</p>
+                            </div>
+                        </div>
+                        <p class="text-[16px] leading-[100%] text-[#A1A1AA]">The right recommendations delivered inside your native banking app.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-y-8 gap-x-6 lg:hidden">
+                    <div class="flex flex-col gap-1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.9995 11.9993L10.9993 13.9994L14.9989 9.99928M19.9984 12.9998C19.9984 18 16.4987 20.5001 12.3392 21.9501C12.1214 22.0239 11.8847 22.0204 11.6692 21.9401C7.49965 20.5001 4 18 4 12.9998V5.9996C4 5.73438 4.10535 5.48002 4.29286 5.29247C4.48038 5.10493 4.73471 4.99957 4.9999 4.99957C6.9997 4.99957 9.49945 3.79953 11.2393 2.27948C11.4511 2.09847 11.7206 1.99902 11.9992 1.99902C12.2778 1.99902 12.5473 2.09847 12.7591 2.27948C14.5089 3.80953 16.9987 4.99957 18.9985 4.99957C19.2637 4.99957 19.518 5.10493 19.7055 5.29247C19.8931 5.48002 19.9984 5.73438 19.9984 5.9996V12.9998Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>                            
+                        <p class="text-[14px] leading-[100%] font-bold text-white mt-2">Secure by design</p>
+                        <p class="text-[12px] leading-[100%] text-[#A1A1AA]">Bank-grade security and privacy.</p>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.0011 18L22.0016 12L16.0011 6M8.00048 6L2 12L8.00048 18" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>                                                      
+                        <p class="text-[14px] leading-[100%] font-bold text-white mt-2">REST APIs & SDKs</p>
+                        <p class="text-[12px] leading-[100%] text-[#A1A1AA]">Fast integration into existing systems.</p>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.9992 9.99966H12.0092M11.9992 14H12.0092M11.9992 5.99934H12.0092M15.9988 9.99966H16.0088M15.9988 14H16.0088M15.9988 5.99934H16.0088M7.9996 9.99966H8.0096M7.9996 14H8.0096M7.9996 5.99934H8.0096M8.9995 22.0006V19.0004C8.9995 18.7351 9.10485 18.4808 9.29236 18.2932C9.47988 18.1057 9.73421 18.0003 9.9994 18.0003H13.999C14.2642 18.0003 14.5185 18.1057 14.706 18.2932C14.8936 18.4808 14.9989 18.7351 14.9989 19.0004V22.0006M5.9998 1.99902H17.9986C19.1031 1.99902 19.9984 2.89453 19.9984 3.99918V20.0005C19.9984 21.1051 19.1031 22.0006 17.9986 22.0006H5.9998C4.89534 22.0006 4 21.1051 4 20.0005V3.99918C4 2.89453 4.89534 1.99902 5.9998 1.99902Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>                                                      
+                        <p class="text-[14px] leading-[100%] font-bold text-white mt-2">Your customer. Your brand.</p>
+                        <p class="text-[12px] leading-[100%] text-[#A1A1AA]">EQVI works entirely inside the bank app.</p>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.2998 6.9998L11.9998 12.0001M11.9998 12.0001L20.6998 6.9998M11.9998 12.0001L12 22.0007M21 7.99976C20.9996 7.64901 20.9071 7.30453 20.7315 7.00086C20.556 6.6972 20.3037 6.44503 20 6.26966L13 2.26943C12.696 2.09388 12.3511 2.00146 12 2.00146C11.6489 2.00146 11.304 2.09388 11 2.26943L4 6.26966C3.69626 6.44503 3.44398 6.6972 3.26846 7.00086C3.09294 7.30453 3.00036 7.64901 3 7.99976V16.0002C3.00036 16.351 3.09294 16.6955 3.26846 16.9991C3.44398 17.3028 3.69626 17.5549 4 17.7303L11 21.7306C11.304 21.9061 11.6489 21.9985 12 21.9985C12.3511 21.9985 12.696 21.9061 13 21.7306L20 17.7303C20.3037 17.5549 20.556 17.3028 20.7315 16.9991C20.9071 16.6955 20.9996 16.351 21 16.0002V7.99976Z" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>                                                       
+                        <p class="text-[14px] leading-[100%] font-bold text-white mt-2">Modular deployment</p>
+                        <p class="text-[12px] leading-[100%] text-[#A1A1AA]">Start with one domain. Expand anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-10 lg:py-[120px] px-4 bg-[#0D1117]">
+            <div class="flex max-lg:flex-col gap-14 lg:gap-20 lg:justify-between lg:items-center max-w-[1200px] mx-auto">
+                <div class="flex flex-col gap-3 lg:gap-8">
+                    <div class="flex flex-col gap-3 lg:gap-4">
+                        <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">Trusted by Banks</p>
+                        <p class="text-[32px] lg:text-[56px] leading-[110%] font-semibold text-white w-full max-w-[480px]">More than 20 years building digital products. More than 10 years in banking.</p>
+                    </div>
+                    <p class="text-[16px] lg:text-[18px] leading-[160%] text-[#6B7280] w-full max-w-[480px]">Our team combines more than two decades of experience building digital products with over ten years of delivering customer engagement, loyalty, and lifestyle solutions for leading banks and payment networks. EQVI brings this experience into a new generation of Customer Intelligence for banking.</p>
+                    <div class="flex items-center gap-4 max-lg:hidden">
+                        <svg class="shrink-0" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="#0D1117"/>
+                            <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#20A9FF"/>
+                            <path d="M16 9.5C16.1142 9.5 16.2193 9.52458 16.3047 9.56445L16.3828 9.60938C17.9742 10.7209 20.2488 11.5996 22.125 11.5996C22.2561 11.5996 22.3656 11.6425 22.4316 11.6953C22.4947 11.7458 22.5 11.7874 22.5 11.7998V16.6992C22.4999 18.2768 21.8196 19.4541 20.6963 20.376C19.5548 21.3127 17.9579 21.9805 16.165 22.4805C16.0644 22.5074 15.9531 22.5058 15.8545 22.4766L15.8447 22.4736L15.1797 22.2793C13.6537 21.8063 12.3035 21.194 11.3037 20.375C10.1798 19.4542 9.50006 18.2766 9.5 16.6992V11.7998C9.50001 11.7874 9.50533 11.7458 9.56836 11.6953C9.63444 11.6425 9.74386 11.5996 9.875 11.5996C11.7516 11.5996 14.0349 10.7137 15.6172 9.60938C15.7123 9.5444 15.8478 9.5 16 9.5Z" stroke="#20A9FF" stroke-linecap="round"/>
+                        </svg>
+                        <p class="text-[13px] leading-[140%] text-[#6B7280]"><span class="font-bold text-[#20A9FF]">20+</span> years of experience • <span class="font-bold text-[#20A9FF]">10+</span> years in banking • <span class="font-bold text-[#20A9FF]">30+</span> financial institutions</p>
+                    </div>
+                </div>
+                <div class="flex flex-col max-lg:gap-4 items-center lg:grow">
+                    <div class="grid grid-cols-3 w-full max-md:gap-2">
+                        <div class="flex items-center justify-center w-full lg:h-[72px]">
+                            <img src="../Assets/Images/new_page2/trusted/1.webp" alt="" class="w-16">
+                        </div>
+                        <div class="flex items-center justify-center w-full lg:h-[72px]">
+                            <img src="../Assets/Images/new_page2/trusted/2.webp" alt="" class="w-[85px]">
+                        </div>
+                        <div class="flex items-center justify-center w-full lg:h-[72px]">
+                            <img src="../Assets/Images/new_page2/trusted/3.webp" alt="" class="w-[85px] md:w-[109px]">
+                        </div>
+                        <div class="flex items-center justify-center w-full lg:h-[72px]">
+                            <img src="../Assets/Images/new_page2/trusted/4.webp" alt="" class="w-[109px]">
+                        </div>
+                        <div class="flex items-center justify-center w-full lg:h-[72px]">
+                            <img src="../Assets/Images/new_page2/trusted/5.webp" alt="" class="w-[101px]">
+                        </div>
+                        <div class="flex items-center justify-center w-full lg:h-[72px]">
+                            <img src="../Assets/Images/new_page2/trusted/6.webp" alt="" class="w-[120px]">
+                        </div>
+                    </div>
+                    <p class="text-[12px] lg:text-[13px] leading-[140%] text-[#6B7280] text-center w-full max-w-[412px]">Selected banks and financial institutions our team has collaborated with across previous projects.</p>
+                    <div class="flex flex-col gap-3 w-full lg:hidden">
+                        <div class="flex items-center justify-center gap-3">
+                            <div class="w-14 h-px bg-white/20"></div>
+                            <svg class="w-6 h-6 shrink-0" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="#0D1117"/>
+                                <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#20A9FF"/>
+                                <path d="M16 9.5C16.1142 9.5 16.2193 9.52458 16.3047 9.56445L16.3828 9.60938C17.9742 10.7209 20.2488 11.5996 22.125 11.5996C22.2561 11.5996 22.3656 11.6425 22.4316 11.6953C22.4947 11.7458 22.5 11.7874 22.5 11.7998V16.6992C22.4999 18.2768 21.8196 19.4541 20.6963 20.376C19.5548 21.3127 17.9579 21.9805 16.165 22.4805C16.0644 22.5074 15.9531 22.5058 15.8545 22.4766L15.8447 22.4736L15.1797 22.2793C13.6537 21.8063 12.3035 21.194 11.3037 20.375C10.1798 19.4542 9.50006 18.2766 9.5 16.6992V11.7998C9.50001 11.7874 9.50533 11.7458 9.56836 11.6953C9.63444 11.6425 9.74386 11.5996 9.875 11.5996C11.7516 11.5996 14.0349 10.7137 15.6172 9.60938C15.7123 9.5444 15.8478 9.5 16 9.5Z" stroke="#20A9FF" stroke-linecap="round"/>
+                            </svg>
+                            <div class="w-14 h-px bg-white/20"></div>
+                        </div>
+                        <p class="text-[13px] leading-[140%] text-[#6B7280] text-center"><span class="font-bold text-[#20A9FF]">20+</span> years of experience • <span class="font-bold text-[#20A9FF]">10+</span> years in banking • <span class="font-bold text-[#20A9FF]">30+</span> financial institutions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-10 lg:py-[120px] px-4 bg-[#F5F7FA]">
+            <div class="flex flex-col gap-8 lg:gap-16 max-w-[1200px] mx-auto">
+                <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">History Navigation</p>
+                <div class="flex flex-col gap-3">
+                    <details class="p-4 lg:px-10 lg:py-6 transition-all duration-300 max-lg:open:p-6 lg:open:py-10 bg-[#F2F2F2] lg:bg-white lg:border border-[#E5E7EB] rounded-[16px] overflow-hidden group relative">
+                        <summary class="flex items-center gap-2.5 justify-between cursor-pointer">
+                            <div class="flex max-lg:flex-col gap-1 lg:gap-10 lg:items-center transition-all duration-100 lg:group-open:opacity-0">
+                                <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2022 – Present</p>
+                                <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">EQVI | Life Operating System</p>
+                            </div>
+                            <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
+                                <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
+                            </p>
+                        </summary>
+                        <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
+                            <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2022 – Present</p>
+                                <p class="text-[28px] leading-[100%] font-bold text-[#111827]">EQVI | Life Operating System</p>
+                            </div>
+                            <p class="text-[14px] lg:text-[16px] leading-[150%] text-[#1A1A2E] lg:text-[#6B7280] lg:max-w-[536px]">EQVI is developing a new generation of AI-powered personal systems designed to help people navigate everyday life through continuous personalized dialogue. Focused on high-stakes decisions and proactive life assistance.</p>
+                        </div>
+                    </details>
+                    <details class="p-4 lg:px-10 lg:py-6 transition-all duration-300 max-lg:open:p-6 lg:open:py-10 bg-[#F2F2F2] lg:bg-white lg:border border-[#E5E7EB] rounded-[16px] overflow-hidden group relative">
+                        <summary class="flex items-center gap-2.5 justify-between cursor-pointer">
+                            <div class="flex max-lg:flex-col gap-1 lg:gap-10 lg:items-center transition-all duration-100 lg:group-open:opacity-0">
+                                <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2016 – 2022</p>
+                                <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">EQVI Labs</p>
+                            </div>
+                            <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
+                                <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
+                            </p>
+                        </summary>
+                        <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
+                            <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2016 – 2022</p>
+                                <p class="text-[28px] leading-[100%] font-bold text-[#111827]">EQVI Labs</p>
+                            </div>
+                            <p class="text-[14px] lg:text-[16px] leading-[150%] text-[#1A1A2E] lg:text-[#6B7280] lg:max-w-[536px]">
+                                Research and development in conversational interfaces, personalization systems, behavioral intelligence, and digital ecosystems.
+                                <br>
+                                Conducted international testing across travel, commerce, education, career development, health, nutrition, physical activity, and lifestyle services.
+                                <br>
+                                Across all projects and research initiatives, the combined audience approached one million users worldwide.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="p-4 lg:px-10 lg:py-6 transition-all duration-300 max-lg:open:p-6 lg:open:py-10 bg-[#F2F2F2] lg:bg-white lg:border border-[#E5E7EB] rounded-[16px] overflow-hidden group relative">
+                        <summary class="flex items-center gap-2.5 justify-between cursor-pointer">
+                            <div class="flex max-lg:flex-col gap-1 lg:gap-10 lg:items-center transition-all duration-100 lg:group-open:opacity-0">
+                                <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2012 – 2016</p>
+                                <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">EQVI Life Assistant</p>
+                            </div>
+                            <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
+                                <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
+                            </p>
+                        </summary>
+                        <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
+                            <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2012 – 2016</p>
+                                <p class="text-[28px] leading-[100%] font-bold text-[#111827]">EQVI Life Assistant</p>
+                            </div>
+                            <p class="text-[14px] lg:text-[16px] leading-[150%] text-[#1A1A2E] lg:text-[#6B7280] lg:max-w-[536px]">
+                                One of the early personal conversational assistants bringing multiple areas of life into a single interface and laying the foundation for the Life Operating System concept.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="p-4 lg:px-10 lg:py-6 transition-all duration-300 max-lg:open:p-6 lg:open:py-10 bg-[#F2F2F2] lg:bg-white lg:border border-[#E5E7EB] rounded-[16px] overflow-hidden group relative">
+                        <summary class="flex items-center gap-2.5 justify-between cursor-pointer">
+                            <div class="flex max-lg:flex-col gap-1 lg:gap-10 lg:items-center transition-all duration-100 lg:group-open:opacity-0">
+                                <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2011 – 2012</p>
+                                <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">Vedomosti iMall</p>
+                            </div>
+                            <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
+                                <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
+                            </p>
+                        </summary>
+                        <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
+                            <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2011 – 2012</p>
+                                <p class="text-[28px] leading-[100%] font-bold text-[#111827]">Vedomosti iMall</p>
+                            </div>
+                            <p class="text-[14px] lg:text-[16px] leading-[150%] text-[#1A1A2E] lg:text-[#6B7280] lg:max-w-[536px]">
+                                Travel and fashion marketplace developed for one of the region’s leading business media brands.
+                                <br>
+                                Partners included Austrian Airlines, Delta Air Lines, British Airways, and leading international travel and lifestyle brands.
+                                <br>
+                                Clients included Financial Times, The Wall Street Journal, and Independent Media.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="p-4 lg:px-10 lg:py-6 transition-all duration-300 max-lg:open:p-6 lg:open:py-10 bg-[#F2F2F2] lg:bg-white lg:border border-[#E5E7EB] rounded-[16px] overflow-hidden group relative">
+                        <summary class="flex items-center gap-2.5 justify-between cursor-pointer">
+                            <div class="flex max-lg:flex-col gap-1 lg:gap-10 lg:items-center transition-all duration-100 lg:group-open:opacity-0">
+                                <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2010 – 2011</p>
+                                <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">Eqvilibria</p>
+                            </div>
+                            <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
+                                <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
+                            </p>
+                        </summary>
+                        <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
+                            <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2010 – 2011</p>
+                                <p class="text-[28px] leading-[100%] font-bold text-[#111827]">Eqvilibria</p>
+                            </div>
+                            <p class="text-[14px] lg:text-[16px] leading-[150%] text-[#1A1A2E] lg:text-[#6B7280] lg:max-w-[536px]">
+                                One of the early banking marketplaces, bringing together more than 500,000 products and services within banking loyalty ecosystems.
+                                <br>
+                                Clients included Raiffeisen Bank and Citibank.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="p-4 lg:px-10 lg:py-6 transition-all duration-300 max-lg:open:p-6 lg:open:py-10 bg-[#F2F2F2] lg:bg-white lg:border border-[#E5E7EB] rounded-[16px] overflow-hidden group relative">
+                        <summary class="flex items-center gap-2.5 justify-between cursor-pointer">
+                            <div class="flex max-lg:flex-col gap-1 lg:gap-10 lg:items-center transition-all duration-100 lg:group-open:opacity-0">
+                                <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2009 – 2010</p>
+                                <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">Mastercard Izbrannoe</p>
+                            </div>
+                            <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
+                                <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
+                            </p>
+                        </summary>
+                        <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
+                            <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2009 – 2010</p>
+                                <p class="text-[28px] leading-[100%] font-bold text-[#111827]">Mastercard Izbrannoe</p>
+                            </div>
+                            <p class="text-[14px] lg:text-[16px] leading-[150%] text-[#1A1A2E] lg:text-[#6B7280] lg:max-w-[536px]">
+                                One of the early lifestyle platforms developed for an international payment network.
+                                <br>
+                                Built and managed the partner ecosystem, content operations, call-center management, merchant onboarding, and nationwide program execution.
+                                <br>
+                                Client: Mastercard Europe.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="p-4 lg:px-10 lg:py-6 transition-all duration-300 max-lg:open:p-6 lg:open:py-10 bg-[#F2F2F2] lg:bg-white lg:border border-[#E5E7EB] rounded-[16px] overflow-hidden group relative">
+                        <summary class="flex items-center gap-2.5 justify-between cursor-pointer">
+                            <div class="flex max-lg:flex-col gap-1 lg:gap-10 lg:items-center transition-all duration-100 lg:group-open:opacity-0">
+                                <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2005 – 2015</p>
+                                <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">Eqvilibria Club</p>
+                            </div>
+                            <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
+                                <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
+                            </p>
+                        </summary>
+                        <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
+                            <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2005 – 2015</p>
+                                <p class="text-[28px] leading-[100%] font-bold text-[#111827]">Eqvilibria Club</p>
+                            </div>
+                            <p class="text-[14px] lg:text-[16px] leading-[150%] text-[#1A1A2E] lg:text-[#6B7280] lg:max-w-[536px]">
+                                One of the early lifestyle platforms for banks, combining loyalty programs, privileges, concierge services, partner networks, and customer engagement programs.
+                                <br>
+                                Clients included Société Générale, Intesa Sanpaolo, Swedbank, Alfa-Bank, and more than 20 banks.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-10 lg:py-[120px] px-4 bg-[#0D1117]">
+            <div class="relative flex flex-col gap-4 lg:gap-8 max-w-[1200px] mx-auto border border-[#8B5CF6] px-4 py-14 lg:py-16 bg-linear-to-r from-[#5B2EFF] to-[#0B1020] rounded-[16px] shadow-[0px_0px_28px_0px_#8B5CF633]">
+                <p class="text-[32px] lg:text-[56px] leading-[110%] text-white md:text-center w-full max-w-[800px] md:mx-auto">Let's build the future of banking together.</p>
+                <p class="text-[16px] lg:text-[20px] leading-[150%] text-[#FFFFFFB3] md:text-center w-full max-w-[600px] md:mx-auto">Join forward-thinking banks already exploring the next generation of customer relationships.</p>
+                <div class="flex max-md:flex-col md:justify-center gap-3 lg:gap-4">
+                    <button id="contact2" class="cursor-pointer w-full md:w-fit py-4 px-10 text-[16px] leading-[100%] font-semibold bg-[#20A9FF] text-white rounded-[8px] text-center">Request Private Demo</button>
+                </div>
+
+                <img src="../Assets/Images/new_page2/last/particles.png" alt="" class="absolute top-1/2 -translate-y-1/2 right-0">
+            </div>
+        </section>
+    </main>
+
+    <!-- contact form -->
+    <div id="overlay" class="hidden fixed inset-0 z-9 bg-[#05050580] lg:bg-[#121212]"></div>
+    <form id="form" class="hidden">
+        <div class="fixed z-10 bg-[#1F2326] rounded-[20px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[calc(100%-32px)] max-w-[600px] p-4 lg:p-6 flex flex-col gap-8">
+            <div id="formContent" class="flex flex-col gap-8">
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-between gap-1.5">
+                        <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white max-md:max-w-[220px]">Schedule an Introductory Meeting</p>
+                        <div id="formToggler" class="cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2983 5.71022C18.2058 5.61752 18.0959 5.54397 17.9749 5.49379C17.8539 5.44361 17.7242 5.41778 17.5933 5.41778C17.4623 5.41778 17.3326 5.44361 17.2116 5.49379C17.0907 5.54397 16.9808 5.61752 16.8883 5.71022L11.9983 10.5902L7.10827 5.70022C7.01569 5.60764 6.90578 5.5342 6.78481 5.4841C6.66385 5.43399 6.5342 5.4082 6.40327 5.4082C6.27234 5.4082 6.14269 5.43399 6.02173 5.4841C5.90076 5.5342 5.79085 5.60764 5.69827 5.70022C5.60569 5.79281 5.53225 5.90272 5.48214 6.02368C5.43204 6.14464 5.40625 6.27429 5.40625 6.40522C5.40625 6.53615 5.43204 6.6658 5.48214 6.78677C5.53225 6.90773 5.60569 7.01764 5.69827 7.11022L10.5883 12.0002L5.69827 16.8902C5.60569 16.9828 5.53225 17.0927 5.48214 17.2137C5.43204 17.3346 5.40625 17.4643 5.40625 17.5952C5.40625 17.7262 5.43204 17.8558 5.48214 17.9768C5.53225 18.0977 5.60569 18.2076 5.69827 18.3002C5.79085 18.3928 5.90076 18.4662 6.02173 18.5163C6.14269 18.5665 6.27234 18.5922 6.40327 18.5922C6.5342 18.5922 6.66385 18.5665 6.78481 18.5163C6.90578 18.4662 7.01569 18.3928 7.10827 18.3002L11.9983 13.4102L16.8883 18.3002C16.9809 18.3928 17.0908 18.4662 17.2117 18.5163C17.3327 18.5665 17.4623 18.5922 17.5933 18.5922C17.7242 18.5922 17.8538 18.5665 17.9748 18.5163C18.0958 18.4662 18.2057 18.3928 18.2983 18.3002C18.3909 18.2076 18.4643 18.0977 18.5144 17.9768C18.5645 17.8558 18.5903 17.7262 18.5903 17.5952C18.5903 17.4643 18.5645 17.3346 18.5144 17.2137C18.4643 17.0927 18.3909 16.9828 18.2983 16.8902L13.4083 12.0002L18.2983 7.11022C18.6783 6.73022 18.6783 6.09022 18.2983 5.71022Z" fill="#8B949E"/>
+                            </svg>                            
+                        </div>
+                    </div>
+                    <p class="text-[12px] leading-[140%] italic text-[#8B949E]">
+                        Meet with our team for a 30-minute introduction to EQVI. We’ll walk you through the platform, discuss your bank’s priorities, and answer any questions you may have.
+                    </p>
+                </div>
+                <div class="flex flex-col w-full gap-6 text-white">
+                    <div class="relative w-full">
+                        <input required name="full_name" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Full Name
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input required name="business_email" type="email" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Business Email
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input required name="position" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Position
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input required name="company" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Company
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input required name="number" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Number of Employees
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full gap-2">
+                    <button id="formSubmit" type="submit" class="cursor-pointer text-[16px] rounded-full lg:rounded-[20px] bg-[#20A9FF] text-white flex justify-center items-center w-full h-[44px]">Request Meeting</button>
+                    <p class="text-[12px] leading-[100%] font-medium text-[#959595]">You agree to the <a href="#" target="_blank" class="underline">Privacy Policy</a></p>
+                    <p id="formError" class="hidden text-[12px] leading-[140%] font-medium text-[#F97373]">Something went wrong. Please try again.</p>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="formSuccess" class="hidden">
+        <div class="z-10 flex flex-col items-center gap-4 text-center text-white p-4 bg-[#121212] border border-white/10 fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-xl">
+            <div class="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center rounded-full border border-[#20A9FF]">
+                <svg class="w-5 h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                </svg>                    
+            </div>
+            <p class="text-[18px] lg:text-[20px] leading-[140%] font-semibold">Thank you.</p>
+            <p class="text-[14px] lg:text-[16px] leading-[140%] text-white/70 max-w-[360px]">Your request has been received.</p>
+            <p class="text-[14px] lg:text-[16px] leading-[140%] text-white/70 max-w-[360px]">A member of our team will contact you shortly to schedule your introductory meeting.</p>
+            <button id="formClose" type="button" class="cursor-pointer text-[16px] rounded-full lg:rounded-[20px] bg-[#20A9FF] text-white flex justify-center items-center px-8 h-[44px]">Close</button>
+        </div>
+    </div>
+
+    <footer class="w-full py-10 px-4 bg-[#0D1117] border-t border-[#FFFFFF0F]">
+        <div class="flex flex-col gap-6 lg:gap-10 max-w-[1200px] mx-auto">
+            <div class="flex max-lg:flex-col gap-6 lg:justify-between">
+                <div class="flex flex-col gap-1.5 lg:gap-3">
+                    <a href="index.html" class="text-[18px] lg:text-[24px] leading-[100%] font-bold text-white">EQVI</a>
+                    <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">Слой отношений для банкинга</p>
+                </div>
+                <div class="flex max-lg:justify-between gap-6 lg:gap-20 text-[12px] lg:text-[14px] leading-[100%] text-[#A1A1AA]">
+                    <div class="flex flex-col gap-2.5 w-[104px] lg:w-[140px]">
+                        <p class="uppercase font-semibold text-white">Product</p>
+                        <a href="platform.html">Платформа</a>
+                        <a href="integration.html">Интеграция</a>
+                        <a href="security.html">Безопасность</a>
+                        <a href="benefits-for-banks.html">Преимущества для банков</a>
+                    </div>
+                    <div class="flex flex-col gap-2.5 w-[104px] lg:w-[140px]">
+                        <p class="uppercase font-semibold text-white">Компания</p>
+                        <a href="about.html">О компании</a>
+                    </div>
+                    <div class="flex flex-col gap-2.5 w-[104px] lg:w-[140px]">
+                        <p class="uppercase font-semibold text-white">Ресурсы</p>
+                        <a href="documentation.html">Документация</a>
+                        <a href="contact.html">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-px bg-[#FFFFFF14]"></div>
+            <div class="flex flex-col items-center gap-2.5 text-[12px] lg:text-[13px] leading-[100%] text-[#A1A1AA]">
+                <p>© 2026 EQVI. Все права защищены.</a>
+                <div class="flex items-center gap-3 lg:gap-6">
+                    <a href="#">Политика конфиденциальности</a>
+                    <div class="w-px h-4 bg-[#FFFFFF40] lg:hidden"></div>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div> 
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script>
+        /* EQVI hero ring — full rainbow dotted circle, centered on the block's right edge (only the left arc shows), slowly rotating */
+        (function () {
+            const canvas = document.getElementById('eqvi-ring-canvas');
+            if (!canvas || !canvas.getContext) return;
+            const ctx = canvas.getContext('2d');
+            const wrap = canvas.parentElement;
+            const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+            const TAU = Math.PI * 2;
+    
+            // Hue by the dot's angle (clockwise from top): top=blue, right=magenta, bottom=orange/yellow, left=green/cyan.
+            function hueAt(phi) { return (220 + phi * 180 / Math.PI) % 360; }
+            function hslToRgb(h, s, l) {
+                h = (((h % 360) + 360) % 360) / 360; s /= 100; l /= 100;
+                let r, g, b;
+                if (s === 0) { r = g = b = l; }
+                else {
+                    const hue2rgb = function (p, q, t) {
+                        if (t < 0) t += 1; if (t > 1) t -= 1;
+                        if (t < 1 / 6) return p + (q - p) * 6 * t;
+                        if (t < 1 / 2) return q;
+                        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+                        return p;
+                    };
+                    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+                    const p = 2 * l - q;
+                    r = hue2rgb(p, q, h + 1 / 3); g = hue2rgb(p, q, h); b = hue2rgb(p, q, h - 1 / 3);
+                }
+                return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+            }
+    
+            let W = 0, H = 0, dpr = 1, cx = 0, cy = 0, R = 0, band = 0, sizeScale = 1;
+            let dots = [];
+    
+            function makeDots() {
+                dots = [];
+    
+                // Main ring particles — evenly spread around the circle with angular + radial jitter.
+                let n = Math.round((TAU * R) / 6);   // dense, roughly even spacing
+                n = Math.max(240, Math.min(900, n));
+                for (let i = 0; i < n; i++) {
+                    const phi = (i / n) * TAU + (Math.random() - 0.5) * (TAU / n) * 2.2; // even + jitter
+                    const rnd = Math.random();
+                    let base;
+                    if (rnd < 0.56)      base = 1.2 + Math.random() * 1.8;   // many small
+                    else if (rnd < 0.85) base = 3.2 + Math.random() * 2.8;   // some medium
+                    else if (rnd < 0.97) base = 6.0 + Math.random() * 4.0;   // few large
+                    else                 base = 10.0 + Math.random() * 4.0;  // rare extra-large
+                    // ~gaussian radial offset within the band, with occasional wider strays
+                    let ro = (Math.random() + Math.random() + Math.random() - 1.5) / 1.5;
+                    if (Math.random() < 0.12) ro *= 2.3;
+                    dots.push({
+                        phi: phi,
+                        ro: ro,
+                        size: base,
+                        alpha: 0.45 + Math.random() * 0.55,
+                        rgb: hslToRgb(hueAt(phi), 88, 55 + Math.random() * 8)
+                    });
+                }
+    
+                // Fine dust layer — tiny faint particles sprayed across a wider band for depth.
+                const dn = Math.round(n * 0.55);
+                for (let i = 0; i < dn; i++) {
+                    const phi = Math.random() * TAU;
+                    const ro = (Math.random() + Math.random() - 1) * 2.6;   // wider spread
+                    dots.push({
+                        phi: phi,
+                        ro: ro,
+                        size: 0.5 + Math.random() * 1.2,
+                        alpha: 0.22 + Math.random() * 0.4,
+                        rgb: hslToRgb(hueAt(phi), 88, 60)
+                    });
+                }
+            }
+    
+            function resize() {
+                const rect = wrap.getBoundingClientRect();
+                dpr = Math.min(window.devicePixelRatio || 1, 2);
+                W = Math.max(1, Math.round(rect.width));
+                H = Math.max(1, Math.round(rect.height));
+                canvas.width = Math.round(W * dpr);
+                canvas.height = Math.round(H * dpr);
+                canvas.style.width = W + 'px';
+                canvas.style.height = H + 'px';
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                cx = W;                       // ring center = block's right edge (container's right edge)
+                cy = H * 0.5;
+                R = Math.min(W * 0.94, H * 0.48); // fit the whole left half within the section height
+                band = R * 0.055;             // scatter band thickness (strays reach ~2.3x this)
+                sizeScale = R / 480;
+                makeDots();
+            }
+    
+            // Start with the warm-colored segment (red / orange / yellow — base phi ~170°)
+            // sitting in the middle of the visible left arc (rendered ~270°), so the ring
+            // begins on the colourful stretch. rot = 270° - 170° = 100°.
+            let rot = 100 * Math.PI / 180;
+            const ROT_SPEED = 0.02;           // radians per second (very slow spin)
+    
+            // Band taper along the arc: |sin(phi)| is the horizontal distance from the
+            // right-edge axis — 0 where the arc exits the block (top & bottom), 1 at the
+            // far-left point. So the scatter band pinches thin at the exits and fans out
+            // wide across the middle of the visible arc. Driven by the *rotating* angle,
+            // so the effect travels around the ring endlessly with the spin.
+            function widthFactor(s) { return 0.06 + 2.35 * Math.pow(s, 0.7); }   // band thickness mult (strong pinch → wide fan)
+            function sizeFactor(s)  { return 0.30 + 0.70 * Math.pow(s, 0.5); }   // dot-size taper
+    
+            function render() {
+                ctx.clearRect(0, 0, W, H);
+                // dots only — no glow halo
+                ctx.globalCompositeOperation = 'source-over';
+                for (let i = 0; i < dots.length; i++) {
+                    const d = dots[i];
+                    const phi = d.phi + rot;
+                    const s = Math.abs(Math.sin(phi));
+                    const rr = R + d.ro * band * widthFactor(s);
+                    const x = cx + Math.sin(phi) * rr;
+                    if (x < -40 || x > cx + 40) continue;
+                    const y = cy - Math.cos(phi) * rr;
+                    const r = d.size * sizeScale * sizeFactor(s);
+                    ctx.globalAlpha = d.alpha;
+                    ctx.beginPath();
+                    ctx.fillStyle = 'rgb(' + d.rgb[0] + ',' + d.rgb[1] + ',' + d.rgb[2] + ')';
+                    ctx.arc(x, y, r, 0, TAU);
+                    ctx.fill();
+                }
+                ctx.globalAlpha = 1;
+            }
+    
+            let last = 0;
+            function frame(ts) {
+                if (!last) last = ts;
+                let dt = (ts - last) / 1000; last = ts;
+                if (dt > 0.05) dt = 0.05;
+                rot += ROT_SPEED * dt;
+                if (rot > TAU) rot -= TAU;
+                render();
+                requestAnimationFrame(frame);
+            }
+    
+            let rt;
+            window.addEventListener('resize', function () {
+                clearTimeout(rt);
+                rt = setTimeout(function () { resize(); if (reduce) render(); }, 150);
+            });
+    
+            resize();
+            if (reduce) render();
+            else requestAnimationFrame(frame);
+        })();
+    </script>
+    <script src="../Assets/JS/new_ru.js"></script>
+</body>
+</html>
