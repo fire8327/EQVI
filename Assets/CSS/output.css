@@ -3450,6 +3450,11 @@
       width: 372px;
     }
   }
+  .xl\:gap-40 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 40);
+    }
+  }
   .xl\:gap-\[111px\] {
     @media (width >= 80rem) {
       gap: 111px;
