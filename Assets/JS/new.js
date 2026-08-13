@@ -1,3 +1,8 @@
+/* tabs */
+$('#tabs').tabs();
+
+
+
 /* slider */
 const swiper = new Swiper('.daySlider', {
     loop: true,
