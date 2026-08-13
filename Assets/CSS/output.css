@@ -431,6 +431,9 @@
   .aspect-9\/20 {
     aspect-ratio: 9/20;
   }
+  .aspect-\[2\.09\] {
+    aspect-ratio: 2.09;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
