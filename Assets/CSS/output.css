@@ -1099,6 +1099,9 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .gap-30 {
+    gap: calc(var(--spacing) * 30);
+  }
   .gap-\[3px\] {
     gap: 3px;
   }
@@ -1429,6 +1432,9 @@
   }
   .bg-\[\#F8F9FC\] {
     background-color: #F8F9FC;
+  }
+  .bg-\[\#F8FAFC\] {
+    background-color: #F8FAFC;
   }
   .bg-\[\#F9FAFB\] {
     background-color: #F9FAFB;
