@@ -2262,6 +2262,11 @@
       margin-top: calc(var(--spacing) * 8);
     }
   }
+  .max-lg\:grid {
+    @media (width < 64rem) {
+      display: grid;
+    }
+  }
   .max-lg\:hidden {
     @media (width < 64rem) {
       display: none;
@@ -2744,6 +2749,11 @@
   .lg\:ml-\[52px\] {
     @media (width >= 64rem) {
       margin-left: 52px;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
     }
   }
   .lg\:hidden {
