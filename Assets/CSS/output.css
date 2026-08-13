@@ -1262,6 +1262,9 @@
   .border-\[\#D9D9D966\] {
     border-color: #D9D9D966;
   }
+  .border-\[\#E2E8F0\] {
+    border-color: #E2E8F0;
+  }
   .border-\[\#E5E7EB\] {
     border-color: #E5E7EB;
   }
@@ -1953,6 +1956,9 @@
   }
   .text-\[\#155DFC\] {
     color: #155DFC;
+  }
+  .text-\[\#64748B\] {
+    color: #64748B;
   }
   .text-\[\#070707\] {
     color: #070707;
@@ -3461,6 +3467,11 @@
   .lg\:bg-white {
     @media (width >= 64rem) {
       background-color: var(--color-white);
+    }
+  }
+  .lg\:p-3 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 3);
     }
   }
   .lg\:p-4 {
