@@ -1,6 +1,15 @@
 /* tabs */
 $('#tabs').tabs();
 
+/* slideToggle */
+$(".toggleMain").each((i,el) => {
+    $(el).find(".toggleButton").click(()=> {
+        $(el).find(".toggleList").slideToggle()
+        $(el).find(".toggleButton").find("svg").toggleClass("rotate-180")
+    })
+})
+
+
 
 
 /* slider */
