@@ -877,9 +877,6 @@
   .flex-1 {
     flex: 1;
   }
-  .shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
   }
@@ -1782,9 +1779,6 @@
   .tracking-\[1\.84px\] {
     --tw-tracking: 1.84px;
     letter-spacing: 1.84px;
-  }
-  .text-\[\#\#EF95B9\] {
-    color: ##EF95B9;
   }
   .text-\[\#00C896\] {
     color: #00C896;
@@ -4037,6 +4031,31 @@
 }
 .custom-circle {
   background: radial-gradient(50% 50% at 50% 50%, rgba(32, 169, 255, 0.101961) 0%, rgba(32, 169, 255, 0) 100%);
+}
+.integration-reveal-slider {
+  width: 100%;
+  overflow: hidden;
+}
+.integrationRevealPagination > .swiper-pagination-bullet-active {
+  background: #20A9FF;
+  width: 40px;
+  border-radius: 4px;
+}
+[data-integration-reveal] .integration-reveal-heading, [data-integration-reveal] .integration-reveal-item, [data-integration-reveal] .integration-reveal-image {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-integration-reveal] .integration-reveal-heading.is-visible, [data-integration-reveal] .integration-reveal-item.is-visible, [data-integration-reveal] .integration-reveal-image.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-integration-reveal] .integration-reveal-heading, [data-integration-reveal] .integration-reveal-item, [data-integration-reveal] .integration-reveal-image {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
