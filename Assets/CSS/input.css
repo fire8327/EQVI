@@ -289,14 +289,7 @@
 .eqvi-tint--green { background: #EFF6FF; border-radius: 14px; }
 .eqvi-tint--violet{ background: #E9F4FF; border-radius: 16px; }
 
-/* ── Карточка домена в слайдере блока 02: рамка цветом домена ────── */
-.eqvi-domain-card {
-  background: #fff;
-  border-radius: 20px;
-  border: 2px solid var(--edge, #F05EAD);
-}
-.eqvi-domain-card--pink   { --edge: #F05EAD; }
-.eqvi-domain-card--yellow { --edge: #F9C442; }
+
 
 /* ── Экран-лента: содержимое проматывается внутри рамки ──────────── */
 .eqvi-scroller {
