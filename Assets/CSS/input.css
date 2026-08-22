@@ -208,35 +208,39 @@
 }
 
 /* ── Волнистые линии на фоне ──────────────────────────────────────── */
+/* Контейнер обрезает волны только снизу: сверху они свободно уходят под шапку */
 .eqvi-waves {
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: calc(var(--wave-top, 96px) + var(--wave-h, 176px));   /* ← новое */
   overflow: hidden;
   pointer-events: none;
 }
 .eqvi-waves svg {
   position: absolute;
-  top: 96px;                 /* зона заголовка: ниже подзаголовка волны не заходят */
+  /* центр пучка — в середине зоны заголовка, прижат вправо, как на живом сайте */
+  top: calc(var(--wave-top, 96px) + var(--wave-h, 176px) / 2);  /* ← новое */
   right: 0;
-  width: 66%;
-  height: 176px;
+  width: var(--wave-w, 66%);                                      /* ← новое */
+  /* толщина пучка: тот же шаг между линиями, что на сайте (~30px) */
+  height: var(--wave-h, 176px);
+  /* наклон по правке клиента: полосы идут снизу слева вверх направо */
+  transform: translateY(-50%) rotate(var(--wave-rot, -16deg));    /* ← новое */
+  transform-origin: center;
   opacity: .7;
 }
-/* Каждая волна дрейфует со своей скоростью; сдвиг ровно на период — стык не виден */
-.eqvi-waves path {
-  transform-box: view-box;
-  animation-name: eqvi-drift;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-@keyframes eqvi-drift {
-  to { transform: translateX(calc(var(--period) * -1)); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .eqvi-waves path { animation: none; }
-}
+
 @media (max-width: 1023px) {
-  .eqvi-waves svg { width: 210%; right: -55%; top: 44px; height: 140px; opacity: .6; }
+  .eqvi-waves { height: calc(var(--wave-top-m, 44px) + var(--wave-h-m, 140px)); }
+  .eqvi-waves svg {
+    top: calc(var(--wave-top-m, 44px) + var(--wave-h-m, 140px) / 2);
+    right: var(--wave-right-m, -55%);
+    width: var(--wave-w-m, 210%);
+    height: var(--wave-h-m, 140px);
+    opacity: .6;
+  }
 }
 
 /* ── Крупная цифра секции ─────────────────────────────────────────── */
@@ -419,7 +423,7 @@
 }
 /* Фирменный знак: высота одна на всех, ширина по своей пропорции */
 .eqvi-logo svg {
-  height: clamp(30px, 6vw, 38px);
+  height: clamp(25px, 6vw, 38px);
   width: auto;
 }
 /* Бренды, чьих знаков нет в открытом наборе, — начертанием */
@@ -519,4 +523,32 @@
   .swiper.peekSlider:not(.daySlider) .swiper-slide.swiper-slide-active { transform: scale(1); opacity: 1; }
   .swiper.expertSlider:not(.daySlider) .swiper-slide:not(.swiper-slide-active) { transform: scale(0.9); }
   .swiper.expertSlider:not(.daySlider) .swiper-slide.swiper-slide-active { transform: scale(1); }
+}
+
+
+/* ── Карточка домена в слайдере блока 02: рамка цветом домена ────── */
+.eqvi-domain-card {
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid var(--edge, #F05EAD);   /* цвет рамки через переменную */
+}
+.eqvi-domain-card--pink   { --edge: #F05EAD; }
+.eqvi-domain-card--yellow { --edge: #F9C442; }
+
+
+.eqvi-phone-screen {
+  border-radius: 28px;
+  background: #fff;
+  overflow: hidden;
+}
+/* Тёмный экран приложения — для тёмных секций.
+   Корпус тоже тёмный, иначе между рамкой и экраном белый кант. */
+.eqvi-phone-screen--dark { background: #0B0D14; }
+.eqvi-phone:has(.eqvi-phone-screen--dark) { background: #0B0D14; }   /* ← новое */
+.eqvi-phone-bar {
+  height: 4px; width: 96px;
+  border-radius: 999px;
+  background: #0D1117;
+  opacity: .85;
+  margin: 10px auto 2px;
 }
