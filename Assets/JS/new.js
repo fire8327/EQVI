@@ -1,5 +1,6 @@
 /* tabs */
 $('#tabs').tabs();
+$('#value-bank-tabs').tabs();
 
 /* slideToggle */
 $(".toggleMain").each((i,el) => {

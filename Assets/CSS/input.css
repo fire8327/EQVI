@@ -8,6 +8,18 @@
   @apply text-[#20A9FF] bg-[#20A9FF1A] border border-[#20A9FF] shadow-[0px_4px_16px_0px_#20A9FF33] font-semibold
 }
 
+.value-bank.ui-tabs-active {
+  @apply text-white font-semibold
+}
+
+.value-bank.ui-tabs-active:first-child {
+  @apply bg-[#F05EAD]
+}
+
+.value-bank.ui-tabs-active:last-child {
+  @apply bg-[#2ECC71]
+}
+
 @media (min-width: 1024px) {
   .swiper:not(.daySlider):not(.integrationSlider) .swiper-slide:not(.swiper-slide-active) {
     transform: scale(0.85);
