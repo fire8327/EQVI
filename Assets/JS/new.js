@@ -11,17 +11,18 @@ $(".toggleMain").each((i,el) => {
 })
 
 /* видео */
-$('#videoToggler').on('click', function() {
-  const video = $('#video')[0];
-  if (video.paused) {
-    $("#videoOverlay").addClass('opacity-0');
-    $("#videoPreview").addClass('hidden');
-    setTimeout(() => {
-      video.play();
-    }, 350);
+$('.videoToggler').on('click', function() {
+  const $toggler = $(this);
+  const videoEl = $toggler.find('.video')[0];
+
+  if (videoEl.paused) {
+    $toggler.find(".videoOverlay").addClass('opacity-0');
+    $toggler.find(".videoPreview").addClass('hidden');
+    
+    setTimeout(() => videoEl.play(), 350);
   } else {
-      video.pause();
-      $("#videoOverlay").removeClass('opacity-0');
+    videoEl.pause();
+    $toggler.find(".videoOverlay").removeClass('opacity-0');
   }
 });
 
