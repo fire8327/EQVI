@@ -10,8 +10,20 @@ $(".toggleMain").each((i,el) => {
     })
 })
 
-
-
+/* видео */
+$('#videoToggler').on('click', function() {
+  const video = $('#video')[0];
+  if (video.paused) {
+    $("#videoOverlay").addClass('opacity-0');
+    $("#videoPreview").addClass('hidden');
+    setTimeout(() => {
+      video.play();
+    }, 350);
+  } else {
+      video.pause();
+      $("#videoOverlay").removeClass('opacity-0');
+  }
+});
 
 /* slider */
 const swiper = new Swiper('.daySlider', {
