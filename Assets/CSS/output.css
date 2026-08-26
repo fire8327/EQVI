@@ -2691,6 +2691,11 @@
       margin-top: calc(var(--spacing) * 5);
     }
   }
+  .max-md\:hidden {
+    @media (width < 48rem) {
+      display: none;
+    }
+  }
   .max-md\:h-\[30px\] {
     @media (width < 48rem) {
       height: 30px;
@@ -2756,9 +2761,19 @@
       right: calc(calc(1/5 * 100%) * -1);
     }
   }
+  .max-sm\:hidden {
+    @media (width < 40rem) {
+      display: none;
+    }
+  }
   .max-sm\:max-w-\[225px\] {
     @media (width < 40rem) {
       max-width: 225px;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
     }
   }
   .md\:mx-auto {
