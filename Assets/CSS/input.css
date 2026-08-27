@@ -12,11 +12,19 @@
   @apply text-white font-semibold
 }
 
-.value-bank.ui-tabs-active:first-child {
+.value-bank.ui-tabs-active:nth-child(1) {
   @apply bg-[#F05EAD]
 }
 
-.value-bank.ui-tabs-active:last-child {
+.value-bank.ui-tabs-active:nth-child(2) {
+  @apply bg-[#F1C62C]
+}
+
+.value-bank.ui-tabs-active:nth-child(3) {
+  @apply bg-[#20A9FF]
+}
+
+.value-bank.ui-tabs-active:nth-child(4) {
   @apply bg-[#2ECC71]
 }
 
