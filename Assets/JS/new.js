@@ -18,6 +18,7 @@ $('.videoToggler').on('click', function() {
   if (videoEl.paused) {
     $toggler.find(".videoOverlay").addClass('opacity-0');
     $toggler.find(".videoPreview").addClass('hidden');
+    $toggler.find(".videoBubble").addClass('hidden');
     
     setTimeout(() => videoEl.play(), 350);
   } else {
