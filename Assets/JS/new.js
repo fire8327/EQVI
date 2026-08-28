@@ -172,7 +172,7 @@ const swiper5 = new Swiper('.integrationSlider', {
 
 
 /* form */
-$("#contact, #contact2, #formToggler, #overlay").click(() => {
+$("#contact, #contact2, #contact3, #formToggler, #overlay").click(() => {
   $("#form, #overlay").toggleClass("hidden")
 })
 
