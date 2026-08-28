@@ -3625,6 +3625,11 @@
       border-width: 1px;
     }
   }
+  .lg\:bg-\[\#0B0D14\] {
+    @media (width >= 64rem) {
+      background-color: #0B0D14;
+    }
+  }
   .lg\:bg-\[\#272C30\] {
     @media (width >= 64rem) {
       background-color: #272C30;

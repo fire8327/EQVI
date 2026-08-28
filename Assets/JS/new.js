@@ -10,6 +10,16 @@ $(".toggleMain").each((i,el) => {
     })
 })
 
+
+/* slideToggle2 */
+$(".toggleMobile").each((i, el) => {
+    $(el).find(".toggleMobileButton").click(() => {
+        $(el).find(".toggleMobileList").slideToggle()
+        $(el).find(".toggleMobileCheck").find("span").toggleClass("hidden")
+    })
+})
+
+
 /* видео */
 $('.videoToggler').on('click', function() {
   const $toggler = $(this);
