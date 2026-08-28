@@ -20,7 +20,6 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-xs: 4px;
     --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
@@ -862,8 +861,14 @@
   .max-w-\[412px\] {
     max-width: 412px;
   }
+  .max-w-\[420px\] {
+    max-width: 420px;
+  }
   .max-w-\[480px\] {
     max-width: 480px;
+  }
+  .max-w-\[520px\] {
+    max-width: 520px;
   }
   .max-w-\[560px\] {
     max-width: 560px;
