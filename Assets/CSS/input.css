@@ -25,7 +25,7 @@
 }
 
 .value-bank.ui-tabs-active:nth-child(4) {
-  @apply bg-[#2ECC71]
+  @apply bg-[#E88A4A]
 }
 
 .value-bank.ui-tabs-active:nth-child(5) {
@@ -33,7 +33,7 @@
 }
 
 .value-bank.ui-tabs-active:nth-child(6) {
-  @apply bg-[#E88A4A]
+  @apply bg-[#2ECC71]
 }
 
 @media (min-width: 1024px) {
