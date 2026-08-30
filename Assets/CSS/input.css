@@ -28,6 +28,14 @@
   @apply bg-[#2ECC71]
 }
 
+.value-bank.ui-tabs-active:nth-child(5) {
+  @apply bg-[#9B6FE8]
+}
+
+.value-bank.ui-tabs-active:nth-child(6) {
+  @apply bg-[#E88A4A]
+}
+
 @media (min-width: 1024px) {
   .swiper:not(.daySlider):not(.integrationSlider) .swiper-slide:not(.swiper-slide-active) {
     transform: scale(0.85);

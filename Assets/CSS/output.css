@@ -2000,6 +2000,9 @@
   .text-\[\#8E8E93\] {
     color: #8E8E93;
   }
+  .text-\[\#9B6FE8\] {
+    color: #9B6FE8;
+  }
   .text-\[\#20A9FF\] {
     color: #20A9FF;
   }
@@ -2089,6 +2092,9 @@
   }
   .text-\[\#C9C9C9\] {
     color: #C9C9C9;
+  }
+  .text-\[\#E88A4A\] {
+    color: #E88A4A;
   }
   .text-\[\#E5484D\] {
     color: #E5484D;
@@ -4110,6 +4116,12 @@
 }
 .value-bank.ui-tabs-active:nth-child(4) {
   background-color: #2ECC71;
+}
+.value-bank.ui-tabs-active:nth-child(5) {
+  background-color: #9B6FE8;
+}
+.value-bank.ui-tabs-active:nth-child(6) {
+  background-color: #E88A4A;
 }
 @media (min-width: 1024px) {
   .swiper:not(.daySlider):not(.integrationSlider) .swiper-slide:not(.swiper-slide-active) {
