@@ -19,12 +19,10 @@ $(".toggleMobile").each((i, el) => {
     })
 })
 
-
-/* видео */
 /* видео */
 $('.videoToggler').each(function() {
     const $toggler = $(this);
-    const videoEl = $toggler.find('.video')[0];
+    const videoEl = $toggler.find('.video')[0];``
 
     // Repeat (скрыта по умолчанию)
     const $repeatBtn = $(`
