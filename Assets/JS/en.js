@@ -52,7 +52,7 @@ $(function() {
                 fullName: $("input[name='full_name']").val().trim() || "",
                 position: $("input[name='position']").val().trim() || "",
                 company: $("input[name='company']").val().trim() || "",
-                numberOfEmployees: $("input[name='number']").val().trim() || ""
+                /* numberOfEmployees: $("input[name='number']").val().trim() || "" */
             };
 
             $submitBtn.prop("disabled", true).text("Sending...");
