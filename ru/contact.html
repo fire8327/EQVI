@@ -48,9 +48,82 @@
                 <p>
                     Наша команда с радостью поможет вам - будь то обсуждение конкретного сценария использования, организация индивидуальной демонстрации продукта, рассмотрение технических требований к интеграции или обсуждение возможностей стратегического партнерства.
                 </p>
+                <button id="contact" class="cursor-pointer rounded-[8px] w-full md:w-fit py-[18px] px-8 text-[16px] leading-[100%] font-semibold text-white bg-[#20A9FF]">Связаться с нами</button>
             </div>
         </article>
     </main>
+
+    <!-- contact form -->
+    <div id="overlay" class="hidden fixed inset-0 z-9 bg-[#05050580] lg:bg-[#121212]"></div>
+    <form id="form" class="hidden">
+        <div class="fixed z-10 bg-[#1F2326] rounded-[20px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[calc(100%-32px)] max-w-[600px] p-4 lg:p-6 flex flex-col gap-8">
+            <div id="formContent" class="flex flex-col gap-8">
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-between gap-1.5">
+                        <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white max-md:max-w-[220px]">Записаться на вводную встречу</p>
+                        <div id="formToggler" class="cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2983 5.71022C18.2058 5.61752 18.0959 5.54397 17.9749 5.49379C17.8539 5.44361 17.7242 5.41778 17.5933 5.41778C17.4623 5.41778 17.3326 5.44361 17.2116 5.49379C17.0907 5.54397 16.9808 5.61752 16.8883 5.71022L11.9983 10.5902L7.10827 5.70022C7.01569 5.60764 6.90578 5.5342 6.78481 5.4841C6.66385 5.43399 6.5342 5.4082 6.40327 5.4082C6.27234 5.4082 6.14269 5.43399 6.02173 5.4841C5.90076 5.5342 5.79085 5.60764 5.69827 5.70022C5.60569 5.79281 5.53225 5.90272 5.48214 6.02368C5.43204 6.14464 5.40625 6.27429 5.40625 6.40522C5.40625 6.53615 5.43204 6.6658 5.48214 6.78677C5.53225 6.90773 5.60569 7.01764 5.69827 7.11022L10.5883 12.0002L5.69827 16.8902C5.60569 16.9828 5.53225 17.0927 5.48214 17.2137C5.43204 17.3346 5.40625 17.4643 5.40625 17.5952C5.40625 17.7262 5.43204 17.8558 5.48214 17.9768C5.53225 18.0977 5.60569 18.2076 5.69827 18.3002C5.79085 18.3928 5.90076 18.4662 6.02173 18.5163C6.14269 18.5665 6.27234 18.5922 6.40327 18.5922C6.5342 18.5922 6.66385 18.5665 6.78481 18.5163C6.90578 18.4662 7.01569 18.3928 7.10827 18.3002L11.9983 13.4102L16.8883 18.3002C16.9809 18.3928 17.0908 18.4662 17.2117 18.5163C17.3327 18.5665 17.4623 18.5922 17.5933 18.5922C17.7242 18.5922 17.8538 18.5665 17.9748 18.5163C18.0958 18.4662 18.2057 18.3928 18.2983 18.3002C18.3909 18.2076 18.4643 18.0977 18.5144 17.9768C18.5645 17.8558 18.5903 17.7262 18.5903 17.5952C18.5903 17.4643 18.5645 17.3346 18.5144 17.2137C18.4643 17.0927 18.3909 16.9828 18.2983 16.8902L13.4083 12.0002L18.2983 7.11022C18.6783 6.73022 18.6783 6.09022 18.2983 5.71022Z" fill="#8B949E"/>
+                            </svg>                            
+                        </div>
+                    </div>
+                    <p class="text-[12px] leading-[140%] italic text-[#8B949E]">
+                        Встретьтесь с нашей командой на 30-минутной вводной сессии по EQVI. Мы расскажем о платформе, обсудим приоритеты вашего банка и ответим на все вопросы.
+                    </p>
+                </div>
+                <div class="flex flex-col w-full gap-6 text-white">
+                    <div class="relative w-full">
+                        <input required name="full_name" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Полное имя
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input required name="business_email" type="email" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Рабочий email
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input required name="position" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Должность 
+                        </p>
+                    </div>
+                    <div class="relative w-full">
+                        <input required name="company" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Компания 
+                        </p>
+                    </div>
+                    <!-- <div class="relative w-full">
+                        <input required name="number" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
+                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
+                            Number of Employees
+                        </p>
+                    </div> -->
+                </div>
+                <div class="flex flex-col w-full gap-2">
+                    <button id="formSubmit" type="submit" class="cursor-pointer text-[16px] rounded-full lg:rounded-[20px] bg-[#20A9FF] text-white flex justify-center items-center w-full h-[44px]">Запросить встречу</button>
+                    <p class="text-[12px] leading-[100%] font-medium text-[#959595]">Вы соглашаетесь с <a href="privacy-policy.html" target="_blank" class="underline">Политикой конфиденциальности</a></p>
+                    <p id="formError" class="hidden text-[12px] leading-[140%] font-medium text-[#F97373]">Что-то пошло не так. Пожалуйста, попробуйте позже.</p>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="formSuccess" class="hidden">
+        <div class="z-10 flex flex-col items-center gap-4 text-center text-white p-4 bg-[#121212] border border-white/10 fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-xl">
+            <div class="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center rounded-full border border-[#20A9FF]">
+                <svg class="w-5 h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.9992 3L4.49975 8.4996L2 5.99978" stroke="#20A9FF" stroke-width="2" stroke-linecap="round"/>
+                </svg>                    
+            </div>
+            <p class="text-[18px] lg:text-[20px] leading-[140%] font-semibold">Спасибо.</p>
+            <p class="text-[14px] lg:text-[16px] leading-[140%] text-white/70 max-w-[360px]">Ваш запрос был отправлен.</p>
+            <p class="text-[14px] lg:text-[16px] leading-[140%] text-white/70 max-w-[360px]">Мы свяжемся с вами в ближайшее время.</p>
+            <button id="formClose" type="button" class="cursor-pointer text-[16px] rounded-full lg:rounded-[20px] bg-[#20A9FF] text-white flex justify-center items-center px-8 h-[44px]">Закрыть</button>
+        </div>
+    </div>
 
     <footer class="w-full py-10 px-4 bg-[#0D1117] border-t border-[#FFFFFF0F]">
         <div class="flex flex-col gap-6 lg:gap-10 max-w-[1200px] mx-auto">
@@ -85,5 +158,10 @@
             </div> 
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/new_ru.js"></script>
 </body>
 </html>
