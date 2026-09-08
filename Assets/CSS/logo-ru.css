@@ -1,0 +1,211 @@
+/* ═══════════════════════════════════════════════════════════════
+   MERCHANT LOGOS
+   ═══════════════════════════════════════════════════════════════ */
+
+.eqvi-logo {
+    flex: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: clamp(18px, 3.4vw, 32px);
+
+    color: #6E7681;
+
+    transition:
+        color .25s ease,
+        opacity .25s ease;
+}
+
+
+/* Сам SVG */
+.eqvi-logo img {
+    display: block;
+
+    width: auto;
+    height: clamp(25px, 6vw, 38px);
+
+    max-width: 180px;
+
+    object-fit: contain;
+
+    /*
+     * Все логотипы приводим к единому
+     * спокойному монохромному виду.
+     */
+    filter: grayscale(1);
+
+    transition:
+        filter .25s ease,
+        opacity .25s ease,
+        transform .25s ease;
+}
+
+
+/* При наведении возвращаем цвет оригинального SVG */
+.eqvi-logo:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   ИНДИВИДУАЛЬНЫЕ РАЗМЕРЫ
+   ═══════════════════════════════════════════════════════════════ */
+
+
+/* Спортмастер */
+.eqvi-logo img[src*="sportmaster"] {
+    max-width: 165px;
+}
+
+
+/* CDEK */
+.eqvi-logo img[src*="cdek-shopping"] {
+    max-width: 135px;
+}
+
+
+/* Love Republic */
+.eqvi-logo img[src*="love-republic"] {
+    max-width: 175px;
+}
+
+
+/* ЦУМ Outlet */
+.eqvi-logo img[src*="tsum-outlet"] {
+    max-width: 145px;
+}
+
+
+/* ВкусВилл */
+.eqvi-logo img[src*="vkusvill"] {
+    max-width: 150px;
+}
+
+
+/* Grow Food */
+.eqvi-logo img[src*="grow-food"] {
+    max-width: 145px;
+}
+
+
+/* Level Kitchen */
+.eqvi-logo img[src*="level-kitchen"] {
+    max-width: 165px;
+}
+
+
+/* ПростоЕда */
+.eqvi-logo img[src*="prostoeda"] {
+    max-width: 155px;
+}
+
+
+/* Шефмаркет */
+.eqvi-logo img[src*="chefmarket"] {
+    max-width: 165px;
+}
+
+
+/* Яндекс Путешествия */
+.eqvi-logo img[src*="yandex-travel"] {
+    max-width: 180px;
+}
+
+
+/* Островок */
+.eqvi-logo img[src*="ostrovok"] {
+    max-width: 145px;
+}
+
+
+/* Яндекс Афиша */
+.eqvi-logo img[src*="yandex-afisha"] {
+    max-width: 165px;
+}
+
+
+/* Литнет */
+.eqvi-logo img[src*="litnet"] {
+    max-width: 125px;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   МОБИЛЬНЫЕ
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 767px) {
+
+    .eqvi-logo {
+        padding-inline: 18px;
+    }
+
+    .eqvi-logo img {
+        height: 28px;
+        max-width: 145px;
+    }
+
+    .eqvi-logo img[src*="sportmaster"] {
+        max-width: 140px;
+    }
+
+    .eqvi-logo img[src*="cdek-shopping"] {
+        max-width: 115px;
+    }
+
+    .eqvi-logo img[src*="love-republic"] {
+        max-width: 145px;
+    }
+
+    .eqvi-logo img[src*="tsum-outlet"] {
+        max-width: 120px;
+    }
+
+    .eqvi-logo img[src*="vkusvill"] {
+        max-width: 125px;
+    }
+
+    .eqvi-logo img[src*="grow-food"] {
+        max-width: 120px;
+    }
+
+    .eqvi-logo img[src*="level-kitchen"] {
+        max-width: 140px;
+    }
+
+    .eqvi-logo img[src*="prostoeda"] {
+        max-width: 130px;
+    }
+
+    .eqvi-logo img[src*="chefmarket"] {
+        max-width: 140px;
+    }
+
+    .eqvi-logo img[src*="yandex-travel"] {
+        max-width: 150px;
+    }
+
+    .eqvi-logo img[src*="ostrovok"] {
+        max-width: 120px;
+    }
+
+    .eqvi-logo img[src*="yandex-afisha"] {
+        max-width: 140px;
+    }
+
+    .eqvi-logo img[src*="litnet"] {
+        max-width: 110px;
+    }
+}
+
+
+/* Учитываем reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .eqvi-logo img {
+        transition: none;
+    }
+}
