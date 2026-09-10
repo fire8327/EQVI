@@ -948,48 +948,114 @@
                         </div>
                         
                         <!-- Список пунктов -->
-                        <div class="flex flex-col gap-6 text-[16px] lg:text-[18px] leading-[100%] text-white">
-                            <div class="flex items-center gap-3">
-                                <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#F05EAD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p class="font-semibold">Формируется персональный план обновления гардероба</p>
-                            </div>
+                        <div class="p-2.5 py-4 md:p-4 lg:p-8 bg-[#0D1117] border border-[#1E293B] rounded-[16px] overflow-hidden">
+                            <p class="text-[20px] lg:text-[24px] leading-[100%] font-bold text-white mb-5 lg:mb-8">
+                                Участие банка в пути клиента
+                            </p>
 
-                            <div class="flex items-center gap-3">
-                                <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#F05EAD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p class="font-semibold">Необходимая сумма накапливается через регулярные переводы, кешбэк и округление</p>
-                            </div>
+                            <di class="relative">
+                                <div class="w-px h-[calc(100%-50px)] absolute bg-[#F05EAD] bottom-2 right-6 md:right-[49.5px] z-0"></div>
+                                <div class="z-1 relative grid grid-cols-[1fr_100px_50px] md:grid-cols-[1fr_140px_100px] gap-x-4 lg:gap-x-10 gap-y-2">
+ 
+                                    <!-- Header row -->
+                                    <p class="text-[13px] lg:text-[15px] leading-[100%] text-[#8B949E] font-medium pb-2">Этап</p>
+                                    <p class="text-[13px] lg:text-[15px] leading-[100%] text-[#8B949E] font-medium text-center pb-2">Банк сегодня</p>
+                                    <p class="text-[13px] lg:text-[15px] leading-[100%] text-[#F05EAD] font-semibold text-center pb-2">С EQVI</p>
 
-                            <div class="flex items-center gap-3">
-                                <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#F05EAD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p class="font-semibold">Покупка оплачивается картой банка</p>
-                            </div>
+                                    <!-- Row 1: Персональный план -->
+                                    <p class="text-[12px] lg:text-[14px] leading-[100%] text-white font-medium">Персональный план</p>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="11" stroke="#475569" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="12" fill="#F05EAD"/>
+                                            <path d="M9 14.5L12.5 18L19 11" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
 
-                            <div class="flex items-center gap-3">
-                                <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#F05EAD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p class="font-semibold">Банк получает комиссионный доход от партнёра</p>
-                            </div>
+                                    <!-- Row 2: Накопление -->
+                                    <p class="text-[12px] lg:text-[14px] leading-[100%] text-white font-medium">Накопление</p>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="11" stroke="#475569" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="12" fill="#F05EAD"/>
+                                            <path d="M9 14.5L12.5 18L19 11" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
 
-                            <div class="flex items-center gap-3">
-                                <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#F05EAD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p class="font-semibold">Недостающая сумма финансируется через рассрочку или кредит</p>
-                            </div>
+                                    <!-- Row 3: Оплата -->
+                                    <p class="text-[12px] lg:text-[14px] leading-[100%] text-white font-medium">Оплата</p>
+                                    <div class="flex flex-col items-center gap-1">
+                                       <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="11" stroke="#475569" stroke-width="2"/>
+                                            <path d="M14 3 A11 11 0 0 1 20.47 22.9 L14 14 Z" fill="#475569"/>
+                                        </svg>
+                                        <p class="text-[11px] lg:text-[12px] leading-[120%] text-[#8B949E] text-center">Только своей картой</p>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="12" fill="#F05EAD"/>
+                                            <path d="M9 14.5L12.5 18L19 11" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
 
-                            <div class="flex items-center gap-3">
-                                <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#F05EAD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p class="font-semibold">Взаимодействие продолжается после покупки</p>
-                            </div>
+                                    <!-- Row 4: Доход от партнёра -->
+                                    <p class="text-[12px] lg:text-[14px] leading-[100%] text-white font-medium">Доход от партнёра</p>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="11" stroke="#475569" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="12" fill="#F05EAD"/>
+                                            <path d="M9 14.5L12.5 18L19 11" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+
+                                    <!-- Row 5: Рассрочка или кредит -->
+                                    <p class="text-[12px] lg:text-[14px] leading-[100%] text-white font-medium">Рассрочка или кредит</p>
+                                    <div class="flex flex-col items-center gap-1">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="11" stroke="#475569" stroke-width="2"/>
+                                            <path d="M14 3 A11 11 0 0 1 20.47 22.9 L14 14 Z" fill="#475569"/>
+                                        </svg>
+                                        <p class="text-[11px] lg:text-[12px] leading-[120%] text-[#8B949E] text-center">Только через свой банк</p>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="12" fill="#F05EAD"/>
+                                            <path d="M9 14.5L12.5 18L19 11" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+
+                                    <!-- Row 6: После покупки -->
+                                    <p class="text-[12px] lg:text-[14px] leading-[100%] text-white font-medium">После покупки</p>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="11" stroke="#475569" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <svg class="w-6 h-6" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="12" fill="#F05EAD"/>
+                                            <path d="M9 14.5L12.5 18L19 11" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </di>
+
+                            <p class="text-[14px] lg:text-[16px] leading-[100%] text-[#F05EAD] text-center mt-6 lg:mt-8 font-medium">
+                                От отдельных операций — ко всему пути клиента
+                            </p>
                         </div>
                     </div>
                     <div id="bank-tab-2" class="flex flex-col gap-8 lg:gap-10">
