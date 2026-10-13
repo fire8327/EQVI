@@ -244,7 +244,7 @@ $(function() {
                   $("#form").addClass("hidden");
                   $("#formToggler").addClass("hidden");
                   $("#formSuccess").removeClass("hidden");
-                  $submitBtn.prop("disabled", false).text("Request Meeting");
+                  $submitBtn.prop("disabled", false).text("Request a Meeting");
               } else {
                   $("#formError").removeClass("hidden");
               }
@@ -254,7 +254,7 @@ $(function() {
           })
           .always(function() {
               if (!$("#formSuccess").is(":visible")) {
-                  $submitBtn.prop("disabled", false).text("Request Meeting");
+                  $submitBtn.prop("disabled", false).text("Request a Meeting");
               }
           });
       });
