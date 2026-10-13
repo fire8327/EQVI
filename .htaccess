@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# 1. 301 Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.eqvilibria\.com [NC]
+RewriteRule ^(.*)$ https://eqvilibria.com/$1 [L,R=301]
+
+# 2. 301 Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://eqvilibria.com/$1 [L,R=301]

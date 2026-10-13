@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow test and legacy drafts
+Disallow: /en/old_page.html
+Disallow: /en/new_page.html
+
+# Sitemap
+Sitemap: https://eqvilibria.com/sitemap.xml
