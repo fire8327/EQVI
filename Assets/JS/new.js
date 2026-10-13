@@ -4,14 +4,11 @@ $('#value-bank-tabs').tabs();
 
 /* slideToggle */
 $(".toggleMain").each((i, el) => {
-    const $btn = $(el).find(".toggleButton");
-    $btn.on("click", () => {
-        $(el).find(".toggleList").slideToggle();
-        $btn.find("svg").toggleClass("rotate-180");
-        const isExpanded = $btn.attr("aria-expanded") === "true";
-        $btn.attr("aria-expanded", !isExpanded);
-    });
-});
+    $(el).find(".toggleButton").click(() => {
+        $(el).find(".toggleList").slideToggle()
+        $(el).find(".toggleButton").find("svg").toggleClass("rotate-180")
+    })
+})
 
 
 /* slideToggle2 */
@@ -23,7 +20,7 @@ $(".toggleMobile").each((i, el) => {
 })
 
 /* видео */
-$('.videoToggler').each(function() {
+$('.videoToggler').each(function () {
     const $toggler = $(this);
     const videoEl = $toggler.find('.video')[0];
 
@@ -41,7 +38,7 @@ $('.videoToggler').each(function() {
     $toggler.append($repeatBtn);
 
     // Обработка клика по самому блоку (Play/Pause)
-    $toggler.on('click', function(e) {
+    $toggler.on('click', function (e) {
         // Если кликнули по кнопке Repeat, игнорируем этот обработчик
         if ($(e.target).closest('.videoRepeatBtn').length) return;
 
@@ -50,7 +47,7 @@ $('.videoToggler').each(function() {
             $toggler.find(".videoPreview").addClass('hidden');
             $toggler.find(".videoBubble").addClass('hidden');
             $repeatBtn.addClass('hidden'); // Скрываем кнопку repeat при ручном запуске
-            
+
             setTimeout(() => videoEl.play(), 350);
         } else {
             videoEl.pause();
@@ -59,12 +56,12 @@ $('.videoToggler').each(function() {
     });
 
     // Окончание видео
-    videoEl.addEventListener('ended', function() {
+    videoEl.addEventListener('ended', function () {
         $repeatBtn.removeClass('hidden');
     });
 
     // Обработка клика по кнопке Repeat
-    $repeatBtn.on('click', function(e) {
+    $repeatBtn.on('click', function (e) {
         e.stopPropagation(); // Чтобы не срабатывал клик по .videoToggler (пауза)
         videoEl.currentTime = 0;
         videoEl.play();
@@ -82,20 +79,20 @@ const swiper = new Swiper('.daySlider', {
 
     breakpoints: {
         640: {
-          slidesPerView: 3.3,
+            slidesPerView: 3.3,
         },
         1024: {
-          slidesPerView: 4, 
+            slidesPerView: 4,
         },
         1280: {
-          slidesPerView: 6,
+            slidesPerView: 6,
         }
-      },
-  
+    },
+
     // If we need pagination
     pagination: {
-      el: '.dayPagination',
-      clickable: true,
+        el: '.dayPagination',
+        clickable: true,
     },
 });
 
@@ -103,16 +100,16 @@ const swiper2 = new Swiper('.historyMobileSlider', {
     grabCursor: true,
     slidesPerView: 1,
     spaceBetween: 10,
-  
+
     // If we need pagination
     pagination: {
-      el: '.historyMobilePagination',
-      clickable: true,
+        el: '.historyMobilePagination',
+        clickable: true,
     },
 
     navigation: {
-      nextEl: '.mobileNext',
-      prevEl: '.mobilePrev',
+        nextEl: '.mobileNext',
+        prevEl: '.mobilePrev',
     },
 });
 
@@ -165,8 +162,8 @@ const swiper3 = new Swiper('.historyDesktopSlider', {
     spaceBetween: 10,
 
     navigation: {
-      nextEl: '.desktopNext',
-      prevEl: '.desktopPrev',
+        nextEl: '.desktopNext',
+        prevEl: '.desktopPrev',
     },
 
     on: {
@@ -189,81 +186,81 @@ const swiper5 = new Swiper('.integrationSlider', {
 
     breakpoints: {
         640: {
-          slidesPerView: 1.5,
-          spaceBetween: 24,
+            slidesPerView: 1.5,
+            spaceBetween: 24,
         }
     },
 
     pagination: {
-      el: '.integrationPagination',
-      clickable: true,
+        el: '.integrationPagination',
+        clickable: true,
     },
 
     navigation: {
-      nextEl: '.integrationNext',
-      prevEl: '.integrationPrev',
+        nextEl: '.integrationNext',
+        prevEl: '.integrationPrev',
     },
 });
 
 
 /* form */
 $("#contact, #contact2, #contact3, #formToggler, #overlay").click(() => {
-  $("#form, #overlay").toggleClass("hidden")
+    $("#form, #overlay").toggleClass("hidden")
 })
 
-$(function() {
-  const $form = $("#form");
-  const $submitBtn = $("#formSubmit");
+$(function () {
+    const $form = $("#form");
+    const $submitBtn = $("#formSubmit");
 
-  if ($form.length) {
-      $form.on("submit", function(e) {
-          e.preventDefault();
+    if ($form.length) {
+        $form.on("submit", function (e) {
+            e.preventDefault();
 
-          if ($submitBtn.prop("disabled")) {
-              return;
-          }
+            if ($submitBtn.prop("disabled")) {
+                return;
+            }
 
-          $("#formError").addClass("hidden");
+            $("#formError").addClass("hidden");
 
-          const payload = {
-              fullName: $("input[name='full_name']").val().trim() || "",
-              businessEmail: $("input[name='business_email']").val().trim() || "",
-              position: $("input[name='position']").val().trim() || "",
-              company: $("input[name='company']").val().trim() || "",
-              /* numberOfEmployees: $("input[name='number']").val().trim() || "" */
-          };
+            const payload = {
+                fullName: $("input[name='full_name']").val().trim() || "",
+                businessEmail: $("input[name='business_email']").val().trim() || "",
+                position: $("input[name='position']").val().trim() || "",
+                company: $("input[name='company']").val().trim() || "",
+                /* numberOfEmployees: $("input[name='number']").val().trim() || "" */
+            };
 
-          $submitBtn.prop("disabled", true).text("Sending...");
+            $submitBtn.prop("disabled", true).text("Sending...");
 
-          $.ajax({
-              url: "http://coordinator.eqvilibria.com/api/v1/site/feedback",
-              method: "POST",
-              contentType: "application/json",
-              dataType: "json",
-              data: JSON.stringify(payload)
-          })
-          .done(function(response) {
-              if (response && response.success === true) {
-                  $("#form").addClass("hidden");
-                  $("#formToggler").addClass("hidden");
-                  $("#formSuccess").removeClass("hidden");
-                  $submitBtn.prop("disabled", false).text("Request a Meeting");
-              } else {
-                  $("#formError").removeClass("hidden");
-              }
-          })
-          .fail(function() {
-              $("#formError").removeClass("hidden");
-          })
-          .always(function() {
-              if (!$("#formSuccess").is(":visible")) {
-                  $submitBtn.prop("disabled", false).text("Request a Meeting");
-              }
-          });
-      });
-  }
+            $.ajax({
+                url: "http://coordinator.eqvilibria.com/api/v1/site/feedback",
+                method: "POST",
+                contentType: "application/json",
+                dataType: "json",
+                data: JSON.stringify(payload)
+            })
+                .done(function (response) {
+                    if (response && response.success === true) {
+                        $("#form").addClass("hidden");
+                        $("#formToggler").addClass("hidden");
+                        $("#formSuccess").removeClass("hidden");
+                        $submitBtn.prop("disabled", false).text("Request a Meeting");
+                    } else {
+                        $("#formError").removeClass("hidden");
+                    }
+                })
+                .fail(function () {
+                    $("#formError").removeClass("hidden");
+                })
+                .always(function () {
+                    if (!$("#formSuccess").is(":visible")) {
+                        $submitBtn.prop("disabled", false).text("Request a Meeting");
+                    }
+                });
+        });
+    }
 
-  $("#formClose").click(function() {
-      $("#form, #overlay, #formToggler, #formSuccess").addClass("hidden");
-  });
+    $("#formClose").click(function () {
+        $("#form, #overlay, #formToggler, #formSuccess").addClass("hidden");
+    });
 });
