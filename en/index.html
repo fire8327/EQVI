@@ -2044,91 +2044,510 @@
             </div>
         </section>
 
-        <section class="w-full py-10 lg:py-[120px] px-4 bg-[#0D1117] border-b border-[#1E293B]">
-            <div class="flex flex-col gap-10 lg:gap-16 max-w-[1200px] mx-auto">
-                <div class="flex flex-col gap-3 lg:gap-4 lg:text-center lg:items-center">
-                    <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">PILOT ROADMAP</p>
-                    <p class="text-[32px] lg:text-[56px] leading-[110%] font-bold text-white max-w-[900px]">A staged path from market validation to bank-wide rollout</p>
+        <section id="roadmap" class="w-full py-10 lg:py-[120px] px-4 bg-[#0D1117] border-b border-[#1E293B]">
+            <div class="flex flex-col gap-8 lg:gap-12 max-w-[1000px] mx-auto">
+                <!-- Header -->
+                <div class="flex flex-col gap-3 lg:gap-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#162032] border border-[#1E293B] w-fit">
+                        <span class="w-2 h-2 rounded-full bg-[#20A9FF] ring-4 ring-[#20A9FF]/20"></span>
+                        <span class="text-[12px] lg:text-[13px] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">EQVI · INTEGRATION ROADMAP</span>
+                    </div>
+                    <h2 class="text-[30px] lg:text-[48px] leading-[115%] font-bold text-white">
+                        From Discovery to Bank-Wide Rollout
+                    </h2>
+                    <p class="text-[15px] lg:text-[18px] leading-[150%] text-[#94A3B8]">
+                        Five stages. Minimal risk. Measurable value. Controlled scaling.
+                    </p>
                 </div>
-                <div class="flex max-lg:flex-col gap-6 lg:gap-12 relative">
-                    <div class="flex lg:flex-col lg:items-center gap-4 w-full md:w-100 lg:flex-1 z-2">
-                        <div class="flex items-center justify-center rounded-full w-12 h-12 lg:w-20 lg:h-20 bg-[#1E1B4B] border-2 border-[#7C5CFF] shadow-[0px_0px_16px_0px_#7C5CFF22] shrink-0">
-                            <p class="text-[16px] lg:text-[20px] leading-[100%] font-bold text-white">01</p>
+
+                <!-- 5 Accordion Stages -->
+                <div class="flex flex-col gap-4 lg:gap-5">
+
+                    <!-- ── STAGE 01 ────────────────────────────────────── -->
+                    <details open class="group bg-[#0E131F] border border-[#1E293B] rounded-[16px] lg:rounded-[20px] overflow-hidden transition-all duration-300 hover:border-[#2E3C52]">
+                        <summary class="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 p-4 lg:p-6 cursor-pointer select-none">
+                            <div class="flex items-center gap-3.5 lg:gap-5">
+                                <div class="flex items-center justify-center rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-[#1B1F38] border border-[#3E3C75] text-[#A5B4FC] shrink-0 font-bold text-[15px] lg:text-[17px]">
+                                    01
+                                </div>
+                                <div class="flex flex-col gap-0.5 lg:gap-1">
+                                    <h3 class="text-[17px] lg:text-[21px] font-bold text-white leading-[125%]">Discovery &amp; Tailored Proposal</h3>
+                                    <p class="text-[12px] lg:text-[14px] text-[#94A3B8] leading-[130%]">Bank objectives, customer segments and a tailored partnership plan.</p>
+                                </div>
+                            </div>
+                            <div class="shrink-0 text-[#94A3B8] group-hover:text-white transition-colors">
+                                <svg class="w-5 h-5 lg:w-6 lg:h-6 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-5 lg:px-6 lg:pb-6 flex flex-col gap-4 lg:gap-5 border-t border-[#1E293B]/60 pt-4 lg:pt-5">
+                            <p class="text-[14px] lg:text-[15px] leading-[160%] text-[#CBD5E1]">
+                                We explore your bank's strategic priorities, customer segments and business objectives. Together, we define relevant use cases, commercial opportunities and measurable KPIs.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-3 lg:gap-4">
+                                <div class="flex flex-col items-center justify-center gap-2.5 p-4 rounded-xl bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <svg class="w-6 h-6 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 2l10 5H2l10-5z"></path>
+                                    </svg>
+                                    <span class="text-[14px] font-medium text-white">Bank Objectives</span>
+                                </div>
+                                <div class="flex justify-center text-[#20A9FF]">
+                                    <svg class="w-5 h-5 max-md:rotate-90 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2.5 p-4 rounded-xl bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <svg class="w-6 h-6 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                        <path d="m9 14 2 2 4-4"></path>
+                                    </svg>
+                                    <span class="text-[14px] font-medium text-white">Tailored Proposal</span>
+                                </div>
+                            </div>
+                            <p class="text-[12px] lg:text-[13px] text-[#94A3B8] leading-[140%]">
+                                Outcome: An agreed pilot strategy, success criteria and partnership roadmap.
+                            </p>
                         </div>
-                        <div class="w-full flex flex-col gap-1.5 lg:gap-2 p-3.5 lg:px-2 lg:py-3 rounded-xl lg:text-center bg-[#0B0D14] border border-[#1E293B]">
-                            <p class="text-[14px] leading-[100%] font-bold text-white">Discovery</p>
-                            <p class="text-[12px] leading-[140%] text-[#94A3B8]">Segment, market, use case, and KPI definition</p>
+                    </details>
+
+                    <!-- ── STAGE 02 ────────────────────────────────────── -->
+                    <details open class="group bg-[#0E131F] border border-[#1E293B] rounded-[16px] lg:rounded-[20px] overflow-hidden transition-all duration-300 hover:border-[#2E3C52]">
+                        <summary class="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 p-4 lg:p-6 cursor-pointer select-none">
+                            <div class="flex items-center gap-3.5 lg:gap-5">
+                                <div class="flex items-center justify-center rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-[#1B1F38] border border-[#3E3C75] text-[#A5B4FC] shrink-0 font-bold text-[15px] lg:text-[17px]">
+                                    02
+                                </div>
+                                <div class="flex flex-col gap-0.5 lg:gap-1">
+                                    <h3 class="text-[17px] lg:text-[21px] font-bold text-white leading-[125%]">Free Employee Trial</h3>
+                                    <p class="text-[12px] lg:text-[14px] text-[#94A3B8] leading-[130%]">Up to 30 employees. No cost. No banking integration.</p>
+                                </div>
+                            </div>
+                            <div class="shrink-0 text-[#94A3B8] group-hover:text-white transition-colors">
+                                <svg class="w-5 h-5 lg:w-6 lg:h-6 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-5 lg:px-6 lg:pb-6 flex flex-col gap-4 lg:gap-5 border-t border-[#1E293B]/60 pt-4 lg:pt-5">
+                            <p class="text-[14px] lg:text-[15px] leading-[160%] text-[#CBD5E1]">
+                                We prepare EQVI for a selected group of up to 30 bank employees to evaluate recommendation quality, personalization and user experience — completely free of charge.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex flex-col">
+                                    <span class="text-[28px] lg:text-[36px] font-bold text-white leading-[100%]">30</span>
+                                    <span class="text-[12px] lg:text-[13px] text-[#94A3B8]">employees</span>
+                                </div>
+                                <div class="px-3 py-1 rounded-lg bg-[#064E3B]/40 border border-[#059669]/60 text-[#34D399] font-semibold text-[13px]">
+                                    Free Trial
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <div class="flex flex-col items-center justify-center gap-2 p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <svg class="w-6 h-6 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M18 2v6a3 3 0 0 1-3 3 3 3 0 0 1-3-3V2M15 11v11M5 2v8a2.5 2.5 0 0 0 5 0V2M7.5 12v10"></path>
+                                    </svg>
+                                    <span class="text-[13px] lg:text-[14px] font-medium text-white">Meals</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <svg class="w-6 h-6 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
+                                    </svg>
+                                    <span class="text-[13px] lg:text-[14px] font-medium text-white">Style</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <svg class="w-6 h-6 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.4-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.4l.7 2.5zM4 11v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9H4zm5-6.5 1.4 3.7M14.5 3l1.4 3.7"></path>
+                                    </svg>
+                                    <span class="text-[13px] lg:text-[14px] font-medium text-white">Entertainment</span>
+                                </div>
+                            </div>
+                            <p class="text-[12px] lg:text-[13px] text-[#94A3B8] leading-[140%]">
+                                Outcome: First-hand product validation without cost or technical integration.
+                            </p>
                         </div>
-                    </div>
-                    <div class="flex lg:flex-col lg:items-center gap-4 w-full md:w-100 lg:flex-1 z-2">
-                        <div class="flex items-center justify-center rounded-full w-12 h-12 lg:w-20 lg:h-20 bg-[#1E1B4B] border-2 border-[#7C5CFF] shadow-[0px_0px_16px_0px_#7C5CFF22] shrink-0">
-                            <p class="text-[16px] lg:text-[20px] leading-[100%] font-bold text-white">02</p>
+                    </details>
+
+                    <!-- ── STAGE 03 ────────────────────────────────────── -->
+                    <details open class="group bg-[#0E131F] border border-[#1E293B] rounded-[16px] lg:rounded-[20px] overflow-hidden transition-all duration-300 hover:border-[#2E3C52]">
+                        <summary class="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 p-4 lg:p-6 cursor-pointer select-none">
+                            <div class="flex items-center gap-3.5 lg:gap-5">
+                                <div class="flex items-center justify-center rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-[#1B1F38] border border-[#3E3C75] text-[#A5B4FC] shrink-0 font-bold text-[15px] lg:text-[17px]">
+                                    03
+                                </div>
+                                <div class="flex flex-col gap-0.5 lg:gap-1">
+                                    <h3 class="text-[17px] lg:text-[21px] font-bold text-white leading-[125%]">External Customer Pilot</h3>
+                                    <p class="text-[12px] lg:text-[14px] text-[#94A3B8] leading-[130%]">3 months. Real customers, financial products and new customer intelligence.</p>
+                                </div>
+                            </div>
+                            <div class="shrink-0 text-[#94A3B8] group-hover:text-white transition-colors">
+                                <svg class="w-5 h-5 lg:w-6 lg:h-6 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-5 lg:px-6 lg:pb-6 flex flex-col gap-4 lg:gap-5 border-t border-[#1E293B]/60 pt-4 lg:pt-5">
+                            <p class="text-[14px] lg:text-[15px] leading-[160%] text-[#CBD5E1]">
+                                We launch a three-month EQVI pilot for a selected customer segment. Customers join independently through promotional codes or secure card eligibility verification. No integration with the bank's IT systems is required.
+                            </p>
+
+                            <!-- Banking Products in EQVI -->
+                            <div class="p-4 lg:p-5 rounded-xl bg-[#090D16] border border-[#1E293B] flex flex-col gap-3">
+                                <p class="text-[13px] lg:text-[14px] font-semibold text-white">Banking Products in EQVI</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                                    <div class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-[#141C2B] border border-[#1E293B] text-[13px] text-white font-medium">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8.7 3.3 2 4.3V20h4v-2h6v2h4v-4.5c1.4-1.2 2-2.8 2-4.5 0-2.5-1.5-4-3-4a3.8 3.8 0 0 0-1-2zM16 11h.01M2 9v1M20 12v1"></path>
+                                        </svg>
+                                        <span>Savings</span>
+                                    </div>
+                                    <div class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-[#141C2B] border border-[#1E293B] text-[13px] text-white font-medium">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                            <rect x="2" y="7" width="20" height="5"></rect>
+                                            <line x1="12" y1="22" x2="12" y2="7"></line>
+                                            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                                        </svg>
+                                        <span>Loyalty</span>
+                                    </div>
+                                    <div class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-[#141C2B] border border-[#1E293B] text-[13px] text-white font-medium">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                                        </svg>
+                                        <span>Cards</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center text-[#20A9FF] py-0.5">
+                                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <polyline points="19 12 12 19 5 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-1 p-3 rounded-lg bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <div class="flex items-center gap-1.5 text-white font-semibold text-[14px]">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                        </svg>
+                                        <span>EQVI App</span>
+                                    </div>
+                                    <p class="text-[12px] text-[#94A3B8]">Contextual recommendation and product selection</p>
+                                </div>
+                                <div class="flex justify-center text-[#20A9FF] py-0.5">
+                                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <polyline points="19 12 12 19 5 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-1 p-3 rounded-lg bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <div class="flex items-center gap-1.5 text-white font-semibold text-[14px]">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        <span>Bank Website</span>
+                                    </div>
+                                    <p class="text-[12px] text-[#94A3B8]">Customer completes the application with the bank</p>
+                                </div>
+                            </div>
+
+                            <!-- New Customer Intelligence -->
+                            <div class="p-4 lg:p-6 rounded-xl bg-[#090D16] border border-[#1E293B] flex flex-col gap-4">
+                                <div class="flex items-start gap-2.5">
+                                    <div class="p-1 rounded-lg bg-[#20A9FF]/10 text-[#20A9FF] mt-0.5">
+                                        <svg class="w-5 h-5 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col gap-0.5">
+                                        <p class="text-[16px] lg:text-[18px] font-bold text-white leading-[125%]">New Customer Intelligence</p>
+                                        <p class="text-[12px] lg:text-[13px] text-[#94A3B8]">Beyond transactions: understanding what customers intend to do next.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 8 Intelligence Cards -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 lg:gap-3">
+                                    <!-- 1. Future Plans -->
+                                    <div class="p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] flex flex-col gap-1.5">
+                                        <div class="w-7 h-7 rounded-lg bg-[#1E293B] flex items-center justify-center text-[#20A9FF]">
+                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <p class="text-[14px] font-semibold text-white">Future Plans</p>
+                                        <p class="text-[12px] text-[#94A3B8] leading-[135%]">Upcoming occasions, activities and planned purchases.</p>
+                                    </div>
+
+                                    <!-- 2. Savings Goals -->
+                                    <div class="p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] flex flex-col gap-1.5">
+                                        <div class="w-7 h-7 rounded-lg bg-[#1E293B] flex items-center justify-center text-[#20A9FF]">
+                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8.7 3.3 2 4.3V20h4v-2h6v2h4v-4.5c1.4-1.2 2-2.8 2-4.5 0-2.5-1.5-4-3-4a3.8 3.8 0 0 0-1-2zM16 11h.01M2 9v1M20 12v1"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="text-[14px] font-semibold text-white">Savings Goals</p>
+                                        <p class="text-[12px] text-[#94A3B8] leading-[135%]">How much customers want to save: 10%, 20% or 30%.</p>
+                                    </div>
+
+                                    <!-- 3. Purchase Intent -->
+                                    <div class="p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] flex flex-col gap-1.5">
+                                        <div class="w-7 h-7 rounded-lg bg-[#1E293B] flex items-center justify-center text-[#20A9FF]">
+                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <circle cx="12" cy="12" r="6"></circle>
+                                                <circle cx="12" cy="12" r="2"></circle>
+                                            </svg>
+                                        </div>
+                                        <p class="text-[14px] font-semibold text-white">Purchase Intent</p>
+                                        <p class="text-[12px] text-[#94A3B8] leading-[135%]">What customers intend to purchase before transactions happen.</p>
+                                    </div>
+
+                                    <!-- 4. Planned Budgets -->
+                                    <div class="p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] flex flex-col gap-1.5">
+                                        <div class="w-7 h-7 rounded-lg bg-[#1E293B] flex items-center justify-center text-[#20A9FF]">
+                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path>
+                                                <path d="M4 6v12a2 2 0 0 0 2 2h14v-4"></path>
+                                                <circle cx="18" cy="14" r="1"></circle>
+                                            </svg>
+                                        </div>
+                                        <p class="text-[14px] font-semibold text-white">Planned Budgets</p>
+                                        <p class="text-[12px] text-[#94A3B8] leading-[135%]">How much customers plan to spend on specific needs.</p>
+                                    </div>
+
+                                    <!-- 5. Purchase Timing -->
+                                    <div class="p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] flex flex-col gap-1.5">
+                                        <div class="w-7 h-7 rounded-lg bg-[#1E293B] flex items-center justify-center text-[#20A9FF]">
+                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                        </div>
+                                        <p class="text-[14px] font-semibold text-white">Purchase Timing</p>
+                                        <p class="text-[12px] text-[#94A3B8] leading-[135%]">When customers expect to make a purchase.</p>
+                                    </div>
+
+                                    <!-- 6. Decision Motivations -->
+                                    <div class="p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] flex flex-col gap-1.5">
+                                        <div class="w-7 h-7 rounded-lg bg-[#1E293B] flex items-center justify-center text-[#20A9FF]">
+                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="text-[14px] font-semibold text-white">Decision Motivations</p>
+                                        <p class="text-[12px] text-[#94A3B8] leading-[135%]">Why customers choose, postpone or reject options.</p>
+                                    </div>
+
+                                    <!-- 7. Lifestyle Changes -->
+                                    <div class="p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] flex flex-col gap-1.5">
+                                        <div class="w-7 h-7 rounded-lg bg-[#1E293B] flex items-center justify-center text-[#20A9FF]">
+                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <polyline points="23 4 23 10 17 10"></polyline>
+                                                <polyline points="1 20 1 14 7 14"></polyline>
+                                                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="text-[14px] font-semibold text-white">Lifestyle Changes</p>
+                                        <p class="text-[12px] text-[#94A3B8] leading-[135%]">Changing routines, priorities and personal goals.</p>
+                                    </div>
+
+                                    <!-- 8. Unmet Needs -->
+                                    <div class="p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] flex flex-col gap-1.5">
+                                        <div class="w-7 h-7 rounded-lg bg-[#1E293B] flex items-center justify-center text-[#20A9FF]">
+                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .5 2.5 1.5 3.5.76.76 1.23 1.52 1.41 2.5z"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="text-[14px] font-semibold text-white">Unmet Needs</p>
+                                        <p class="text-[12px] text-[#94A3B8] leading-[135%]">Needs not yet visible in transaction history.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Summary Banner -->
+                                <div class="p-3.5 lg:p-4 rounded-xl bg-[#131F33] border border-[#1E3A8A]/50 flex flex-col gap-1">
+                                    <p class="text-[13px] lg:text-[14px] font-semibold text-[#38BDF8]">From Past Transactions to Future Intentions</p>
+                                    <p class="text-[12px] lg:text-[13px] text-[#94A3B8] leading-[140%]">The bank understands what customers have spent. EQVI adds what they are planning, how much they want to save and when they may need a financial solution.</p>
+                                </div>
+                            </div>
+
+                            <p class="text-[13px] lg:text-[14px] leading-[150%] text-[#CBD5E1]">
+                                The bank measures engagement, interest in financial products, referral traffic and attributable conversions, while receiving aggregated, privacy-compliant insights into future customer needs.
+                            </p>
+                            <p class="text-[12px] lg:text-[13px] text-[#94A3B8] leading-[140%]">
+                                Outcome: Market validation, commercial performance data and new customer intelligence — before technical integration.
+                            </p>
                         </div>
-                        <div class="w-full flex flex-col gap-1.5 lg:gap-2 p-3.5 lg:px-2 lg:py-3 rounded-xl lg:text-center bg-[#0B0D14] border border-[#1E293B]">
-                            <p class="text-[14px] leading-[100%] font-bold text-white">Local validation</p>
-                            <p class="text-[12px] leading-[140%] text-[#94A3B8]">Test assumptions in a target geography</p>
+                    </details>
+
+                    <!-- ── STAGE 04 ────────────────────────────────────── -->
+                    <details open class="group bg-[#0E131F] border border-[#1E293B] rounded-[16px] lg:rounded-[20px] overflow-hidden transition-all duration-300 hover:border-[#2E3C52]">
+                        <summary class="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 p-4 lg:p-6 cursor-pointer select-none">
+                            <div class="flex items-center gap-3.5 lg:gap-5">
+                                <div class="flex items-center justify-center rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-[#1B1F38] border border-[#3E3C75] text-[#A5B4FC] shrink-0 font-bold text-[15px] lg:text-[17px]">
+                                    04
+                                </div>
+                                <div class="flex flex-col gap-0.5 lg:gap-1">
+                                    <h3 class="text-[17px] lg:text-[21px] font-bold text-white leading-[125%]">In-App Banking Integration</h3>
+                                    <p class="text-[12px] lg:text-[14px] text-[#94A3B8] leading-[130%]">Secure API, in-app financial products and dual access.</p>
+                                </div>
+                            </div>
+                            <div class="shrink-0 text-[#94A3B8] group-hover:text-white transition-colors">
+                                <svg class="w-5 h-5 lg:w-6 lg:h-6 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-5 lg:px-6 lg:pb-6 flex flex-col gap-4 lg:gap-5 border-t border-[#1E293B]/60 pt-4 lg:pt-5">
+                            <p class="text-[14px] lg:text-[15px] leading-[160%] text-[#CBD5E1]">
+                                EQVI is embedded in the bank's mobile application through a secure API. Customers receive contextual recommendations and select financial products directly within the banking experience.
+                            </p>
+
+                            <!-- Flow Box -->
+                            <div class="p-4 lg:p-5 rounded-xl bg-[#090D16] border border-[#1E293B] flex flex-col gap-3">
+                                <div class="flex flex-col items-center justify-center gap-1 p-3.5 rounded-lg bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <div class="flex items-center gap-1.5 text-white font-semibold text-[14px]">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 2l10 5H2l10-5z"></path>
+                                        </svg>
+                                        <span>Banking App + EQVI</span>
+                                    </div>
+                                    <p class="text-[12px] text-[#94A3B8]">Contextual financial recommendations</p>
+                                </div>
+                                <div class="flex justify-center text-[#20A9FF] py-0.5">
+                                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <polyline points="19 12 12 19 5 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                                    <div class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-[#141C2B] border border-[#1E293B] text-[13px] text-white font-medium">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8.7 3.3 2 4.3V20h4v-2h6v2h4v-4.5c1.4-1.2 2-2.8 2-4.5 0-2.5-1.5-4-3-4a3.8 3.8 0 0 0-1-2zM16 11h.01M2 9v1M20 12v1"></path>
+                                        </svg>
+                                        <span>Savings</span>
+                                    </div>
+                                    <div class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-[#141C2B] border border-[#1E293B] text-[13px] text-white font-medium">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                            <rect x="2" y="7" width="20" height="5"></rect>
+                                            <line x1="12" y1="22" x2="12" y2="7"></line>
+                                            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                                        </svg>
+                                        <span>Loyalty</span>
+                                    </div>
+                                    <div class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-[#141C2B] border border-[#1E293B] text-[13px] text-white font-medium">
+                                        <svg class="w-4 h-4 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                                        </svg>
+                                        <span>Cards</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center text-[#20A9FF] py-0.5">
+                                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <polyline points="19 12 12 19 5 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="flex items-center justify-center gap-2 p-3.5 rounded-lg bg-[#064E3B]/30 border border-[#059669]/60 text-center">
+                                    <svg class="w-5 h-5 text-[#34D399]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                    <span class="text-[14px] font-semibold text-white">Product Selection &amp; Application Inside the Bank</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-2.5 text-[#94A3B8] text-[12px] lg:text-[13px] leading-[140%]">
+                                <svg class="w-4 h-4 text-[#34D399] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    <polyline points="9 12 11 14 15 10"></polyline>
+                                </svg>
+                                <p>No directly identifying customer information is required for the core API. Pseudonymous identifiers and necessary contextual signals are used under agreed privacy controls.</p>
+                            </div>
+
+                            <p class="text-[14px] lg:text-[15px] leading-[160%] text-[#CBD5E1]">
+                                Existing EQVI pilot customers retain their preferences and personalization after secure, consent-based account linking. One profile supports access through both applications.
+                            </p>
+                            <p class="text-[12px] lg:text-[13px] text-[#94A3B8] leading-[140%]">
+                                Outcome: An embedded AI assistant with seamless banking journeys and continuity of personalization.
+                            </p>
                         </div>
-                    </div>
-                    <div class="flex lg:flex-col lg:items-center gap-4 w-full md:w-100 lg:flex-1 z-2">
-                        <div class="flex items-center justify-center rounded-full w-12 h-12 lg:w-20 lg:h-20 bg-[#0D1117] border-2 border-[#20A9FF] shadow-[0px_0px_16px_0px_#20A9FF33] shrink-0">
-                            <p class="text-[16px] lg:text-[20px] leading-[100%] font-bold text-white">03</p>
+                    </details>
+
+                    <!-- ── STAGE 05 ────────────────────────────────────── -->
+                    <details open class="group bg-[#0E131F] border border-[#1E293B] rounded-[16px] lg:rounded-[20px] overflow-hidden transition-all duration-300 hover:border-[#2E3C52]">
+                        <summary class="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 p-4 lg:p-6 cursor-pointer select-none">
+                            <div class="flex items-center gap-3.5 lg:gap-5">
+                                <div class="flex items-center justify-center rounded-full w-10 h-10 lg:w-12 lg:h-12 bg-[#1B1F38] border border-[#3E3C75] text-[#A5B4FC] shrink-0 font-bold text-[15px] lg:text-[17px]">
+                                    05
+                                </div>
+                                <div class="flex flex-col gap-0.5 lg:gap-1">
+                                    <h3 class="text-[17px] lg:text-[21px] font-bold text-white leading-[125%]">Bank-Wide Rollout</h3>
+                                    <p class="text-[12px] lg:text-[14px] text-[#94A3B8] leading-[130%]">Full customer base. Engagement, conversion and revenue.</p>
+                                </div>
+                            </div>
+                            <div class="shrink-0 text-[#94A3B8] group-hover:text-white transition-colors">
+                                <svg class="w-5 h-5 lg:w-6 lg:h-6 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-5 lg:px-6 lg:pb-6 flex flex-col gap-4 lg:gap-5 border-t border-[#1E293B]/60 pt-4 lg:pt-5">
+                            <p class="text-[14px] lg:text-[15px] leading-[160%] text-[#CBD5E1]">
+                                Following successful KPI validation, EQVI expands across the bank's customer base, with additional lifestyle domains, financial products, loyalty programs and partner offers.
+                            </p>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <div class="flex flex-col items-center justify-center gap-2 p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <svg class="w-6 h-6 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                    <span class="text-[13px] lg:text-[14px] font-medium text-white">Engagement</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <svg class="w-6 h-6 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                        <polyline points="17 6 23 6 23 12"></polyline>
+                                    </svg>
+                                    <span class="text-[13px] lg:text-[14px] font-medium text-white">Conversion</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 p-3.5 rounded-xl bg-[#141C2B] border border-[#1E293B] text-center">
+                                    <svg class="w-6 h-6 text-[#20A9FF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                        <line x1="1" y1="10" x2="23" y2="10"></line>
+                                        <line x1="6" y1="15" x2="6.01" y2="15"></line>
+                                        <line x1="10" y1="15" x2="14" y2="15"></line>
+                                    </svg>
+                                    <span class="text-[13px] lg:text-[14px] font-medium text-white">Revenue</span>
+                                </div>
+                            </div>
+                            <p class="text-[12px] lg:text-[13px] text-[#94A3B8] leading-[140%]">
+                                Outcome: A scalable relationship layer designed to increase engagement, conversion and long-term customer value.
+                            </p>
                         </div>
-                        <div class="w-full flex flex-col gap-1.5 lg:gap-2 p-3.5 lg:px-2 lg:py-3 rounded-xl lg:text-center bg-[#0B0D14] border border-[#1E293B]">
-                            <p class="text-[14px] leading-[100%] font-bold text-white">Employee Validation</p>
-                            <p class="text-[12px] leading-[140%] text-[#94A3B8]">30-50 bank employees trial the product</p>
-                        </div>
-                    </div>
-                    <div class="flex lg:flex-col lg:items-center gap-4 w-full md:w-100 lg:flex-1 z-2">
-                        <div class="flex items-center justify-center rounded-full w-12 h-12 lg:w-20 lg:h-20 bg-[#0B0D14] border-2 border-[#1E293B] shrink-0">
-                            <p class="text-[16px] lg:text-[20px] leading-[100%] font-bold text-[#475569]">04</p>
-                        </div>
-                        <div class="w-full flex flex-col gap-1.5 lg:gap-2 p-3.5 lg:px-2 lg:py-3 rounded-xl lg:text-center bg-[#0B0D14]/50 border border-[#1E293B]/50">
-                            <p class="text-[14px] leading-[100%] font-bold text-[#C9C9C9] opacity-50">Limited customer </p>
-                            <p class="text-[12px] leading-[140%] text-[#94A3B8]">One segment, 1-2 key domains</p>
-                        </div>
-                    </div>
-                    <div class="flex lg:flex-col lg:items-center gap-4 w-full md:w-100 lg:flex-1 z-2">
-                        <div class="flex items-center justify-center rounded-full w-12 h-12 lg:w-20 lg:h-20 bg-[#0B0D14] border-2 border-[#1E293B] shrink-0">
-                            <p class="text-[16px] lg:text-[20px] leading-[100%] font-bold text-[#475569]">05</p>
-                        </div>
-                        <div class="w-full flex flex-col gap-1.5 lg:gap-2 p-3.5 lg:px-2 lg:py-3 rounded-xl lg:text-center bg-[#0B0D14]/50 border border-[#1E293B]/50">
-                            <p class="text-[14px] leading-[100%] font-bold text-[#C9C9C9] opacity-50">Measurement</p>
-                            <p class="text-[12px] leading-[140%] text-[#94A3B8]">Independent measurement</p>
-                        </div>
-                    </div>
-                    <div class="flex lg:flex-col lg:items-center gap-4 w-full md:w-100 lg:flex-1 z-2">
-                        <div class="flex items-center justify-center rounded-full w-12 h-12 lg:w-20 lg:h-20 bg-[#0B0D14] border-2 border-[#1E293B] shrink-0">
-                            <p class="text-[16px] lg:text-[20px] leading-[100%] font-bold text-[#475569]">06</p>
-                        </div>
-                        <div class="w-full flex flex-col gap-1.5 lg:gap-2 p-3.5 lg:px-2 lg:py-3 rounded-xl lg:text-center bg-[#0B0D14]/50 border border-[#1E293B]/50">
-                            <p class="text-[14px] leading-[100%] font-bold text-[#C9C9C9] opacity-50">Scale</p>
-                            <p class="text-[12px] leading-[140%] text-[#94A3B8]">Bank-wide rollout only after KPI confirmation.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between w-[715px] xl:w-[856px] absolute top-[33px] left-1/2 -translate-x-1/2 z-1 max-lg:hidden">
-                        <div class="w-4 h-4 bg-[#7C5CFF] border-[1.5px] border-[#20A9FF] rotate-45 flex items-center justify-center">
-                            <div class="w-1 h-1 bg-white"></div>
-                        </div>
-                        <div class="w-4 h-4 bg-[#7C5CFF] border-[1.5px] border-[#20A9FF] rotate-45 flex items-center justify-center">
-                            <div class="w-1 h-1 bg-white"></div>
-                        </div>
-                        <div class="w-4 h-4 bg-[#1E293B] border-[1.5px] border-[#334155] rotate-45 flex items-center justify-center">
-                            <div class="w-1 h-1 bg-[#475569]"></div>
-                        </div>
-                        <div class="w-4 h-4 bg-[#1E293B] border-[1.5px] border-[#334155] rotate-45 flex items-center justify-center">
-                            <div class="w-1 h-1 bg-[#475569]"></div>
-                        </div>
-                        <div class="w-4 h-4 bg-[#1E293B] border-[1.5px] border-[#334155] rotate-45 flex items-center justify-center">
-                            <div class="w-1 h-1 bg-[#475569]"></div>
-                        </div>
-                    </div>
-                    <div class="absolute w-[2px] h-[180px] top-6 left-[23px] bg-[#7C5CFF] lg:hidden z-1"></div>
-                    <div class="absolute w-[2px] h-[calc(100%-60px)] lg:w-[calc(100%-80px)] lg:h-[2px] left-[23px] lg:left-1/2 lg:-translate-x-1/2 bg-[#1E293B] lg:top-6 lg:top-10 z-0"></div>
+                    </details>
                 </div>
-                <div class="flex flex-col gap-6">
-                    <div class="flex lg:items-center gap-2.5 lg:gap-2 lg:mx-auto">
-                        <div class="w-2 h-2 bg-[#7C5CFF] rotate-45"></div>
-                        <p class="text-[12px] lg:text-[14px] leading-[140%] text-[#94A3B8]">Each stage includes a decision gate - the bank may pause or stop at any point.</p>
+
+                <!-- Footer & CTA -->
+                <div class="flex flex-col gap-6 pt-2">
+                    <div class="flex items-center gap-2.5 text-[#94A3B8] text-[13px] lg:text-[14px] leading-[140%]">
+                        <svg class="w-4 h-4 text-[#7C5CFF] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg>
+                        <p>Every stage includes agreed KPIs, security controls and a decision gate. The bank may pause or stop before proceeding.</p>
                     </div>
                     <button id="contact3" class="cursor-pointer w-full lg:w-fit px-8 h-[50px] rounded-[8px] bg-[#20A9FF] text-white flex items-center justify-center lg:mx-auto">
                         <span class="text-[15px] lg:text-[16px] leading-[100%] font-bold">Discuss Opportunities</span>

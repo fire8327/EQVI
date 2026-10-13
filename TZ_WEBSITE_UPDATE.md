@@ -201,7 +201,17 @@
 
 ---
 
-### 13. Integration — унифицировать технические формулировки
+### 13. Integration — унифицировать технические формулировки (ВЫПОЛНЕНО)
+* **Статус:** ✅ **Выполнено**.
+  * На главной странице [en/index.html](file:///c:/Users/f1re/Desktop/Projects/EQVI/en/index.html) внедрена новая 5-этапная модель:
+    1. **Discovery & Tailored Proposal**
+    2. **Free Employee Trial** (до 30 сотрудников, без затрат, 3 домена: Meals, Style, Entertainment)
+    3. **External Customer Pilot** (3 месяца, без IT-интеграции, автономное приложение EQVI + переход на сайт банка + 8 карточек New Customer Intelligence)
+    4. **In-App Banking Integration** (встраивание через Secure API, выбор и оформление внутри приложения банка, псевдонимизированные ID)
+    5. **Bank-Wide Rollout** (масштабирование на всю базу: Engagement, Conversion, Revenue)
+  * В блоке Roadmap исключены лишние кнопки `collapse`/`expand`.
+  * Блок свёрстан адаптивно (от 320px до десктопа) с аккордеон-карточками на нативном семантическом `<details open>`.
+  * Дублирующая плашка *Trust, Privacy & Responsible AI* удалена из Roadmap, при этом отдельный раздел безопасности сохранён.
 * **Где:** Integration Roadmap, Value for Banks, главная страница, FAQ и любые другие упоминания интеграции.
 * **Что сделать:**
   1. Внедрить на всём сайте **новую пятиэтапную модель сотрудничества**:
