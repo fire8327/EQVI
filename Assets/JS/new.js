@@ -3,12 +3,15 @@ $('#tabs').tabs();
 $('#value-bank-tabs').tabs();
 
 /* slideToggle */
-$(".toggleMain").each((i,el) => {
-    $(el).find(".toggleButton").click(()=> {
-        $(el).find(".toggleList").slideToggle()
-        $(el).find(".toggleButton").find("svg").toggleClass("rotate-180")
-    })
-})
+$(".toggleMain").each((i, el) => {
+    const $btn = $(el).find(".toggleButton");
+    $btn.on("click", () => {
+        $(el).find(".toggleList").slideToggle();
+        $btn.find("svg").toggleClass("rotate-180");
+        const isExpanded = $btn.attr("aria-expanded") === "true";
+        $btn.attr("aria-expanded", !isExpanded);
+    });
+});
 
 
 /* slideToggle2 */
@@ -22,7 +25,7 @@ $(".toggleMobile").each((i, el) => {
 /* видео */
 $('.videoToggler').each(function() {
     const $toggler = $(this);
-    const videoEl = $toggler.find('.video')[0];``
+    const videoEl = $toggler.find('.video')[0];
 
     // Repeat (скрыта по умолчанию)
     const $repeatBtn = $(`

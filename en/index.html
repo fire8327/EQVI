@@ -175,14 +175,10 @@
                         <div class="absolute inset-0 flex items-center justify-center cursor-pointer z-1 videoOverlay">
                             <div class="flex flex-col gap-4 items-center justify-center transition-all duration-500">
                                 <div class="w-fit flex items-center justify-center p-4 rounded-full border-2 border-[#F05EAD]">
-                                    <svg class="w-8 lg:w-10 h-8 lg:h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <path
-                                                d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
-                                                fill="#F05EAD"></path>
-                                        </g>
+                                    <svg class="w-8 lg:w-10 h-8 lg:h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path
+                                            d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
+                                            fill="#F05EAD"></path>
                                     </svg> 
                                 </div>
                                 <p class="videoBubble text-[16px] lg:text-[18px] leading-[100%] font-semibold text-white bg-[#F05EAD] px-4 py-2 rounded-full">See a Need Become a Plan</p>
@@ -231,19 +227,15 @@
                     </p>
                 </div>
                 <div class="flex flex-col gap-6 toggleMain">
-                    <button class="toggleButton cursor-pointer flex items-center gap-2 mx-auto font-semibold rounded-full border border-[#30363D] py-2 px-4">
+                    <button class="toggleButton cursor-pointer flex items-center gap-2 mx-auto font-semibold rounded-full border border-[#30363D] py-2 px-4" aria-expanded="false" aria-controls="processList">
                         <span class="text-[16px] lg:text-[18px] leading-[100%] text-white">View the Full Process</span>
-                        <svg class="w-6 h-6 transition-all duration-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
-                                    fill="#20A9FF"></path>
-                            </g>
+                        <svg class="w-6 h-6 transition-all duration-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                fill="#20A9FF"></path>
                         </svg>
                     </button>
-                    <div class="toggleList hidden">
+                    <div id="processList" class="toggleList hidden">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-1.5 md:gap-4 lg:gap-8">
                             
                             <!-- Item 01 -->
@@ -379,98 +371,6 @@
                             
                         </div>
                     </div>
-                    <!-- <div class="flex flex-col gap-3 hidden lg:hidden">
-                        <div class="flex flex-col gap-3 p-4 toggleMobile rounded-xl border border-[#30363D]">
-                            <div class="flex items-center justify-between toggleMobileButton">
-                                <div class="flex items-ceneter gap-2">
-                                    <p class="rounded-full w-6 h-6 text-[12px] leading-[100%] font-bold border border-[#30363D] text-[#20A9FF] flex items-center justify-center">01</p>
-                                    <p class="text-[18px] leading-[100%] font-semibold text-white">Domain Intelligence</p>
-                                </div>
-                                <p class="w-3.5 h-6 flex items-center text-center text-[20px] leading-[100%] text-[#6B7280] toggleMobileCheck">
-                                    <span>+</span>
-                                    <span class="hidden">-</span>
-                                </p>
-                            </div>
-                            <p class="toggleMobileList text-[16px] leading-[100%] text-[#A1A1AA] hidden">
-                                Domain experts continuously train, evaluate and refine specialized AI models for nutrition, health, style, travel and other areas of life.
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-3 p-4 toggleMobile rounded-xl border border-[#30363D]">
-                            <div class="flex items-center justify-between toggleMobileButton">
-                                <div class="flex items-ceneter gap-2">
-                                    <p class="rounded-full w-6 h-6 text-[12px] leading-[100%] font-bold border border-[#30363D] text-[#20A9FF] flex items-center justify-center">02</p>
-                                    <p class="text-[18px] leading-[100%] font-semibold text-white">Unified Customer Profile</p>
-                                </div>
-                                <p class="w-3.5 h-6 flex items-center text-center text-[20px] leading-[100%] text-[#6B7280] toggleMobileCheck">
-                                    <span>+</span>
-                                    <span class="hidden">-</span>
-                                </p>
-                            </div>
-                            <p class="toggleMobileList text-[16px] leading-[100%] text-[#A1A1AA] hidden">
-                                All signals from different domains unified into one intelligent profile to understand the whole person.
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-3 p-4 toggleMobile rounded-xl border border-[#30363D]">
-                            <div class="flex items-center justify-between toggleMobileButton">
-                                <div class="flex items-ceneter gap-2">
-                                    <p class="rounded-full w-6 h-6 text-[12px] leading-[100%] font-bold border border-[#30363D] text-[#20A9FF] flex items-center justify-center">03</p>
-                                    <p class="text-[18px] leading-[100%] font-semibold text-white">Cross-Domain Intelligence</p>
-                                </div>
-                                <p class="w-3.5 h-6 flex items-center text-center text-[20px] leading-[100%] text-[#6B7280] toggleMobileCheck">
-                                    <span>+</span>
-                                    <span class="hidden">-</span>
-                                </p>
-                            </div>
-                            <p class="toggleMobileList text-[16px] leading-[100%] text-[#A1A1AA] hidden">
-                                Experts and AI connect insights across domains to understand relationships and what matters next.
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-3 p-4 toggleMobile rounded-xl border border-[#30363D]">
-                            <div class="flex items-center justify-between toggleMobileButton">
-                                <div class="flex items-ceneter gap-2">
-                                    <p class="rounded-full w-6 h-6 text-[12px] leading-[100%] font-bold border border-[#30363D] text-[#20A9FF] flex items-center justify-center">04</p>
-                                    <p class="text-[18px] leading-[100%] font-semibold text-white">Contextual Recommendations</p>
-                                </div>
-                                <p class="w-3.5 h-6 flex items-center text-center text-[20px] leading-[100%] text-[#6B7280] toggleMobileCheck">
-                                    <span>+</span>
-                                    <span class="hidden">-</span>
-                                </p>
-                            </div>
-                            <p class="toggleMobileList text-[16px] leading-[100%] text-[#A1A1AA] hidden">
-                                Personalized suggestions delivered in the right context, ensuring relevance to customers.
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-3 p-4 toggleMobile rounded-xl border border-[#30363D]">
-                            <div class="flex items-center justify-between toggleMobileButton">
-                                <div class="flex items-ceneter gap-2">
-                                    <p class="rounded-full w-6 h-6 text-[12px] leading-[100%] font-bold border border-[#30363D] text-[#20A9FF] flex items-center justify-center">05</p>
-                                    <p class="text-[18px] leading-[100%] font-semibold text-white">Continuous Feedback</p>
-                                </div>
-                                <p class="w-3.5 h-6 flex items-center text-center text-[20px] leading-[100%] text-[#6B7280] toggleMobileCheck">
-                                    <span>+</span>
-                                    <span class="hidden">-</span>
-                                </p>
-                            </div>
-                            <p class="toggleMobileList text-[16px] leading-[100%] text-[#A1A1AA] hidden">
-                                Real user feedback and behavior signals continuously feed the system to refine the experience.
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-3 p-4 toggleMobile rounded-xl border border-[#30363D]">
-                            <div class="flex items-center justify-between toggleMobileButton">
-                                <div class="flex items-ceneter gap-2">
-                                    <p class="rounded-full w-6 h-6 text-[12px] leading-[100%] font-bold border border-[#30363D] text-[#20A9FF] flex items-center justify-center">06</p>
-                                    <p class="text-[18px] leading-[100%] font-semibold text-white">Adaptive Learning</p>
-                                </div>
-                                <p class="w-3.5 h-6 flex items-center text-center text-[20px] leading-[100%] text-[#6B7280] toggleMobileCheck">
-                                    <span>+</span>
-                                    <span class="hidden">-</span>
-                                </p>
-                            </div>
-                            <p class="toggleMobileList text-[16px] leading-[100%] text-[#A1A1AA] hidden">
-                                AI continuously learns and becomes more accurate, adapting to your evolving needs and goals.
-                            </p>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -694,19 +594,15 @@
                     </div>
                 </div>
                 <div class="toggleMain flex flex-col gap-6 mt-4">
-                    <button class="toggleButton cursor-pointer flex items-center gap-2 mx-auto font-semibold">
+                    <button class="toggleButton cursor-pointer flex items-center gap-2 mx-auto font-semibold" aria-expanded="false" aria-controls="methodologyList">
                         <span class="text-[16px] lg:text-[18px] leading-[100%] text-white">View Testing Methodology</span>
-                        <svg class="w-6 h-6 transition-all duration-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
-                                    fill="#20A9FF"></path>
-                            </g>
+                        <svg class="w-6 h-6 transition-all duration-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                fill="#20A9FF"></path>
                         </svg>
                     </button>
-                    <div class="toggleList hidden">
+                    <div id="methodologyList" class="toggleList hidden">
                         <div class="flex flex-col gap-4 lg:gap-6">
                             <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase lg:text-center">Testing Methodology</p>
                             <div class="flex flex-col gap-1">
@@ -913,46 +809,6 @@
                     </p>
         
                     <div class="">
-        
-                        <!-- <ul class="r flex flex-col gap-4 lg:flex-1">
-                            <li class="flex gap-3">
-                                <svg class="shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#20A9FF" stroke-width="2.2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <p class="text-[15px] lg:text-[16px] leading-[140%] text-white">
-                                    Identifies what the customer wants to achieve
-                                </p>
-                            </li>
-                            <li class="flex gap-3">
-                                <svg class="shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#20A9FF" stroke-width="2.2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <p class="text-[15px] lg:text-[16px] leading-[140%] text-white">
-                                    Adapts each question to their previous response
-                                </p>
-                            </li>
-                            <li class="flex gap-3">
-                                <svg class="shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#20A9FF" stroke-width="2.2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <p class="text-[15px] lg:text-[16px] leading-[140%] text-white">
-                                    Uses only the information needed for the next step
-                                </p>
-                            </li>
-                            <li class="flex gap-3">
-                                <svg class="shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 12.5 10 17.5 19 7" stroke="#20A9FF" stroke-width="2.2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <p class="text-[15px] lg:text-[16px] leading-[140%] text-white">
-                                    Shows how every answer shapes the plan
-                                </p>
-                            </li>
-                        </ul> -->
-        
                         <!-- Экран диалога -->
                         <div class="videoToggler r eqvi-phone eqvi-phone--pink shrink-0 mx-auto overflow-hidden relative">
                             <div class="eqvi-phone-notch absolute top-2 left-1/2 -translate-x-1/2"></div>
@@ -960,14 +816,10 @@
                             <div class="absolute inset-0 flex items-center justify-center cursor-pointer z-1 videoOverlay">
                                 <div class="flex flex-col gap-4 items-center justify-center transition-all duration-500">
                                     <div class="w-fit flex items-center justify-center p-4 rounded-full border-2 border-[#F05EAD]">
-                                        <svg class="w-8 lg:w-10 h-8 lg:h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path
-                                                    d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
-                                                    fill="#F05EAD"></path>
-                                            </g>
+                                        <svg class="w-8 lg:w-10 h-8 lg:h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path
+                                                d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z"
+                                                fill="#F05EAD"></path>
                                         </svg> 
                                     </div>
                                     <p class="videoBubble text-[16px] lg:text-[18px] leading-[100%] font-semibold text-white bg-[#F05EAD] px-4 py-2 rounded-full">See a Goal Bring Them Back</p>
@@ -2337,19 +2189,15 @@
             <div class="flex flex-col gap-8 lg:gap-16 max-w-[1200px] mx-auto">
                 <!-- <p class="text-[12px] lg:text-[14px] leading-[100%] font-semibold text-[#20A9FF] tracking-[1.5px] uppercase">History Navigation</p> -->
                 <div class="flex flex-col gap-6 toggleMain">
-                    <button class="toggleButton cursor-pointer flex items-center gap-2 mx-auto font-semibold rounded-full border border-[#E5E7EB] py-2 px-4">
+                    <button class="toggleButton cursor-pointer flex items-center gap-2 mx-auto font-semibold rounded-full border border-[#E5E7EB] py-2 px-4" aria-expanded="false" aria-controls="historyList">
                         <span class="text-[16px] lg:text-[18px] leading-[100%] text-[#1A1A2E] lg:text-[#6B7280]">Explore Our Experience</span>
-                        <svg class="w-6 h-6 transition-all duration-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
-                                    fill="#20A9FF"></path>
-                            </g>
+                        <svg class="w-6 h-6 transition-all duration-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                fill="#20A9FF"></path>
                         </svg>
                     </button>
-                    <div class="toggleList hidden">
+                    <div id="historyList" class="toggleList hidden">
                         <div class="flex flex-col gap-3">
                             <details class="p-4 lg:px-10 lg:py-6 transition-all duration-300 max-lg:open:p-6 lg:open:py-10 bg-[#F2F2F2] lg:bg-white lg:border border-[#E5E7EB] rounded-[16px] overflow-hidden group relative">
                                 <summary class="flex items-center gap-2.5 justify-between cursor-pointer">
@@ -2357,13 +2205,13 @@
                                         <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2022 – Present</p>
                                         <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">EQVI | Life Operating System</p>
                                     </div>
-                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center" aria-hidden="true">
                                         <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
                                         <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
                                     </p>
                                 </summary>
                                 <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
-                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden" aria-hidden="true">
                                         <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2022 – Present</p>
                                         <p class="text-[28px] leading-[100%] font-bold text-[#111827]">EQVI | Life Operating System</p>
                                     </div>
@@ -2376,13 +2224,13 @@
                                         <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2016 – 2022</p>
                                         <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">EQVI Labs</p>
                                     </div>
-                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center" aria-hidden="true">
                                         <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
                                         <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
                                     </p>
                                 </summary>
                                 <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
-                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden" aria-hidden="true">
                                         <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2016 – 2022</p>
                                         <p class="text-[28px] leading-[100%] font-bold text-[#111827]">EQVI Labs</p>
                                     </div>
@@ -2401,13 +2249,13 @@
                                         <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2012 – 2016</p>
                                         <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">EQVI Life Assistant</p>
                                     </div>
-                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center" aria-hidden="true">
                                         <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
                                         <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
                                     </p>
                                 </summary>
                                 <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
-                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden" aria-hidden="true">
                                         <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2012 – 2016</p>
                                         <p class="text-[28px] leading-[100%] font-bold text-[#111827]">EQVI Life Assistant</p>
                                     </div>
@@ -2422,13 +2270,13 @@
                                         <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2011 – 2012</p>
                                         <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">Vedomosti iMall</p>
                                     </div>
-                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center" aria-hidden="true">
                                         <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
                                         <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
                                     </p>
                                 </summary>
                                 <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
-                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden" aria-hidden="true">
                                         <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2011 – 2012</p>
                                         <p class="text-[28px] leading-[100%] font-bold text-[#111827]">Vedomosti iMall</p>
                                     </div>
@@ -2447,13 +2295,13 @@
                                         <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2010 – 2011</p>
                                         <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">Eqvilibria</p>
                                     </div>
-                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center" aria-hidden="true">
                                         <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
                                         <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
                                     </p>
                                 </summary>
                                 <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
-                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden" aria-hidden="true">
                                         <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2010 – 2011</p>
                                         <p class="text-[28px] leading-[100%] font-bold text-[#111827]">Eqvilibria</p>
                                     </div>
@@ -2470,13 +2318,13 @@
                                         <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2009 – 2010</p>
                                         <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">Mastercard Izbrannoe</p>
                                     </div>
-                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center" aria-hidden="true">
                                         <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
                                         <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
                                     </p>
                                 </summary>
                                 <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
-                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden" aria-hidden="true">
                                         <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2009 – 2010</p>
                                         <p class="text-[28px] leading-[100%] font-bold text-[#111827]">Mastercard Izbrannoe</p>
                                     </div>
@@ -2495,13 +2343,13 @@
                                         <p class="lg:w-[180px] text-[11px] lg:text-[12px] leading-[100%] font-semibold transition-all duration-100 text-[#666666] lg:text-[#6B7280] max-lg:group-open:text-[#20A9FF] uppercase">2005 – 2015</p>
                                         <p class="text-[20px] leading-[100%] font-bold text-[#1A1A1A]">Eqvilibria Club</p>
                                     </div>
-                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center">
+                                    <p class="w-3.5 h-6 lg:w-[20px] lg:h-[34px] relative lg:absolute lg:top-5 lg:group-open:top-8 lg:right-10 text-[20px] lg:text-[28px] leading-[100%] text-[#666666] flex items-center" aria-hidden="true">
                                         <span class="w-full absolute transition-all duration-100 group-open:opacity-0">+</span>
                                         <span class="w-full absolute opacity-0 transition-all duration-100 group-open:opacity-100">-</span>
                                     </p>
                                 </summary>
                                 <div class="flex max-lg:flex-col gap-4 lg:gap-20 max-lg:mt-4">
-                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden">
+                                    <div class="flex flex-col gap-3 w-[400px] max-lg:hidden" aria-hidden="true">
                                         <p class="text-[12px] leading-[100%] font-semibold text-[#111827]">2005 – 2015</p>
                                         <p class="text-[28px] leading-[100%] font-bold text-[#111827]">Eqvilibria Club</p>
                                     </div>
@@ -2533,17 +2381,17 @@
 
     <!-- contact form -->
     <div id="overlay" class="hidden fixed inset-0 z-9 bg-[#05050580] lg:bg-[#121212]"></div>
-    <form id="form" class="hidden">
+    <form id="form" role="dialog" aria-modal="true" aria-labelledby="formTitle" class="hidden">
         <div class="fixed z-10 bg-[#1F2326] rounded-[20px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[calc(100%-32px)] max-w-[600px] p-4 lg:p-6 flex flex-col gap-8">
             <div id="formContent" class="flex flex-col gap-8">
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-1.5">
-                        <p class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white max-md:max-w-[220px]">Schedule an Introductory Meeting</p>
-                        <div id="formToggler" class="cursor-pointer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.2983 5.71022C18.2058 5.61752 18.0959 5.54397 17.9749 5.49379C17.8539 5.44361 17.7242 5.41778 17.5933 5.41778C17.4623 5.41778 17.3326 5.44361 17.2116 5.49379C17.0907 5.54397 16.9808 5.61752 16.8883 5.71022L11.9983 10.5902L7.10827 5.70022C7.01569 5.60764 6.90578 5.5342 6.78481 5.4841C6.66385 5.43399 6.5342 5.4082 6.40327 5.4082C6.27234 5.4082 6.14269 5.43399 6.02173 5.4841C5.90076 5.5342 5.79085 5.60764 5.69827 5.70022C5.60569 5.79281 5.53225 5.90272 5.48214 6.02368C5.43204 6.14464 5.40625 6.27429 5.40625 6.40522C5.40625 6.53615 5.43204 6.6658 5.48214 6.78677C5.53225 6.90773 5.60569 7.01764 5.69827 7.11022L10.5883 12.0002L5.69827 16.8902C5.60569 16.9828 5.53225 17.0927 5.48214 17.2137C5.43204 17.3346 5.40625 17.4643 5.40625 17.5952C5.40625 17.7262 5.43204 17.8558 5.48214 17.9768C5.53225 18.0977 5.60569 18.2076 5.69827 18.3002C5.79085 18.3928 5.90076 18.4662 6.02173 18.5163C6.14269 18.5665 6.27234 18.5922 6.40327 18.5922C6.5342 18.5922 6.66385 18.5665 6.78481 18.5163C6.90578 18.4662 7.01569 18.3928 7.10827 18.3002L11.9983 13.4102L16.8883 18.3002C16.9809 18.3928 17.0908 18.4662 17.2117 18.5163C17.3327 18.5665 17.4623 18.5922 17.5933 18.5922C17.7242 18.5922 17.8538 18.5665 17.9748 18.5163C18.0958 18.4662 18.2057 18.3928 18.2983 18.3002C18.3909 18.2076 18.4643 18.0977 18.5144 17.9768C18.5645 17.8558 18.5903 17.7262 18.5903 17.5952C18.5903 17.4643 18.5645 17.3346 18.5144 17.2137C18.4643 17.0927 18.3909 16.9828 18.2983 16.8902L13.4083 12.0002L18.2983 7.11022C18.6783 6.73022 18.6783 6.09022 18.2983 5.71022Z" fill="#8B949E"/>
+                        <h2 id="formTitle" class="text-[18px] lg:text-[20px] leading-[100%] font-semibold text-white max-md:max-w-[220px]">Schedule an Introductory Meeting</h2>
+                        <button type="button" id="formToggler" aria-label="Close modal" class="cursor-pointer bg-transparent border-0 p-0 text-[#8B949E] hover:text-white transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M18.2983 5.71022C18.2058 5.61752 18.0959 5.54397 17.9749 5.49379C17.8539 5.44361 17.7242 5.41778 17.5933 5.41778C17.4623 5.41778 17.3326 5.44361 17.2116 5.49379C17.0907 5.54397 16.9808 5.61752 16.8883 5.71022L11.9983 10.5902L7.10827 5.70022C7.01569 5.60764 6.90578 5.5342 6.78481 5.4841C6.66385 5.43399 6.5342 5.4082 6.40327 5.4082C6.27234 5.4082 6.14269 5.43399 6.02173 5.4841C5.90076 5.5342 5.79085 5.60764 5.69827 5.70022C5.60569 5.79281 5.53225 5.90272 5.48214 6.02368C5.43204 6.14464 5.40625 6.27429 5.40625 6.40522C5.40625 6.53615 5.43204 6.6658 5.48214 6.78677C5.53225 6.90773 5.60569 7.01764 5.69827 7.11022L10.5883 12.0002L5.69827 16.8902C5.60569 16.9828 5.53225 17.0927 5.48214 17.2137C5.43204 17.3346 5.40625 17.4643 5.40625 17.5952C5.40625 17.7262 5.43204 17.8558 5.48214 17.9768C5.53225 18.0977 5.60569 18.2076 5.69827 18.3002C5.79085 18.3928 5.90076 18.4662 6.02173 18.5163C6.14269 18.5665 6.27234 18.5922 6.40327 18.5922C6.5342 18.5922 6.66385 18.5665 6.78481 18.5163C6.90578 18.4662 7.01569 18.3928 7.10827 18.3002L11.9983 13.4102L16.8883 18.3002C16.9809 18.3928 17.0908 18.4662 17.2117 18.5163C17.3327 18.5665 17.4623 18.5922 17.5933 18.5922C17.7242 18.5922 17.8538 18.5665 17.9748 18.5163C18.0958 18.4662 18.2057 18.3928 18.2983 18.3002C18.3909 18.2076 18.4643 18.0977 18.5144 17.9768C18.5645 17.8558 18.5903 17.7262 18.5903 17.5952C18.5903 17.4643 18.5645 17.3346 18.5144 17.2137C18.4643 17.0927 18.3909 16.9828 18.2983 16.8902L13.4083 12.0002L18.2983 7.11022C18.6783 6.73022 18.6783 6.09022 18.2983 5.71022Z" fill="currentColor"/>
                             </svg>                            
-                        </div>
+                        </button>
                     </div>
                     <p class="text-[12px] leading-[140%] italic text-[#8B949E]">
                         Meet with our team for a 30-minute introduction to EQVI. We’ll walk you through the platform, discuss your bank’s priorities, and answer any questions you may have.
@@ -2574,12 +2422,6 @@
                             Company
                         </p>
                     </div>
-                    <!-- <div class="relative w-full">
-                        <input required name="number" type="text" placeholder=" " class="w-full text-[16px] leading-[100%] px-4 py-3 border border-[#5E6366] rounded-[8px] focus:outline-none focus:border-[#05C0F4] peer not-placeholder-shown:border-[#05C0F4]">
-                        <p class="pointer-events-none text-[#5E6366] transition-all duration-500 text-[16px] leading-[100%] absolute top-1/2 -translate-y-1/2 left-4 peer-focus:text-[12px] peer-focus:text-[#05C0F4] peer-focus:top-2 peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-[#05C0F4] peer-not-placeholder-shown:top-2">
-                            Number of Employees
-                        </p>
-                    </div> -->
                 </div>
                 <div class="flex flex-col w-full gap-2">
                     <button id="formSubmit" type="submit" class="cursor-pointer text-[16px] rounded-full lg:rounded-[20px] bg-[#20A9FF] text-white flex justify-center items-center w-full h-[44px]">Request a Meeting</button>
